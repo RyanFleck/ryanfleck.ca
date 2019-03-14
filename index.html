@@ -55,8 +55,8 @@
     });
   };
 </script>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-<script async>
+
+<script async defer src="https://connect.facebook.net/en_US/sdk.js">
     console.log("It functions. Loading chatbot.");
 
     (function(d, s, id) {
@@ -66,8 +66,8 @@
       js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-    
-    FB.CustomerChat.show(shouldShowDialog: boolean);
+
+    FB.CustomerChat.show(True); // Oops.
 </script>
 
 </html>
