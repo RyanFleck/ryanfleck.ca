@@ -43,32 +43,32 @@
 <p>In the meantime, return to <a href="http://ryanfleck.github.io">ryanfleck.github.io</a><br/>
 <br />
 <p class="quiet">RCF</p>
-</body>
 
+<div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId            : '368776427026719',
-      autoLogAppEvents : true,
       xfbml            : true,
       version          : 'v3.2'
     });
   };
-</script>
 
-<script async defer src="https://connect.facebook.net/en_US/sdk.js">
-    console.log("It functions. Loading chatbot.");
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="612104662550667"
+  theme_color="#6699cc"
+  logged_in_greeting="Hello."
+  logged_out_greeting="Hello.">
+</div>
 
-    FB.CustomerChat.show(True); // Oops.
-</script>
-
+</body>
 </html>
-
