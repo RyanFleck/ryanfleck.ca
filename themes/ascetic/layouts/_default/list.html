@@ -1,0 +1,17 @@
+
+{{ define "main" }}
+<main>
+    <article>
+        {{ .Content }}
+
+        <ol reversed>
+            {{ range .Pages }}
+            <li>
+                    <a href="{{.Permalink}}">
+                        {{ if .Date }}{{.Date.Format "2006-01-02"}} - {{end}}{{.Title}}</a>
+                </li>
+            {{ end }}
+            </ol>
+    </article>
+</main>
+{{end}}
