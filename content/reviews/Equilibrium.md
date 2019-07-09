@@ -4,6 +4,7 @@ tags:
 date: 2019-07-08T22:11:40-04:00
 title: "Film Review: Equilibrium"
 subtitle: "A nightmare distopia pairing the best of Orwell & Huxley."
+draft: true
 ---
 
 As anybody who has ever spoken to me will know, I hold the writing of authors Aldous Huxley and George Orwell in very high regard. Equilibrium, while it didn't perform well in the Box Office, was thoroughly enjoyable and did a fantastic job of mixing together elements from two of the greatest dystopian novels ever written: Brave New World, and 1984.
