@@ -1,59 +1,90 @@
 <style>
-      html {
-        scroll-behavior: smooth;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: auto !important;
-        padding: 1rem;
-        font-size: 17px;
-        max-width: 100%;
-        color: rgba(0, 0, 0, 0.9);
-        background: rgb(235, 213, 198);
-       
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        -ms-word-break: break-all;
-        word-break: break-all;
-        word-break: break-word;
-        -ms-hyphens: auto;
-        -moz-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
-        
-        font-family: "Courier New", Courier, monospace !important;
-      }
-      body {
-        margin: 0 auto;
-        max-width: 60ch;
-      }
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: auto !important;
+    font-size: 17px;
+    max-width: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    background: rgb(235, 213, 198);
 
-      h1,h2,h3,h4,h5,h6{
-        padding-top: 2rem;
-        font-size: 1rem;
-      }
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 
-      code, pre, .highlight{
-        font-family: 'Courier New', Courier, monospace;
-        background-color: transparent !important;
-      }
+    font-family: "Courier New", Courier, monospace;
+  }
 
-      article > div.highlight, article > pre{
-        overflow-x: auto;
-        margin-right: calc(-50vw + 51%);
-        padding: 0;
-      }
+  body {
+    margin: 0 auto;
+    max-width: 62ch;
+    padding: 1ch;
+  }
 
-      div.highlight > pre {
-        margin: 0;
-      }
+  
 
-      hr{
-        border-style: dashed;
-      }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 15px;
+    }
+  }
 
-      blockquote{
-        margin-left: 2ch;
-      }
+  @media only screen and (max-width: 400px) {
+    html {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+
+  code,
+  pre,
+  .highlight {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent !important;
+  }
+
+  article>div.highlight,
+  article>pre {
+    overflow-x: auto;
+    margin-right: calc(-50vw + 51%);
+    padding: 0;
+  }
+
+  div.highlight>pre {
+    margin: 0;
+  }
+
+  hr {
+    border-style: dashed;
+  }
+
+  blockquote {
+    margin-left: 2ch;
+  }
 
 </style>
