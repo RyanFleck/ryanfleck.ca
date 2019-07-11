@@ -7,7 +7,6 @@ title: "The Zen of Vim"
 subtitle: "Ever wanted a programming tool which maintains the same relationship as a sword to the knight, the hammer to the smith?"
 ---
 
-
 When is a tool more than a tool?
 
 When does a hammer transcend its ability simply to hammer nails, but becomes an extension of the workman's body, a physical manifestation of his will?
