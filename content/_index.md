@@ -4,6 +4,6 @@ Passionate computer programmer. [Download CV](https://github.com/RyanFleck/Proje
 
 This [minimalist](/posts/digital-minimalism) website stores my longform writing. 
 
-Please visit my [Github](https://github.com/ryanfleck/), [LinkedIn](https://www.linkedin.com/in/ryan-c-fleck/) or [blog](https://ryanfleck.github.io) for more info.
+Please visit my [Github](https://github.com/ryanfleck/), [LinkedIn](https://www.linkedin.com/in/ryan-c-fleck/), or [blog](https://ryanfleck.github.io) for more info.
 
 **Posts:**
