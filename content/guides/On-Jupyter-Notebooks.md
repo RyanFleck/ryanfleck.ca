@@ -6,7 +6,7 @@ subtitle: "Fantastic interactive webpages with code, notes, results, and images.
 draft: true
 ---
 
-If you are a Python programmer, you absolutely must use the fantastic amalgamations of documentation, code, and output commonly known as Jupyter Notebooks. Installing, assuming you have `python3` installed, is as simple as running:
+If you are a Python programmer, you absolutely must use the fantastic amalgamations of documentation, code, and code output commonly known as Jupyter Notebooks. Installing, assuming you have `python3` installed, is as simple as running:
 
 ```sh
 pip3 install juptyer
