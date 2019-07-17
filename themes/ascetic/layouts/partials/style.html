@@ -8,7 +8,7 @@
     font-size: 17px;
     max-width: 100%;
     color: rgba(0, 0, 0, 0.8);
-    background: rgb(235, 213, 198);
+    background: rgb(245, 236, 231);
 
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -29,7 +29,20 @@
     padding: 1ch;
   }
 
-  
+  a {
+    text-decoration: none;
+    color: rgb(83, 83, 221);
+  }
+
+  ::selection {
+    background: rgba(255, 255, 44, 0.76);
+  }
+
+  ::-moz-selection {
+    background: rgba(255, 255, 44, 0.76);
+  }
+
+
 
   @media only screen and (max-width: 600px) {
     html {
@@ -49,7 +62,7 @@
     }
   }
 
-  
+
 
   h1,
   h2,
@@ -87,9 +100,8 @@
     margin-left: 2ch;
   }
 
-  footer{
+  footer {
     color: rgba(0, 0, 0, 0.2);
     font-size: 0.8rem;
   }
-
 </style>

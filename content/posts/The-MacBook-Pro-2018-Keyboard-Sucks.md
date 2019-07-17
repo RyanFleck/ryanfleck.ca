@@ -3,7 +3,7 @@ tags:
 - MacBook Pro
 - Butterfly Keyboard
 date: 2019-07-10T19:11:00-04:00
-title: "The MacBook Pro 2018 Keyboard Sucks"
+title: "The 2018 MacBook Pro Keyboard"
 subtitle: "Goodbye efficiency, hello carpal tunnel!"
 ---
 
