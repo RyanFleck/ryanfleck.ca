@@ -8,7 +8,10 @@
             {{ range .Paginator.Pages }}
             <li>
                 {{ if .Date }}
-                <span class="pagin-date">  
+                <span class="pagin-desktop" style="aria-hidden: true;">  
+                {{.Date.Format "2006-01-02"}}:
+                </span> 
+                <span class="pagin-mobile">  
                 {{.Date.Format "2006-01-02"}}:
                 </span> 
                 {{end}}

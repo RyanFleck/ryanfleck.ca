@@ -41,13 +41,24 @@
     background: rgba(255, 255, 44, 0.76);
   }
 
+  .pagin-mobile{
+    display: none;
+    font-size: 0.7em;
+    padding-top: 0.5rem;
+  }
+  .pagin-desktop{
+    display: inline; 
+  }
 
   @media only screen and (max-width: 600px) {
     html {
       font-size: 18px;
     }
-    .pagin-date{
+    .pagin-desktop{
       display: none; 
+    }
+    .pagin-mobile{
+      display: block; 
     }
   }
 
