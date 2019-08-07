@@ -19,3 +19,10 @@ After this, you can simply tell your console `juptyer notebook` in your project 
 Before you is the splendor of an `.ipynb` file. You can add and intermingle 'cells' containing code and text. Hitting `SHIFT-ENTER` runs the cell you are currently editing, and prints any results below the cell. The output can be anything from text, to tables, to images and graphs.
 
 At this point, you should go and read some tutorials on using common data science and plotting libraries like pandas and matplotlib. Enjoy your new tool!
+
+```py
+def test():
+    ans = 1 + 1
+    print("A basic program. 1+1="+str(ans))
+    print("This is a very long string, and it should go way, way off the right edge of the screen, so far that the user will have to scroll to see it. Yeah. That far. Wow. Neato.")
+```

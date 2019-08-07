@@ -15,7 +15,6 @@
      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     font-size: 22px;
-
   }
   /* Places where eyeballs go should be comfortable and serifed. */
   p,li{
@@ -27,7 +26,7 @@
   body {
     margin: 0 auto;
     max-width: 700px;
-    padding: 1ch;
+    padding: 5px;
   }
 
   a {
@@ -43,27 +42,26 @@
     background: rgba(255, 255, 44, 0.76);
   }
 
-
+  .pagin-mobile{
+    display: none;
+    font-size: 0.7em;
+    padding-top: 0.5rem;
+  }
+  .pagin-desktop{
+    display: inline; 
+  }
 
   @media only screen and (max-width: 600px) {
     html {
-      font-size: 15px;
+      font-size: 18px;
+    }
+    .pagin-desktop{
+      display: none; 
+    }
+    .pagin-mobile{
+      display: block; 
     }
   }
-
-  @media only screen and (max-width: 400px) {
-    html {
-      font-size: 13px;
-    }
-  }
-
-  @media only screen and (max-width: 300px) {
-    html {
-      font-size: 10px;
-    }
-  }
-
-
 
   h1,
   h2,
@@ -81,6 +79,7 @@
       "SFMono-Regular",
       Consolas,
       "Liberation Mono",
+      "Noto Mono",
       Menlo,
       Courier,
       monospace;

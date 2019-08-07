@@ -7,7 +7,13 @@
             style="list-style: none;padding-left: 0px;">
             {{ range .Paginator.Pages }}
             <li>
-                {{ if .Date }}{{.Date.Format "2006-01-02"}}:
+                {{ if .Date }}
+                <span class="pagin-desktop" style="aria-hidden: true;">  
+                {{.Date.Format "2006-01-02"}}:
+                </span> 
+                <span class="pagin-mobile">  
+                {{.Date.Format "2006-01-02"}}:
+                </span> 
                 {{end}}
                 <a href="{{.Permalink}}">
                     {{.Title}}</a>
