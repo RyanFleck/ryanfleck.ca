@@ -1,12 +1,11 @@
 ---
 tags:
+- internship
+- IBM
 date: 2019-08-11T12:58:51-04:00
 title: "Extreme Blue 2019"
-subtitle: ""
 draft: true
 ---
-
-**FIRST DRAFT**
 
 IBM shipped all of the North American *Extreme Blue* interns out to 
 New York City for a few days to present our projects to a panel of executives,
@@ -30,7 +29,7 @@ novel technology to a pressing problem with relatively few internal
 subject-matter-experts (or, at least, few with time.) 
 My project was *not like this at all*; we had to deal with well documented tools 
 and *arcanely documented* old things. 
-Some of the older tools and technogies we had to work with were written 
+Some of the older tools and technologies we had to work with were written 
 before stack overflow, before forums, before professional
 programming information leaked from heavy tomes and arcane scrolles of ye olde systeme programme 
 creation knoweldage into easily digestable bites on the internet. This was an interesting challenge.
@@ -85,8 +84,8 @@ Here I insert the first part of Epictetus's *The Enchiridion*[^1].
 
 *A thousand times, yes.*
 
-Special shoutout to *Jan Napenas*[^jan], the EB program manager for Canada, who cares deeply
-for the success and wellbeing of her small group of EB interns. The extra attention and
+Special shout-out to *Jan Napenas*[^jan], the EB program manager for Canada, who cares deeply
+for the success and well-being of her small group of EB interns. The extra attention and
 investment in training for soft skills, team bonding exercises, and swag was appreciated.
 
 ## Do I Recommend a Regular Internship?
@@ -94,15 +93,15 @@ investment in training for soft skills, team bonding exercises, and swag was app
 I can't say.
 
 The EB experience is more akin to software consulting than working on a software product development team. 
-IBM has very competetive pay and great support for its interns,
+IBM has very competitive pay and great support for its interns,
 but I can't comment on the growth opportunities or work of regular interns personally. 
 I do have anecdotes from roommates and friends, who have said that the IBM experience (as a technical intern) is akin to
 working as a gear in a giant machine. Work comes in, work goes out, the quality and speed of your work
 gets you places. The pace at IBM, as a regular intern, is more relaxed than other more 'hardcore'
-companies. You are expected to work dilligently, but not to kill yourself. The pace is also not so relaxed
+companies. You are expected to work diligently, but not to kill yourself. The pace is also not so relaxed
 as to ensure the only thing you complete during your internship is a few python scripts. This being said,
 if you are not a good intern, and your performance is terrible, there don't seem to be many consequences apart from
-being given less work and, consequentially, recieving less experience from the time you have invested
+being given less work and, consequentially, receiving less experience from the time you have invested
 working at the company.
 
 ## The Best Parts
@@ -131,16 +130,28 @@ Oh, yeah, we got to go to New York City.
 
 [^2]: **Lyrics:** Theme From "New York, New York", Frank Sinatra, Lyricists: Fred Ebb, John Kander, [Link](https://www.youtube.com/watch?v=le1QF3uoQNg)
 
-New York City was a *hell* of a time. Presenting to the executives, after all of the training and preparation we had done, went smooth as butter. Answering further questions at our booths after was also fun, especially after the catered drinks and snacks arrived.
+New York City was a *hell* of a time. Presenting to the executives, 
+after all of the training and preparation we had done, went smooth as butter.
+Answering further questions at our booths after was also fun, 
+especially after the catered drinks and snacks arrived.
+
+Canadian EBs were given an additional day to explore the city, which I used to
+have lunch with a relative and explore the Meat Packing District, the Highline,
+Le Bain (great view!), and Brooklyn. After some cards and heading off to bed early at 2 AM,
+I woke at 6 and went for a morning run in Central Park. I'd say I squeezed quite a lot
+out of my free days and evenings.
+
+
+### The Executive Presence Workshops
+
+All of the Canadian EBs had the privilege of being trained by [Brad Antle](https://www.linkedin.com/in/bradantle/) to embody executive presence, and to present with eminence. I'll not share all of his sage advice here, but the techniques he taught made a world of difference, dramatically improving our ability to communicate with sincerity, gravity and confidence.
 
 
 ### Dragon's Den
 
-Jan[^jan] put us through **three** of these events, where each team pitched to a selection of local executives and were *grilled* to harden our business cases and technical strategies. They became progressively easier as we became accustomed to talking on a stage in a suit. As previously mentioned, 
+Jan[^jan] put us through **three** of these events, where each team pitched to a selection of local executives and were *grilled* to harden our business cases and technical strategies. They became progressively easier as we became accustomed to talking on a stage in a suit.
+The aforementioned *Executive Presence Workshops* were fundamental to our preparation, 
 
-### The Executive Presence Workshop
-
-All of the Canadian EBs had the privilege of being trained by [Brad Antle](https://www.linkedin.com/in/bradantle/) to embody executive presence, and to present with eminenece. I'll not share all of his sage advice here, but the techniques he taught made a world of difference, dramatically improving our ability to communicate with sincerity, gravity and confidence.
 
 ### Learning to do Shitty Work
 
@@ -150,7 +161,7 @@ I'll quote one of my coworkers now. This statement was made from the heart of th
 
 My rigidity and borderline arrogance, stemming primarily from
 
-anyway, I had to learn to just flip out a rough draft without worrying too much,
+Anyway, I had to learn to just flip out a rough draft without worrying too much,
 I learned this far too late, and if I had learned it earlier I would have saved a ton
 of time, but when it comes to written work and conceptual programs, just slapping some
 rough work together is the best thing to do.
