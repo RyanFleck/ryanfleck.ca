@@ -10,7 +10,9 @@ As anybody who has ever spoken to me will know, I hold the writing of authors
 Aldous Huxley and George Orwell in very high regard. Equilibrium, while it
 didn't perform well in the Box Office, was thoroughly enjoyable and did a
 fantastic job of mixing together elements from two of the greatest dystopian
-novels ever written: Brave New World, and 1984.
+novels ever written: Brave New World, and 1984. *Additionally,* a friend pointed
+out it also has *firemen* from Ray Bradbury's *Fahrenheit 451*, another great
+dystopian novel.
 
 The film touched me personally, as it is heavily centered around the themes of
 repressing one's own humanity, and sacrificing the turmoil and chaos of a full
@@ -84,4 +86,50 @@ all the displays in the city.
 At the same moment, the underground destroys the Prozium distribution
 facilities, and a riot begins. The Librian government has fallen.
 
-# The Problem of Prozium
+# Why Equilibrium Resonated With Me 
+
+For a time, boiling alive in a chaotic sea of confused emotions, I thought the
+best way forward was simply to shut off everything human. If I could turn off
+all of my human desires and emotions, I thought, I could become a perfect and
+rational being, unaffected by the pull of internal chemicals and hormones,
+nonplussed by my personal situation and failures.
+
+Looking back now, this thought is delusional. I've since moved past this set of
+ideas, recognizing that what ties us to this world and those around us is
+exactly the set of feelings I wanted to repress.
+
+*Equilibrium* demonstrates, through similar observations and character
+transformations, the meaninglessness of a life without feeling.
+
+# A Warning from Science Fiction
+
+In Canada today, we continue to slide catastrophically towards a low-trust
+society. Policies that outright discourage assimilation has seen the formation
+of many ethnic enclaves in Canada, each with their own culture, values, and
+tribal interests.
+
+> No one can serve two masters, since either he will hate one and love the
+> other, or he will be devoted to one and despise the other. You cannot serve
+> both God and money.
+
+*Equilibrium* solves the problem of *global* differences by sedating the entire
+population and repressing human emotions, ensuring everyone feels that they
+belong to the same *monoculture*. In effect, this obliterates everything unique
+about each person's culture, reducing each member of the society to an atom,
+ensuring they have no commonality with any other man, for any reason apart from
+belonging to a group controlled by the state.
+
+In effect, *Libra* ensures it has control by chemically enforcing a
+*monoculture*, and tribalizing the society down to an atomic level.
+Parallels can be seen in the new religion of *Intersectionality*: the fewer 
+people who identify with one another, the easier they are to subvert and control.
+
+*Then again,* it is equally easy to control a group of people who identify
+strongly with one another.
+
+Hm... I'll have to think more about this.
+
+# Atmosphere and Cinematography
+
+
+
