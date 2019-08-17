@@ -1,42 +1,17 @@
 {{ define "main" }}
 <main>
-    <article>
-        {{ .Content }}
+    <article id="home">
+	
+    <img id="R" src="https://ryanfleck.github.io/assets/r.svg" />
 
-        <ol reversed
-            style="list-style: none;padding-left: 0px;">
-            {{ range .Paginator.Pages }}
-            <li>
-                {{ if .Date }}
-                <span class="pagin-desktop" style="aria-hidden: true;">  
-                {{.Date.Format "2006-01-02"}}:
-                </span> 
-                <span class="pagin-mobile">  
-                {{.Date.Format "2006-01-02"}}:
-                </span> 
-                {{end}}
-                <a href="{{.Permalink}}">
-                    {{.Title}}</a>
-            </li>
-            {{ end }}
+    <div id="buttons">
 
-        </ol>
+	<button onclick="window.location.href='/about'">About</button>
+	<button onclick="window.location.href='https://github.com/RyanFleck/Projects/blob/master/tex/Resume/RCF_CV_W19.pdf'">Resume</button>
+	<button onclick="window.location.href='/posts'">Writing</button>
+	<button onclick="window.location.href='/cartoons'">Cartoons</button>
 
-        <p>Page {{ .Paginator.PageNumber }};
-
-            {{ if .Paginator.HasPrev }}
-            <a href="{{ .Paginator.Prev.URL }}">prev</a>,
-            {{ else }}
-            prev,
-            {{ end }}
-
-            {{ if .Paginator.HasNext }}
-            <a href="{{ .Paginator.Next.URL }}">next</a>.
-            {{ else }}
-            next.
-            {{ end }}
-
-        </p>
+    </div>
 
     </article>
 </main>

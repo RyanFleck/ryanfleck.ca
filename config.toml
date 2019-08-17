@@ -2,6 +2,6 @@ baseURL = "https://www.ryanfleck.ca/"
 languageCode = "en-us"
 title = "Ryan Fleck"
 theme = "ascetic"
-paginate = 10
+paginate = 10 
 pygmentsCodeFences = true
 pygmentsStyle = "emacs"

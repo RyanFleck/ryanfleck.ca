@@ -1,17 +1,45 @@
 
 {{ define "main" }}
 <main>
+    
     <article>
         {{ .Content }}
 
-        <ol reversed>
-            {{ range .Pages }}
+        <ol reversed
+            style="list-style: none;padding-left: 0px;">
+            {{ range .Paginator.Pages }}
             <li>
-                    <a href="{{.Permalink}}">
-                        {{ if .Date }}{{.Date.Format "2006-01-02"}} - {{end}}{{.Title}}</a>
-                </li>
+                {{ if .Date }}
+                <span class="pagin-desktop" style="aria-hidden: true;">  
+                {{.Date.Format "2006-01-02"}} -
+                </span> 
+                <span class="pagin-mobile">  
+                {{.Date.Format "2006-01-02"}}
+                </span> 
+                {{end}}
+                <a href="{{.Permalink}}">
+                    {{.Title}}</a>
+            </li>
             {{ end }}
-            </ol>
+
+        </ol>
+
+        <p>Page {{ .Paginator.PageNumber }};
+
+            {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}">prev</a>,
+            {{ else }}
+            prev,
+            {{ end }}
+
+            {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}">next</a>.
+            {{ else }}
+            next.
+            {{ end }}
+
+        </p>
+
     </article>
 </main>
 {{end}}
