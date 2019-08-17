@@ -3,7 +3,6 @@ tags:
 - Film Review
 date: 2019-07-08T22:11:40-04:00
 title: "Film Review: Equilibrium"
-draft: true
 ---
 
 As anybody who has ever spoken to me will know, I hold the writing of authors
@@ -88,15 +87,16 @@ facilities, and a riot begins. The Librian government has fallen.
 
 # Why Equilibrium Resonated With Me 
 
-For a time, boiling alive in a chaotic sea of confused emotions, I thought the
+For a time, boiling alive in a chaotic sea of confused anguish, I thought the
 best way forward was simply to shut off everything human. If I could turn off
 all of my human desires and emotions, I thought, I could become a perfect and
 rational being, unaffected by the pull of internal chemicals and hormones,
 nonplussed by my personal situation and failures.
 
-Looking back now, this thought is delusional. I've since moved past this set of
-ideas, recognizing that what ties us to this world and those around us is
-exactly the set of feelings I wanted to repress.
+Looking back now, these thoughts were desperate and delusional. I've since moved
+past these ideas, arriving at a better place, recognizing that what ties us to
+this world and those around us is exactly the set of feelings I wanted to
+repress.
 
 *Equilibrium* demonstrates, through similar observations and character
 transformations, the meaninglessness of a life without feeling.
@@ -104,13 +104,15 @@ transformations, the meaninglessness of a life without feeling.
 # A Warning from Science Fiction
 
 In Canada today, we continue to slide catastrophically towards a low-trust
-society. Policies that outright discourage assimilation has seen the formation
-of many ethnic enclaves in Canada, each with their own culture, values, and
-tribal interests.
+society. Policies that outright discourage assimilation have led to the
+formation of many ethnic enclaves in Canada, each with their own culture,
+values, and tribal interests.
 
 > No one can serve two masters, since either he will hate one and love the
 > other, or he will be devoted to one and despise the other. You cannot serve
-> both God and money.
+> both God and money.[^b]
+
+[^b]: Matthew 6:24
 
 *Equilibrium* solves the problem of *global* differences by sedating the entire
 population and repressing human emotions, ensuring everyone feels that they
@@ -119,17 +121,34 @@ about each person's culture, reducing each member of the society to an atom,
 ensuring they have no commonality with any other man, for any reason apart from
 belonging to a group controlled by the state.
 
-In effect, *Libra* ensures it has control by chemically enforcing a
-*monoculture*, and tribalizing the society down to an atomic level.
-Parallels can be seen in the new religion of *Intersectionality*: the fewer 
-people who identify with one another, the easier they are to subvert and control.
+In effect, *Libra* ensures it has control by chemically enforcing an unnatural
+*monoculture*, tribalizing the society down to an atomic level.  Parallels
+can be seen in the new religion of *Intersectionality*: the fewer people who
+identify with one another, the easier they are to subvert and control. Divided,
+we fall.
+
+*Divided, we fall...*
 
 *Then again,* it is equally easy to control a group of people who identify
 strongly with one another.
 
-Hm... I'll have to think more about this.
+Hm... We'll have to think more about this.
+
+...Isn't Facebook's new cryptocurrency called *Libra?*
 
 # Atmosphere and Cinematography
 
+While low-budget, the atmosphere of *Libra* is immersive, clean, and utterly
+real. The set, costumes, color grading, all convey a sort of perfect emptiness.
+The citizens go about their lives like trains on tracks, like a cat trapped in a
+box on antibiotics, unthinking, just moving forward.
+
+Nothing that I saw broke my immersion.
+
+# Conclusion
+
+- You should probably watch this film.
+- You should definitely watch this film if you're into dystopian science fiction.
+- Is it better to face the chaos of human emotion, or cease to live altogether?
 
 

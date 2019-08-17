@@ -4,13 +4,14 @@ tags:
 - IBM
 date: 2019-08-11T12:58:51-04:00
 title: "Extreme Blue 2019"
-draft: true
 ---
 
 IBM shipped all of the North American *Extreme Blue* interns out to New York
 City for a few days to present our projects to a panel of executives, to which
 we had dedicated a summer and no small quantity of blood and sweat.  I write
 this on my flight home from Newark, NJ to Billy Bishop in Toronto.
+
+*WIP*
 
 ## Extreme Blue?
 
@@ -47,8 +48,11 @@ Lots and lots of Java. Most teams worked on cool ML stuff in Python. I worked
 in Java.  I swam in oceans of Java.  *I dreamed in Java.* I woke up and found
 myself thinking about the class structure of a human: 
 
-```java Ryan.getComms().speak(Mood.excited, "Spaghetti, please!"); ``` I'm
-happy about this, because the additional experience fiddling with Java EE
+```java 
+Ryan.getComms().speak(Mood.excited, "Spaghetti, please!");
+``` 
+
+I'm happy about this, because the additional experience fiddling with Java EE
 (which is probably the fourth-hardest thing to fiddle with in the software
 multiverse,) has prepared me for analyzing complex, distributed business logic
 systems.
@@ -125,11 +129,7 @@ as to ensure the only thing you complete during your internship is a few python
 scripts. This being said, if you are not a good intern, and your performance is
 terrible, there don't seem to be many consequences apart from being given less
 work and, consequentially, receiving less experience from the time you have
-invested
-
-
-
-working at the company.
+invested working at the company.
 
 ## The Best Parts
 
@@ -187,24 +187,46 @@ accustomed to talking on a stage in a suit.  The aforementioned *Executive
 Presence Workshops* were fundamental to our preparation, 
 
 
-### Learning to do Shitty Work
+### Learning to Complete Low-Quality First Drafts
 
 I'll quote one of my coworkers now. This statement was made from the heart of
 this person, and intended for me, Ryan.
 
 > Wow, I never thought I'd meet a worse perfectionist than me!
 
-My rigidity and borderline arrogance, stemming primarily from
+At least I know now how arrogant and irritating I can be.
 
 Anyway, I had to learn to just flip out a rough draft without worrying too
-much, I learned this far too late, and if I had learned it earlier I would have
+much; I learned this far too late, and if I had learned it earlier I would have
 saved a ton of time, but when it comes to written work and conceptual programs,
 just slapping some rough work together is the best thing to do.
+
+Our team ran into a few situations where thinking ahead was a hindrance, and of
+course, I continued to think ahead and attempt to carefully form my
+submission, response, question, or answer. In these situations, the additional
+time and effort I put into the little details resulted in an excess of stress
+for myself and others.
+
+*There is a time and a place for thoughtful output.*
 
 ### Learning to Trust Others
 
 Continuing from the previous section, I had to learn to trust my coworkers and
 refrain from criticizing, condemning and complaining for shallow reasons.
+Micromanagement is not healthy for anybody involved. It sours relationships and
+burns bridges. Luckily, I was able to recognize this is myself and relax, but
+not before some damage was done. On the bright side, some groups had this
+problem but *never resolved it,* so I count myself lucky.
 
+## Conclusion
+
+Extreme Blue was great. If you (the Engineering student reading this,) have the
+opportunity, I'd recommend applying and trying to get through the interviews.
+They're not difficult compared to others I have done, but you need to have a
+*drive.* EB proposal owners (those who draft the projects and choose team
+members,) look for driven people with genuine interest in the project they are
+looking to hire you for. These people have a great personal interest in seeing
+the project succeed, and so, will only consider those who they feel can build to
+and past the project goals. *Apply!*
 
 [^jan]: [Jan Napenas](https://ca.linkedin.com/in/jan-napenas) M.Ed, is the Canadian Program Manager for the Extreme Blue Internship Program at IBM.
