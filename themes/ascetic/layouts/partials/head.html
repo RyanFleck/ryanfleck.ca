@@ -5,7 +5,12 @@
     shrink-to-fit=no">
 <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <!-- Title  -->
+
+{{ if not .IsHome }}
 <title>{{ .Site.Title }} {{ if .Title }}- {{ .Title }}{{end}}</title>
+{{ else }}
+<title>{{ .Site.Title }}</title>
+{{ end }}
 
 <!-- Twitter & FB Meta -->
 <meta name="twitter:title" content="{{ .Site.Title }} {{ if .Title }}- {{ .Title }}{{end}}" />
