@@ -82,10 +82,7 @@ treat said member, and not necessarily how my reputation stands with the member
 in question.  Here I insert the first part of Epictetus's *The
 Enchiridion*[^1].
 
-[^1]: [The Enchiridion](http://classics.mit.edu/Epictetus/epicench.html),
-hosted by MIT Classics, translated by Elizabeth Carter. The Internet Classics
-Archive by Daniel C. Stevenson, Web Atomics. World Wide Web presentation is
-copyright (C) 1994-2000, Daniel C. Stevenson, Web Atomics.
+[^1]: [The Enchiridion](http://classics.mit.edu/Epictetus/epicench.html), hosted by MIT Classics, translated by Elizabeth Carter. The Internet Classics Archive by Daniel C. Stevenson, Web Atomics. World Wide Web presentation is copyright (C) 1994-2000, Daniel C. Stevenson, Web Atomics.
 
 > Some things are in our control and others not. Things in our control are
 > opinion, pursuit, desire, aversion, and, in a word, whatever are our own
