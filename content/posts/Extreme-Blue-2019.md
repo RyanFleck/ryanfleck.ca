@@ -149,8 +149,9 @@ Oh, yeah, we got to go to New York City.
 
 ### New York City
 
-> These vagabond shoes, are longing to stray  Right through the very heart of
-> it  New York, New York[^2]
+> These vagabond shoes, are longing to stray  
+> Right through the very heart of it  
+> New York, New York[^2]  
 
 [^2]: **Lyrics:** Theme From "New York, New York", Frank Sinatra, Lyricists: Fred Ebb, John Kander, [Link](https://www.youtube.com/watch?v=le1QF3uoQNg)
 
@@ -186,12 +187,12 @@ Presence Workshops* were fundamental to our preparation,
 
 ### Learning to Complete Low-Quality First Drafts
 
-I'll quote one of my coworkers now. This statement was made from the heart of
-this person, and intended for me, Ryan.
+I'll quote one of my coworkers now. This statement was made from the heart,
+off the cuff- a very real and unfiltered thought.
 
 > Wow, I never thought I'd meet a worse perfectionist than me!
 
-At least I know now how arrogant and irritating I can be.
+At least now I know how arrogant and irritating I can be.
 
 Anyway, I had to learn to just flip out a rough draft without worrying too
 much; I learned this far too late, and if I had learned it earlier I would have
