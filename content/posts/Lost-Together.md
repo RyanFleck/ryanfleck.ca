@@ -25,6 +25,19 @@ I knew it wasn't healthy. But it helped. Like a drug.
 
 ...
 
+Weaker members of the group would regularly talk quite openly about their
+problems at home. I did this while feeling guilty, knowing that others in the
+group, with problems which were catastrophic or far worse, were putting on a
+stiff upper lip.
+
+Our culture today attempts to portray the sharing of deep, troubling thoughts
+and the tumultuous worries of life as strong and courageous. I still haven't
+decided if I believe this. At a deep level, I am convinced that sharing too much
+is simply emotionally greedy, even to this day when friends are willing to
+listen.
+
+...
+
 Time passed, and a few of us headed out to University. We all floundered. At
 Westmount, though we were encouraged, there was no need to develop healthy study
 habits. We were all possessed with a deep apathy, enabled by intelligence enough
