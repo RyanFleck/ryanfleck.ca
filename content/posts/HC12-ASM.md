@@ -8,7 +8,34 @@ The **HC12** CPU is used to teach the **CEG3136** class at the University of
 Ottawa. This document is a *living personal reference* to the CPU12 CISC
 instruction set. *WIP!* 
 
-Let's get started with a few practical examples.
+Let's get started with a practical example. Calculate:
+
+```
+z = a + b - c
+```
+
+In C:
+```c
+void main() {
+  int z;
+  int a=5, b=6, c=8;
+  z = a + b - c;
+}
+```
+
+In HC12 ASM:
+```asm
+  OFFSET 0
+var_a DC.W 5
+var_b DC.W 6
+var_c DC.W 8
+z DS.W 1
+
+  LDAA var_a,SP
+  ADDA var_b,SP
+  SUBA var_c,SP
+  STAA z,SP
+ ``` 
 
 # Using the Stack
 
@@ -67,9 +94,9 @@ one](https://www.nxp.com/assets/documents/data/en/reference-manuals/S12XCPUV1.pd
 
 In short, the modes available on the HC12 CPU are:
 
-1. Immediate, where the data is included in the instruction.
-1. Direct, where an address in memory is given.
-1. Indexed, where 
+1. Immediate
+1. Direct
+1. Indexed
 1. Relative
 
 Each of these can be expanded to include their operating modes (`N` is
@@ -79,8 +106,111 @@ the table above, and `op` for operation):
 1. Immediate: `op #oprNi`
 1. Direct: `op opr8a`
   - Extended: `op opr16a`
-1. Indexed
-1. Relative
+1. Indexed:
+  - With N-Bit offset: `op oprxN,xysp`
+  - With 3-Bit offset, pre-decrement: `op oprxN,-xysp`
+  - With 3-Bit offset, pre-increment: `op oprxN,+xysp`
+  - With 3-Bit offset, post-decrement: `op oprxN,xysp-`
+  - With 3-Bit offset, post-increment: `op oprxN,xysp+`
+  - With accumulator offset: `op abd,xysp`
+  - Indexed-Indirect, 16-bit offset: `[oprx16, xysp]`
+  - Indexed-Indirect, D offset: `[D, xysp]`
+1. Relative: `op PCr, oprxN`
+
+These can be broken into three loose operating modes, with modifiers:
+
+1. **Directly providing the value,** using the `#` character, directly gives the CPU the
+value in the instruction. There is no RAM access needed to proceed with the
+operation.
+2. **Using an offset,** supplying two values without an addition or subtraction
+symbol (`like,this`), adds the two numbers together and allows the CPU to access 
+things like the stack.
+3. **Incrementing or decrementing**, supplying a `+` or `-` before or after the
+`xysp` allows the `xysp` register to be increased or decreased before or after
+the contents of the address are passed back to wherever the operation dictates.
+
+Some examples might be nice:
+
+```asm
+; Inherent instructions have NO addressing mode.
+inherent:
+  NOP
+  LSL
+
+immediate:
+  ; Note the #!
+  LDAA #$64
+  LDX #$1234
+  BEQ inherent
+
+direct:
+  LDS
+
+indexed_offset:
+  
+
+
+direct:
+  LDS #AFE ; Init stack pointer.
+```
+
+
+# Important Things
+
+**ORG** is the *origin* command. It places assembly code at the specified
+location in memory. Generates an internal, absolute code **section** in memory.
+
+```asm
+; Next instruction will be placed at address 3000
+  ORG $3000
+```
+
+**OFFSET** declares an *offset* section which is useful for stack frames or
+simulating data structures.
+
+**SECTION** declares a *relocatable* section. These can include data, constant
+data, or code. Define *separate sections* so these are placed in the correct
+memory location. Variables defined with *DS*, constants defined with *DC*, and
+code all belong in different places.
+
+```asm
+consts: SECTION
+const1: DC.B $8B
+const2: DC.B $A4
+
+data:   SECTION
+var1:   DS.W 1
+var2:   DS.W 1
+
+code:   SECTION
+loop:
+  LDAA const1
+  ADDA const2
+  STAA var1
+  BRA loop
+```
+
+**SWITCH** blocks assemble code according to *case* statements.
+
+```asm
+var EQU 5
+
+; Written directive:
+SWITCH var
+CASE 0
+  LDD #23
+CASE 2
+  LDD #89
+CASE 5
+  LDD #A8
+DEFAULT
+  LDD #19
+ENDSW
+
+; Generates:
+  LDD #A8
+```
+
 
 # Formatting Tests
 
