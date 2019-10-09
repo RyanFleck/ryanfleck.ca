@@ -2,12 +2,11 @@
 tags: ASM, Assembly, HC12
 date: 2019-10-09T13:24:10-04:00
 title: "Introduction to HC12 Assembly"
-draft: true
 ---
 
 The **HC12** CPU is used to teach the **CEG3136** class at the University of
-Ottawa. This document is a living personal reference to the CPU and CISC
-instruction set.
+Ottawa. This document is a *living personal reference* to the CPU12 CISC
+instruction set. *WIP!* 
 
 Let's get started with a few practical examples.
 
