@@ -39,7 +39,7 @@ inputs.
 All operations will use the following notation for **operands**:
 
 Expression | Referenced Data Type
-------|----------------------
+-----------|----------------------
 `opr8i`, `opr16i` | 8-bit or 16-bit **i**mmediately addressed data
 `opr8a`, `opr16a` | 8-bit or 16-bit **a**ddress
 `oprx5`, `oprx9`, `oprx16` | N-bit const offset for indexed addressing
@@ -58,13 +58,19 @@ Expression | Referenced Data Type
 - `abd, xysp`, the X, Y, or Z registers offset by A, B, or D.
 
 
+
+**Great,** now you can read the docs like a *master!* NXP has quite a few
+publicly available documents with the instruction set thoroughly detailed, like
+[this
+one](https://www.nxp.com/assets/documents/data/en/reference-manuals/S12XCPUV1.pdf).
+
 # Addressing Modes
 
 In short, the modes available on the HC12 CPU are:
 
-1. Immediate
-1. Direct
-1. Indexed
+1. Immediate, where the data is included in the instruction.
+1. Direct, where an address in memory is given.
+1. Indexed, where 
 1. Relative
 
 Each of these can be expanded to include their operating modes (`N` is
