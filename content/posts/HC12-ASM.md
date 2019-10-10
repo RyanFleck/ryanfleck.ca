@@ -116,11 +116,10 @@ registers before completing a set of operations:
 DS.W 1      ; Space to RTS address 
 DS.B 1      ; Space to store A
 DS.B 1      ; Space to store B
-arr DS.B 6  ; Space for our array
 
 create_array:
   PSHA  ; Save A to the stack
-  PSHB  ; Save A to the stack
+  PSHB  ; Save B to the stack
 
   ; Load 3 into the A register.
   LDAA #$3
@@ -128,13 +127,13 @@ create_array:
 
 ; Description below.
 loop:
-  STAA 0,X
-  INX
+  STAA 0,Y
+  INY
   INCA
   DECB
   BNE loop
   
-  PULB  ; Restore A to previous status
+  PULB  ; Restore B to previous status
   PULA  ; Restore A to previous status
   RTS
 ```
