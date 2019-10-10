@@ -2,7 +2,10 @@
 tags: ASM, Assembly, HC12
 date: 2019-10-09T13:24:10-04:00
 title: "Introduction to HC12 Assembly"
+toc: true
 ---
+
+# Introduction
 
 The **HC12** CPU is used to teach the **CEG3136** class at the University of
 Ottawa. This document is a *living personal reference* to the CPU12 CISC
@@ -14,55 +17,44 @@ Let's get started with a practical example. Calculate:
 z = a + b - c
 ```
 
-In C:
+A function written in **C**:
 ```c
-void main() {
+void addstuff() {
   int z;
   int a=5, b=6, c=8;
   z = a + b - c;
 }
 ```
 
-In HC12 ASM:
+Now in **HC12 ASM**, using *sections* for organization:
 ```asm
-  OFFSET 0
+consts: SECTION
 var_a DC.W 5
 var_b DC.W 6
 var_c DC.W 8
+
+data:   SECTION
 z DS.W 1
 
+code:   SECTION
+addstuff:
   LDAA var_a,SP
   ADDA var_b,SP
   SUBA var_c,SP
   STAA z,SP
- ``` 
+  RTS
 
-# Using the Stack
+``` 
 
-The stack is an area of memory that we can place temporary variables in. It is
-good for functions or subroutines that need to manipulate more data than can be
-stored in the registers. First, we call the `OFFSET 0` command to define a set
-of offset labels. Essentially, these labels allow data structures and variables
-to be reserved and accessed in the stack.
-
-```asm
-  OFFSET 0
-space_to_store_x   DS.W 1
-space_for_one_word DS.W 1
-a_ten_byte_space   DS.B 10
-
-store_something:
-  PSHX
-  LDD #$1234
-  STAB space_for_one_word,SP
-```
 
 # Reading the Docs
 
-When looking at documentation, you'll need to know how to read the function
-inputs.
+When looking at documentation, you'll need to know how to read the operands for
+any given function. Learning this will enable you to *feed* any given function
+the data it needs to run, and prevent you and the machine from *diverging in your
+thinking!*
 
-All operations will use the following notation for **operands**:
+Most manuals will use the following notation for **operands**:
 
 Expression | Referenced Data Type
 -----------|----------------------
@@ -83,12 +75,97 @@ Expression | Referenced Data Type
 - `oprx5, xysp` which is indexed offset.
 - `abd, xysp`, the X, Y, or Z registers offset by A, B, or D.
 
-
-
 **Great,** now you can read the docs like a *master!* NXP has quite a few
 publicly available documents with the instruction set thoroughly detailed, like
 [this
 one](https://www.nxp.com/assets/documents/data/en/reference-manuals/S12XCPUV1.pdf).
+
+
+# Using the Stack
+
+The stack is an area of memory that we can place temporary variables in. It is
+good for functions or subroutines that need to manipulate more data than can be
+stored in the registers. First, we call the `OFFSET 0` command to define a set
+of offset labels. Essentially, these labels allow data structures and variables
+to be reserved and accessed in the stack. See the [Program
+Organization](#program-organization) section for more information on `OFFSET`.
+
+```tasm
+  OFFSET 0
+space_to_store_x   DS.W 1
+space_for_one_word DS.W 1
+a_ten_byte_space   DS.B 10
+
+store_something:
+  PSHX
+  LDD #$1234
+  STAB space_for_one_word,SP
+```
+
+As you can see, `variable_name, SP` is used to reference areas of the stack
+memory. Here is a more complex example, where a subroutine preserves the
+registers before completing a set of operations:
+
+```tasm
+; create_array.asm
+; =========================================
+;  Creates an array of one-byte decimals like so in the memory:
+;   [ 3, 4, 5, 6, 7, 8 ]
+;  at the address given in register Y.
+
+  OFFSET 0
+DS.W 1      ; Space to RTS address 
+DS.B 1      ; Space to store A
+DS.B 1      ; Space to store B
+arr DS.B 6  ; Space for our array
+
+create_array:
+  PSHA  ; Save A to the stack
+  PSHB  ; Save A to the stack
+
+  ; Load 3 into the A register.
+  LDAA #$3
+  LDAB #$5
+
+; Description below.
+loop:
+  STAA 0,X
+  INX
+  INCA
+  DECB
+  BNE loop
+  
+  PULB  ; Restore A to previous status
+  PULA  ; Restore A to previous status
+  RTS
+```
+
+Let's look carefully at the instructions in the loop.
+
+1. `STAA 0,X` stores the contents of the register A into the memory address
+referenced in the register X. For the first run of the loop, the value 3 is
+loaded into the memory address `[X]`.
+1. Now that we are done with the X register for now, we can point it to the next
+address in memory with the `INX` command.
+1. To ensure we'll store `4` in the next address, we `INCA`. The `A` register is
+*incremented* and now contains the number `4`.
+1. `DECB` is called and `B` becomes `4`. It will continue to be decremented
+until it becomes zero, and the `BNE` command *refrains* from jumping back to the
+`loop` label.
+1. `BNE` is *branch if not equal to zero*, checking the CCR (Condition Code
+Registers) to see if the last operation set the `Z` (zero) bit. If the zero bit
+is **not** set, `BNE` will move the `PC` back to the argument label, in this
+case, `loop`.
+
+**Notably,** we use `PSHA` and `PSHB` at the beginning of the *subroutine* to
+save the current contents of the `A` and `B` registers to the stack. At the end
+of the program, we use `PULB` and `PULA` to move the original contents of the
+registers back into place.
+
+We do this in order to reduce the impact of the subroutine on the running
+machine code. Subroutines are responsible for cleaning up after themselves. If a
+subroutine messed up the registers in the middle of a long operation which made
+a subroutine call, that long operation would be *very unhappy!*
 
 # Addressing Modes
 
@@ -154,8 +231,11 @@ direct:
   LDS #AFE ; Init stack pointer.
 ```
 
+# Program Organization 
 
-# Important Things
+A number of labels and directives can be used to sort the pieces of a program,
+ensuring they are placed in (or forced into,) the correct place in memory. Here
+are the commands *to know* for the midterm.
 
 **ORG** is the *origin* command. It places assembly code at the specified
 location in memory. Generates an internal, absolute code **section** in memory.
@@ -166,12 +246,17 @@ location in memory. Generates an internal, absolute code **section** in memory.
 ```
 
 **OFFSET** declares an *offset* section which is useful for stack frames or
-simulating data structures.
+simulating data structures. Essentially, this allows you to pre-allocate blocks
+of memory *around the stack pointer* for use for a particular purpose. The
+command we use the most, `OFFSET 0`, tells the compiler to, *starting at the
+stack pointer, preserve this much space for this set of variables.* Order does
+matter: If you are going to *push* or *pull* anything to the stack, you need to
+reserve space for those at the 'bottom', and define those *first*.
 
 **SECTION** declares a *relocatable* section. These can include data, constant
 data, or code. Define *separate sections* so these are placed in the correct
-memory location. Variables defined with *DS*, constants defined with *DC*, and
-code all belong in different places.
+memory location. Variables defined with *DS* (define storage,) constants defined
+with *DC*, and code all belong in different places.
 
 ```asm
 consts: SECTION
@@ -190,7 +275,9 @@ loop:
   BRA loop
 ```
 
-**SWITCH** blocks assemble code according to *case* statements.
+**SWITCH** blocks assemble code according to *case* statements. After assembly,
+the switch block no longer exists; only one of the cases is preserved in the
+final `.s19` file.
 
 ```asm
 var EQU 5
@@ -211,12 +298,15 @@ ENDSW
   LDD #A8
 ```
 
+<br />
+<hr />
+<br />
 
-# Formatting Tests
+**Formatting Tests**
 
 The below are to ensure correct syntax highlighting.
 
-## Assembly
+A bit of assembly:
 
 ```asm
   OFFSET 0
@@ -228,10 +318,8 @@ loopTo3k:
   LDX MYINT,SP 
 
 ```
+Here's a short C snippet I wrote while playing with strings.
 
-## C
-
-This snippet...
 ```c
 #include <stdio.h>
 
