@@ -27,7 +27,7 @@ void addstuff() {
 ```
 
 Now in **HC12 ASM**, using *sections* for organization:
-```asm
+```tasm
 consts: SECTION
 var_a DC.W 5
 var_b DC.W 6
@@ -208,7 +208,7 @@ the contents of the address are passed back to wherever the operation dictates.
 
 Some examples might be nice:
 
-```asm
+```tasm
 ; Inherent instructions have NO addressing mode.
 inherent:
   NOP
@@ -240,7 +240,7 @@ are the commands *to know* for the midterm.
 **ORG** is the *origin* command. It places assembly code at the specified
 location in memory. Generates an internal, absolute code **section** in memory.
 
-```asm
+```tasm
 ; Next instruction will be placed at address 3000
   ORG $3000
 ```
@@ -258,7 +258,7 @@ data, or code. Define *separate sections* so these are placed in the correct
 memory location. Variables defined with *DS* (define storage,) constants defined
 with *DC*, and code all belong in different places.
 
-```asm
+```tasm
 consts: SECTION
 const1: DC.B $8B
 const2: DC.B $A4
@@ -279,7 +279,7 @@ loop:
 the switch block no longer exists; only one of the cases is preserved in the
 final `.s19` file.
 
-```asm
+```tasm
 var EQU 5
 
 ; Written directive:
@@ -308,7 +308,7 @@ The below are to ensure correct syntax highlighting.
 
 A bit of assembly:
 
-```asm
+```tasm
   OFFSET 0
   DS.W 1
   MYINT DS.W 1
