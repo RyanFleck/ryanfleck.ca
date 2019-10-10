@@ -38,12 +38,11 @@ z DS.W 1
 
 code:   SECTION
 addstuff:
-  LDAA var_a,SP
-  ADDA var_b,SP
-  SUBA var_c,SP
-  STAA z,SP
+  LDAA var_a
+  ADDA var_b
+  SUBA var_c
+  STAA z
   RTS
-
 ``` 
 
 
