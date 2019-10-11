@@ -2,6 +2,7 @@
 tags:
 date: 2019-10-11T17:54:00-04:00
 title: "Passing Structures in C++"
+draft: true
 ---
 
 Draft preview. Work in progress.
@@ -69,12 +70,150 @@ structure you pass to the function will be cloned on the stack and used by the
 function. If you modify a structure that is passed *by value*, the original will
 not be modified.
 
+Passing by value is the easiest to program. First, add a function declaration
+and definition:
+
+```cpp
+// Declare your function at the top:
+void display_by_value(Complex c);
+
+// Lower in the file, add your definition:
+void display_by_value(Complex c) {
+}
+```
+After adding these, your file will look like this (I won't repeat this in future
+examples, to keep the article of the length reasonable.)
+
+```cpp
+#include <iostream>
+
+struct Complex {
+  double r, i;
+};
+
+void display_by_value(Complex c);
+
+int main(void) {
+
+  struct Complex thing;
+  thing.r = 2;
+  thing.i = 4;
+
+  return 0;
+}
+
+void display_by_value(Complex c) {
+}
+```
+
+```cpp
+#include <iostream>
+
+struct Complex {
+  double r, i;
+};
+
+void display_by_value(Complex c);
+
+int main(void) {
+
+  struct Complex thing;
+  thing.r = 2;
+  thing.i = 4;
+
+  display_by_value(thing);
+  //cout> 2 4 
+
+  return 0;
+}
+
+void display_by_value(Complex c) {
+  std::cout << c.r << " " << c.i << "\n";
+}
+```
+
 # Pass by Pointer
 
 
+```cpp
+#include <iostream>
+
+struct Complex {
+  double r, i;
+};
+
+void display_by_value(Complex c);
+void display_by_pointer(Complex *pc);
+void display_by_reference(Complex &rc);
+
+int main(void) {
+
+  struct Complex thing;
+  Complex *ptr;
+  ptr = &thing;
+  thing.r = 2;
+  thing.i = 4;
+
+  display_by_value(thing);
+  display_by_pointer(ptr);
+  display_by_reference(thing);
+
+  return 0;
+}
+
+void display_by_value(Complex c) {
+  std::cout << c.r << " " << c.i << "\n";
+}
+
+void display_by_pointer(Complex *pc) {
+  std::cout << pc->r << " " << pc->i << "\n";
+}
+
+void display_by_reference(Complex &rc) {
+  std::cout << rc.r << " " << rc.i << "\n";
+}
+```
 
 # Pass by Reference
 
+```cpp
+#include <iostream>
+
+struct Complex {
+  double r, i;
+};
+
+void display_by_value(Complex c);
+void display_by_pointer(Complex *pc);
+void display_by_reference(Complex &rc);
+
+int main(void) {
+
+  struct Complex thing;
+  Complex *ptr;
+  ptr = &thing;
+  thing.r = 2;
+  thing.i = 4;
+
+  display_by_value(thing);
+  display_by_pointer(ptr);
+  display_by_reference(thing);
+
+  return 0;
+}
+
+void display_by_value(Complex c) {
+  std::cout << c.r << " " << c.i << "\n";
+}
+
+void display_by_pointer(Complex *pc) {
+  std::cout << pc->r << " " << pc->i << "\n";
+}
+
+void display_by_reference(Complex &rc) {
+  std::cout << rc.r << " " << rc.i << "\n";
+}
+```
 
 # Final Example
 
