@@ -106,6 +106,21 @@ void display_by_value(Complex c) {
 }
 ```
 
+Our function takes a `Complex` structure as input. As with in *main*, you'll be
+able to access the properties of the properties of a *struct* using the `.`
+operator.
+
+
+```cpp
+void display_by_value(Complex c) {
+  std::cout << c.r << " " << c.i << "\n";
+}
+```
+
+Now all we need to do is add this function to our main body, passing the `thing`
+variable to the function. The following code will print `2 4`, the contents of
+the `thing` structure.
+
 ```cpp
 #include <iostream>
 
@@ -133,7 +148,6 @@ void display_by_value(Complex c) {
 ```
 
 # Pass by Pointer
-
 
 ```cpp
 #include <iostream>
