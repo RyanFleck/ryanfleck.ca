@@ -1,18 +1,17 @@
 ---
 tags:
 date: 2019-10-11T17:54:00-04:00
-title: "Passing Structures in C++"
-draft: true
+title: "Passing Structs in C++"
 ---
-
-Draft preview. Work in progress.
 
 After a conversation with a friend revolving around passing structures to
 functions, I decided to write a short tutorial on passing structures to
 functions in *three different ways!* I am **not** a very experienced C++
 programmer, but hopefully these examples will illustrate to a beginner the
 medley of ways that data can be passed into functions, and the pros & cons of
-each method. We will pass the structure below by:
+each method. Skip to the [end](#final-final-example) if you learn better by
+reading code.
+We will pass the structure below by:
 
 1. [Value](#pass-by-value)
 2. [Pointer](#pass-by-pointer)
@@ -25,6 +24,12 @@ each method. We will pass the structure below by:
 struct Complex {
   double r, i;
 };
+
+// Goal: Complete the following functions
+
+void display_by_value(Complex c);
+void display_by_pointer(Complex *pc);
+void display_by_reference(Complex &rc);
 ```
 
 # Source 
@@ -147,7 +152,44 @@ void display_by_value(Complex c) {
 }
 ```
 
+It is **very important** to note that passing by value passes a new copy of *the
+entire object.* Modifications made within the function are made to this *new
+copy*, and do not effect the original structure. To do that, you'll need to pass
+by reference or pointer.
+
 # Pass by Pointer
+
+To pass by pointer, you can write your function with an asterisk (`*`) between
+the structure type and variable name, like this:
+
+```cpp
+void display_by_pointer(Complex *pc) {
+  std::cout << pc->r << " " << pc->i << "\n";
+}
+```
+
+The arrow member operator (`var->attr`) is the operational equivalent of
+`(*var).attr`, and makes it easy to access the properties of objects through
+their references. Recall that, when passing a pointer, the name alone (`var`, in
+this case) holds the address, and `*var` allows you to access the item itself.
+
+Two different methods can be used to pass a pointer to your structure.
+
+```cpp
+// 1. Point a pointer at the struct
+struct Complex thing;
+Complex *ptr;
+ptr = &thing;
+display_by_pointer(ptr);
+
+// 2. Give the function the address of the struct
+struct Complex thing;
+display_by_pointer(&thing);
+```
+Both cases will pass the *address* of the Complex struct `thing` to the function
+`display_by_pointer(Complex * pc)`. Passing the pointer does *not* make a copy
+of the original object, instead allowing the function to directly modify the
+original object in place. Below, both function calls perform the same action:
 
 ```cpp
 #include <iostream>
@@ -156,9 +198,7 @@ struct Complex {
   double r, i;
 };
 
-void display_by_value(Complex c);
 void display_by_pointer(Complex *pc);
-void display_by_reference(Complex &rc);
 
 int main(void) {
 
@@ -168,28 +208,26 @@ int main(void) {
   thing.r = 2;
   thing.i = 4;
 
-  display_by_value(thing);
   display_by_pointer(ptr);
-  display_by_reference(thing);
+  display_by_pointer(&thing);
 
   return 0;
 }
 
-void display_by_value(Complex c) {
-  std::cout << c.r << " " << c.i << "\n";
-}
-
 void display_by_pointer(Complex *pc) {
   std::cout << pc->r << " " << pc->i << "\n";
-}
-
-void display_by_reference(Complex &rc) {
-  std::cout << rc.r << " " << rc.i << "\n";
 }
 ```
 
 # Pass by Reference
 
+Passing by reference allows the programmer to pass an object as if using a
+pointer without having to use pointer notation within the function. All you have
+to do is add an ampersand (`&`) behind the parameter that is to be referenced.
+
+Since this example is programmed very similarly to passing by value, I will omit
+the tutorial-style steps and cut right to the chase:
+
 ```cpp
 #include <iostream>
 
@@ -197,31 +235,17 @@ struct Complex {
   double r, i;
 };
 
-void display_by_value(Complex c);
-void display_by_pointer(Complex *pc);
 void display_by_reference(Complex &rc);
 
 int main(void) {
 
   struct Complex thing;
-  Complex *ptr;
-  ptr = &thing;
   thing.r = 2;
   thing.i = 4;
 
-  display_by_value(thing);
-  display_by_pointer(ptr);
   display_by_reference(thing);
 
   return 0;
-}
-
-void display_by_value(Complex c) {
-  std::cout << c.r << " " << c.i << "\n";
-}
-
-void display_by_pointer(Complex *pc) {
-  std::cout << pc->r << " " << pc->i << "\n";
 }
 
 void display_by_reference(Complex &rc) {
@@ -229,7 +253,14 @@ void display_by_reference(Complex &rc) {
 }
 ```
 
+It is important to remember that the structure manipulated inside the function
+is *the original structure*. Changes made will effect the original, and persist
+after the function exits.
+
 # Final Example
+
+Given that you were following along and writing everything in a single
+source file, something like the following should be sitting in your text editor:
 
 ```cpp
 #include <iostream>
@@ -272,6 +303,10 @@ void display_by_reference(Complex &rc) {
 
 # Final Final Example
 
+Additionally, to prove that changes made when passing by value will *not* effect
+the original object, and passing by pointer and reference *will*, run the
+following example:
+
 
 ```cpp
 #include <iostream>
@@ -288,13 +323,12 @@ struct Complex {
   double r, i;
 };
 
+// Our functions.
 void display_by_value(Complex c);
 void display_by_pointer(Complex *pc);
 void display_by_reference(Complex &rc);
 
 int main(void) {
-  std::cout << "Hello, World!\n";
-  //> Hello, World!
 
   // Define a complex thing.
   struct Complex thing;
@@ -357,3 +391,9 @@ void display_by_reference(Complex &rc) {
   std::cout << rc.r << " " << rc.i << "\n";
 }
 ```
+<br />
+<hr />
+
+If you enjoy my programming tutorials, please subscribe to my [youtube
+channel](https://www.youtube.com/channel/UCjYQgnRYXjatVkGgNTAMyfQ) for weekly
+uploads of fresh digital content.
