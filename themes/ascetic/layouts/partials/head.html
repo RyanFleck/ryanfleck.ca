@@ -6,27 +6,48 @@
 <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <!-- Title  -->
 
-{{ if not .IsHome }}
-<title> {{ if .Title }}{{ .Title }} - {{end}}{{ .Site.Title }}</title>
-{{ else }}
-<title>{{ .Site.Title }}</title>
+<title>{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}</title>
+{{ if .IsHome }}
+<meta name="description" content="Ryan Fleck, computer engineering student, pragmatic programmer." />
 <link rel="preload" href="/r.svg">
-{{ end }}
-
-{{ if not .IsHome }}
-<!-- Twitter & FB Meta -->
-<meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
-<meta property="og:description" content="{{ .Summary }}" />
 {{ else }}
-<!--TODO: Replace with hugo variables. -->
-<meta property="og:title" content="Ryan Fleck" />
-<meta property="og:description" content="Ryan Fleck, computer engineering student, pragmatic programmer." />
+<meta name="description" content="{{ .Summary }}" />
 {{ end }}
 
+<!-- Twitter & FB Meta -->
+<meta property="og:title" content="{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
+<meta itemprop="name" content="{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
+<meta name="twitter" content="{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
+{{ if not .IsHome }}
+<meta property="og:description" content="{{ .Summary }}" />
+<meta name="twitter:description" content="{{ .Summary }}" />
+<meta itemprop="description" content="{{ .Summary }}" />
+{{ else }}
+<meta property="og:description" content="Ryan Fleck, computer engineering student, pragmatic programmer." />
+<meta name="twitter:description" content="Ryan Fleck, computer engineering student, pragmatic programmer." />
+<meta itemprop="description" content="Ryan Fleck, computer engineering student, pragmatic programmer." />
+{{ end }}
+
+
+<!--OpenGraph-->
+<meta property="og:" content="">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="en_CA">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{.Permalink }}">
 <meta property="og:image" content="https://ryanfleck.ca/r.jpg">
+<meta property="og:site_name" content="Ryan Fleck">
+<meta property="og:article:author" content="Ryan Fleck">
+<meta property="og:profile:first_name" content="Ryan">
+<meta property="og:profile:last_name" content="Fleck">
+<meta property="og:profile:username" content="RyanFleck">
+
+<!--Twitter-->
+<meta name="twitter:" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@RyanFleck_Dev">
+<meta name="twitter:image:src" content="https://ryanfleck.ca/r.jpg">
 
 <!-- Favicon  -->
 <link rel="icon" href="/favicon.ico">
