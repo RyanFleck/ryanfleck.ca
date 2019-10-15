@@ -18,6 +18,9 @@
                 </span> 
                 {{end}}
                 <a href="{{.Permalink}}">
+                    {{ if .Draft }}
+                    <span style="color:red;">DRAFT:</span>
+                    {{ end }}
                     {{.Title}}</a>
             </li>
             {{ end }}
