@@ -281,6 +281,19 @@ code{
 footer a{
   color: rgb(141, 141, 228);
 }
+
+.rcf-glitch{
+  filter: drop-shadow(10px 10px 2mm white) blur(0px);
+  /*filter: blur(0px) opacity(100%);*/
+  transition: filter 1s;
+}
+
+
+.rcf-glitch:hover{
+  filter: drop-shadow(-15px -15px 11px red) blur(5px);
+  /*filter: blur(10px) opacity(80%);*/
+  transition: filter 1s;
+}
 </style>
 <style media="print">
 html{
