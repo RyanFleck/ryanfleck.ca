@@ -289,6 +289,7 @@ a[href^="http://localhost:1313/"]{
 }
 #buttons > a.button {
   background: none;
+  padding-right: 0px;
 }
 code{
   font-size: 0.9rem;
@@ -317,6 +318,25 @@ display: none;
 display: none;
 }
 }
+
+
+@media (min-width: 600px){
+#c-parent {
+height: 90vh;
+}
+#c-floater{
+float: left;
+height: 40%;
+width: 100%;
+margin-bottom: -25%;
+}
+#c-child {
+clear: both;
+height: 0vh;
+}
+}
+
+
 </style>
 <style media="print">
 html{
