@@ -14,6 +14,11 @@ by engineers to prototype and describe industrial digital logic.
 This document is a copy of living notes for the *CEG3155* course I am currently
 taking, *Digital Systems II*.
 
+The two primary types of VHDL logic the course deals with (and I deal with
+within this document) are called *concurrent* and *sequential*, where
+*concurrent* logic obviously runs *concurrently*, and *sequential* logic runs
+*sequentially* within process statements.
+
 # A Basic VHDL Program
 
 Let's dive right in with a full example. Here is an implementation for a decoder
@@ -26,7 +31,7 @@ use ieee.std_logic_1164.all;
 
 entity decoder_enable is
   port(
-    a, b, en : in std_logic_vector;
+    a, b, en : in std_logic;
     d : out std_logic_vector(3 downto 0)
   );
 end decoder_enable;
@@ -42,7 +47,7 @@ end de_arch;
 ```
 The first thing that our program requires is the standard IEEE 1164 libraries.
 These should always be present at the top of your programs to use constructs
-like `std_logic_vector`.
+like `std_logic`.
 
 ```vhdl
 library ieee;
@@ -79,10 +84,64 @@ begin
 end de_arch;
 ```
 
-<!--This pattern is called *conditional signal assignment statement.*-->
+This logic is technically *concurrent*. Each assignment (`<=`) will run
+simultaneously when the signal reaches the component.
+
+# Internal Signals
+
+# Concurrent VHDL 
+
+# Sequential VHDL
+
+# Inclusion of Components
+
+Large digital systems can be implemented by combining large amounts of
+components defined in *other VHDL files*. We accomplish this with *internal
+signals* and *component statements*.
+
+For instance, a trivial NAND component with one input and output can be defined
+in its own VHDL file, like so:
+
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity nand is
+  port(
+    x, y : in std_logic;
+    z : out std_logic
+  );
+end decoder_enable;
+
+architecture nand_arch of nand is
+begin
+  y <= not (x and y);
+end nand_arch;
+```
+
+If you were to use this in another VHDL architecture, you would first have to
+place `nand.vhdl` in the same directory, then you could write an architecture
+like the following:
+
+```vhdl
+architecture sample_arch of big_component is
+  signal H : std_logic_vector(1 downto 0);
+
+  component NAND
+    port(
+      x, y : in std_logic;
+      z : out std_logic
+    );
+  end component;
+
+  begin
+    L0: NAND(SW(0), SW(1), H);
+    LEDR(0) <= H;
+end sample_arch;
+```
 
 
-
+# Finite State Machines
 
 
 
