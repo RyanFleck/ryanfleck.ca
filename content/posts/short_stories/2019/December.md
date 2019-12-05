@@ -3,9 +3,18 @@ tags:
 date: 2019-12-05T15:27:36-05:00
 title: "December's Collected Short Stories"
 draft: true
+toc: true
 ---
 
+
+
+<br />
+
+<br />
+
 # No Problems Whatsoever
+
+<br />
 
 It began slowly.
 
@@ -34,7 +43,17 @@ that he hated those like his greedy, lying land-lady, placing it on a pile with
 many others, a heap of kindling that would only grow dry with the falling of
 rain.
 
+<br />
 
+# June and the Ghost 
+
+<br />
+
+She held him like it was the last time she would ever see his stupid, beautiful
+face, burying her head in his neck and breathing the smells of sweat and pine.
+His strong arms gently, but firmly, were placed around her waist and back,
+drawing her further into the embrace. She could feel the heat of his body
+through her winter coat.
 
 
 <!-- https://www.gutenberg.org/files/13085/13085-h/13085-h.htm#page443 -->
