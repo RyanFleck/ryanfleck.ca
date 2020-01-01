@@ -43,6 +43,7 @@ that he hated those like his greedy, lying land-lady, placing it on a pile with
 many others, a heap of kindling that would only grow dry with the falling of
 rain.
 
+
 <br />
 
 # June and the Ghost 
@@ -50,10 +51,61 @@ rain.
 <br />
 
 She held him like it was the last time she would ever see his stupid, beautiful
-face, burying her head in his neck and breathing the smells of sweat and pine.
+face; burying her head in his neck and breathing the smells of sweat and pine.
 His strong arms gently, but firmly, were placed around her waist and back,
 drawing her further into the embrace. She could feel the heat of his body
 through her winter coat.
+
+He was a spectre that she would never truly touch.
+
+
+<br />
+
+# The Gamble
+
+<br />
+
+I inhaled another ragged, mildly smoky breath through the tube extending above
+the surface of the water. At least I had goggles and could see. Above me,
+extending further than I could swim in all directions, was an oil slick fire.
+The surface of the shimmering ocean above me was ablaze. I was stuck beneath it,
+breathing from a storm drain of a small floating buoy. A beach was probably 50
+meters away from me, but I was certain the beach would be just as dangerous, and
+aflame, as the water itself.
+
+It had probably been thirty minutes since the fire started. I could see the
+bodies of my fellow crewmen floating at the surface, burning along with the
+crude. They had not been so lucky as I. Still, I would have to surface
+eventually.
+
+It was becoming difficult to breathe. It took some effort to pull air through
+the long tube, and I was beginning to feel light-headed from smoke inhalation.
+My options weren't great. I dove down a few meters in an attempt to find a place
+to surface; still nothing. Back to the pipe to take a breath.
+
+I could do one of three things. Option one: Take as much air in me as I could,
+swim as far out to sea as I could, and hope for the best. Option two: Swim to
+the beach, run up, and attempt to roll the fire out on land, assuming there was
+good, dry land up there that wasn't currently ablaze.
+
+Option three was to wait until the fire went out. It shouldn't take too long.
+After all, how much time could it possibly take for all the crude to pour out of
+a tanker and burn?
+
+*four hours later*
+
+I was comfortable under the water. The fiery and inky-black patterns of burning
+crude flowing across the surface lit the sea floor with a lively orange hue now
+that the sun had set. I would surely die of lung cancer in a few years, with the
+volume of smoke that I had inhaled, but the small...
+
+
+**Uh oh.** this scenario doesn't make any sense. The amount of dead,
+oxygen-deprived air between the diver's mouth and the end of the tube would be
+larger than the volume of air the diver could inhale. Though the diver could
+never _exhale_ through the tube.
+
+...no, wait, he could just inhale and block the tube with his thumb.
 
 
 <!-- https://www.gutenberg.org/files/13085/13085-h/13085-h.htm#page443 -->
