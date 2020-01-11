@@ -7,7 +7,7 @@ title: "About"
 Hello! 
 
 My name is **Ryan**, and I am a passionate computer programmer.
-This [minimalist](/posts/digital-minimalism) website stores my longform
+This [minimalist](/2019/the-case-for-digital-minimalism/) website stores my longform
 writing. I am a beginner in all things, and write primarily to think.
 
 <link rel="prefetch" href="/pics/nyc.jpeg">
