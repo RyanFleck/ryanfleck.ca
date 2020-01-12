@@ -7,8 +7,6 @@ toc: true
 
 # MSP430F5529LP?
 
-*Work in progress.*
-
 Texas Instruments' Launchpad Microcontrollers are used in UOE Racing's
 electric car projects. UOE's entry for the [Shell Eco-Marathon](https://www.shell.com/make-the-future/shell-ecomarathon.html) competition relies
 on an MSP430 Launchpad board to control a DRV8323, which controls a
@@ -49,7 +47,7 @@ you'd ever need to know about the microcontroller.
 
 `Timer_A` is a timer (who would have guessed?) module with seven capture/compare
 registers, `CCR0` through to `CCR6`. The MCU also has `B` and `D` timers, but
-I suppose I'll look into those when I run out of channels on `Timer_A0` (there
+I suppose I'll look into those when I run out of channels on `Timer0_A5` (there
 are two other `Timer_A` modules on the board!) This timer module
 is **16 bits** and has **up to** six channels.
 
@@ -201,6 +199,21 @@ been set correctly:
 All of the registers on the MSP430F5529LP MCU can be inspected in this manner
 within Code Composer Studio.
 
+```
+Timer Calculations for 1s blink:
+
+2^16 = 65536 max ticks
+~1MHz clock /8 = 125000 Hz
+* 65536 ticks = ~1.9 Hz blinks
++ external prescaler /2 => ~1 Hz blinks.
+```
+
+*Success!*
+
+![](/pics/timer/blink.gif)
+
+Here's a copy of the code with comments:
+
 ```c
 #include "msp430f5529.h"
 
@@ -209,11 +222,6 @@ within Code Composer Studio.
  * Adapted by Ryan Fleck - Ryan.Fleck@protonmail.com
  *
  * Blinks LED2 at P4.7
- *
- * 2^16 = 65536
- * ~1MHz clock /8 = 125000 Hz
- * * 65536 ticks = 1.9 Hz blinks
- * + external prescaler /2 => ~1 Hz blinks.
  */
 
 void main(void)
@@ -258,6 +266,8 @@ void main(void)
 /* TimerA has two interrupt vectors:
  *  - One dedicated to CCR0
  *  - One shared by TAIFG, plus all other channels.
+ *  - A case statement is used to check which channel
+ *    the interrupt was issued from for ch. 1-4.
  */
 
 #pragma vector=TIMER0_A0_VECTOR
@@ -270,8 +280,6 @@ __interrupt void TIMER0_A0_ISR(void)
 __interrupt void TIMER0_A1_ISR(void)
 {
     P1OUT ^= 0x01; // Toggle P1.0
-    // Allows the compiler to generate more efficient code for the switch, equivalent to switch(TA0IV)
-    // source: https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-
     switch (__even_in_range(TA0IV, TA0IV_TAIFG))
     {
     case TA0IV_NONE:
@@ -291,13 +299,15 @@ __interrupt void TIMER0_A1_ISR(void)
 }
 ```
 
-*Success!*
-
-![](/pics/timer/blink.gif)
 
 
 `__even_in_range()` allows the compiler to generate more efficient code for the
 switch, equivalent to switch(TA0IV)[^even_ir]
+
+Now that we've discussed output-compare mode, let's take a look at
+input-capture.
+
+*To be continued.*
 
 [^even_ir]: TI Forums: "What does the '__even_in_range' function do?" [e2e.ti.com/support/microcontrollers/msp430...](https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-)
 
