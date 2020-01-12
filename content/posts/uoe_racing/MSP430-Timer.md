@@ -174,6 +174,10 @@ __interrupt void TIMER0_A1_ISR(void)
 
 ```
 
+*Success!*
+
+![](/pics/timer/blink.gif)
+
 One silly thing to note: when looking at your timer modules in CCS, you'll
 notice you have many, named with the convention `TimerX_AY`. Here, `X` denotes
 the timer module, and `Y` denotes the number of channels[^slides].
