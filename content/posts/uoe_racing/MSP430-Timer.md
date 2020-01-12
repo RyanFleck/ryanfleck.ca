@@ -2,11 +2,12 @@
 tags:
 date: 2020-01-11T18:27:35-05:00
 title: "MSP430 Timer Module"
-draft: true
 toc: true
 ---
 
 # MSP430F5529LP?
+
+*Work in progress.*
 
 Texas Instruments' Launchpad Microcontrollers are used in UOE Racing's
 electric car projects. UOE's entry for the [Shell Eco-Marathon](https://www.shell.com/make-the-future/shell-ecomarathon.html) competition relies
@@ -72,11 +73,15 @@ By reading the manual and the diagram above, we know:
 
 1. Each channel is controlled by a `TAxCCTLn` register.
     1. Bit 4 is `CCIE`, enabling interrupts.
-    
+
+# A Practical Example
+
 The only registers we need to configure `Timer_A` are `TA0CTL`, and for each
 timer channel, `TA0CCTLn` and `TA0CCRn`. The register `TA0R` stores the actual
 value of the timer. For example, a simple blink program in C would look like the
-following (tested 2020-01-12 on an MSP430F5529LP):
+following:
+
+(Compiled with CCS, 2020-01-12, on an MSP430F5529LP)
 
 
 ```c
@@ -86,7 +91,12 @@ following (tested 2020-01-12 on an MSP430F5529LP):
  * Timer experiments.
  * Adapted by Ryan Fleck - Ryan.Fleck@protonmail.com
  *
- * Switch at P1.1 blinks LED2 at P4.7
+ * Blinks LED2 at P4.7 @ 2Hz
+ * 
+ * 2^16 = 65536
+ * ~1MHz clock /8 = 125000 Hz
+ * * 65536 ticks = 1.9 Hz blinks
+ * Approximately half-second blinks
  */
 
 void main(void)
@@ -143,8 +153,6 @@ __interrupt void TIMER0_A0_ISR(void)
 __interrupt void TIMER0_A1_ISR(void)
 {
     P1OUT ^= 0x01;                            // Toggle P1.0
-    // Allows the compiler to generate more efficient code for the switch, equivalent to switch(TA0IV)
-    // source: https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-
     switch (__even_in_range(TA0IV, TA0IV_TAIFG))
     {
     case TA0IV_NONE:
@@ -168,8 +176,12 @@ __interrupt void TIMER0_A1_ISR(void)
 
 One silly thing to note: when looking at your timer modules in CCS, you'll
 notice you have many, named with the convention `TimerX_AY`. Here, `X` denotes
-the timer module, and `Y` denotes the number of channels.
+the timer module, and `Y` denotes the number of channels[^slides].
 
+`__even_in_range()` allows the compiler to generate more efficient code for the
+switch, equivalent to switch(TA0IV)[^even_ir]
+
+[^even_ir]: TI Forums: "What does the '__even_in_range' function do?" [e2e.ti.com/support/microcontrollers/msp430...](https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-)
 
 [^slides]: TI MSP430x5xx Timer Training, [software-dl.ti.com/trainingTTO/trainingTTO_public_sw/MSP430_LaunchPad_Workshop/v4/Chapters/MSP430m06_TIMERS.pdf](http://software-dl.ti.com/trainingTTO/trainingTTO_public_sw/MSP430_LaunchPad_Workshop/v4/Chapters/MSP430m06_TIMERS.pdf), Copyright &copy; 2008-2018 Texas Instruments Incorporated 
 
