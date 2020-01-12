@@ -5,6 +5,7 @@ title: "MSP430 Timer Module"
 toc: true
 ---
 
+
 # MSP430F5529LP?
 
 Texas Instruments' Launchpad Microcontrollers are used in UOE Racing's
@@ -42,6 +43,7 @@ you'd ever need to know about the microcontroller.
 
 [^tome]: TI MSP430x5xx Family User's Guide, Revision Q, [slau208q.pdf](http://www.ti.com/lit/ug/slau208q/slau208q.pdf), Copyright &copy; 2008-2018 Texas Instruments Incorporated 
 
+![](/pics/timer/msp430.svg)
 
 # The Timer_A Peripheral
 
@@ -117,6 +119,8 @@ By reading the manual and tables above, we can conclude that
     1. Bit 4 is `CCIE`, enabling interrupts.
 
 1. For output-compare, we set a value in `TA0CCRn`
+
+![](/pics/timer/timer.svg)
 
 # A Practical Example
 
@@ -308,6 +312,8 @@ Now that we've discussed output-compare mode, let's take a look at
 input-capture.
 
 *To be continued.*
+
+![](/pics/timer/tbc.svg)
 
 [^even_ir]: TI Forums: "What does the '__even_in_range' function do?", [link](https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-)
 
