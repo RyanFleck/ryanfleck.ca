@@ -40,7 +40,7 @@ The primary reference for this article is TI's thousand-page
 [tome](http://www.ti.com/lit/ug/slau208q/slau208q.pdf)[^tome] with everything
 you'd ever need to know about the microcontroller.
 
-[^tome]: TI MSP430x5xx Family User's Guide, Revision Q, [www.ti.com/lit/ug/slau208q/slau208q.pdf](http://www.ti.com/lit/ug/slau208q/slau208q.pdf), Copyright &copy; 2008-2018 Texas Instruments Incorporated 
+[^tome]: TI MSP430x5xx Family User's Guide, Revision Q, [slau208q.pdf](http://www.ti.com/lit/ug/slau208q/slau208q.pdf), Copyright &copy; 2008-2018 Texas Instruments Incorporated 
 
 
 # The Timer_A Peripheral
@@ -309,7 +309,7 @@ input-capture.
 
 *To be continued.*
 
-[^even_ir]: TI Forums: "What does the '__even_in_range' function do?" [e2e.ti.com/support/microcontrollers/msp430...](https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-)
+[^even_ir]: TI Forums: "What does the '__even_in_range' function do?", [link](https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-)
 
-[^slides]: TI MSP430x5xx Timer Training, [software-dl.ti.com/trainingTTO/trainingTTO_public_sw/MSP430_LaunchPad_Workshop/v4/Chapters/MSP430m06_TIMERS.pdf](http://software-dl.ti.com/trainingTTO/trainingTTO_public_sw/MSP430_LaunchPad_Workshop/v4/Chapters/MSP430m06_TIMERS.pdf), Copyright &copy; 2008-2018 Texas Instruments Incorporated 
+[^slides]: TI MSP430x5xx Timer Training, [MSP430m06_TIMERS.pdf](http://software-dl.ti.com/trainingTTO/trainingTTO_public_sw/MSP430_LaunchPad_Workshop/v4/Chapters/MSP430m06_TIMERS.pdf), Copyright &copy; 2008-2018 Texas Instruments Incorporated 
 
