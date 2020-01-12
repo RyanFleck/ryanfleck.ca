@@ -57,10 +57,54 @@ Below is the block diagram from page 462 of TI's user guide[^tome].
 
 ![](/pics/timer/block.png)
 
-By reading the manual and the diagram above, we know:
+This diagram shows the *Timer Block*, the top level component of the peripheral,
+and the content of each timer channel, labeled with `CCRn`. Diagrams like this
+are useful for understanding what registers can be used to configure the timer.
+For instance, in the *Timer Block*, two dividers `ID` and `IDEX` exist between
+the 16-bit timer register `TAxR` and the clock source, allowing us to *slow down
+time* and only tick every `x` seconds. The clock source itself can be configured
+with `TASSEL`. We need to do some more reading to understand *where* these can
+be configured.
 
-1. Each of the seven timer channels has a control register `TAxCCTLn`.
-1. The timer is controlled with the `TAxCTL` register (p.476)[^tome].
+For starters, here are the bits for the `Timer_A` control register, `TAxCTL`.
+
+![](/pics/timer/taxctl.png)
+
+This table tells us *everything* we need to know about configuring our timer
+module! We will refer back to this table when we begin writing code. Note the
+configuration bits for previously discussed `TASSEL`, `ID`.
+
+Each timer channel also has a configuration register.
+
+![](/pics/timer/taxcctln.png)
+
+![](/pics/timer/taxcctln-defs-1.png)
+
+![](/pics/timer/taxcctln-defs-2.png)
+
+These configuration options are a little more complex. What you need to know for
+now is that timer channels can operate in two modes: **capture** or **compare**.
+The input-capture mode allows us to listen for incoming signals and save the
+time of capture to the channel's `TAxCCRn` register. Output-compare will trigger
+an interrupt when the value stored in `TAxCCRn` matches the timer value stored
+in `TAxR`.
+
+Additionally, we can multiply the prescaler (called *input divider* in the
+diagrams) by an additional, larger number using the `TAxEX0` register. For
+instance, setting `ID0` and `IDEX0` to 8 makes the prescaler value 64.
+
+![](/pics/timer/taxex0.png)
+
+One silly thing to note: when looking at your timer modules in CCS, you'll
+notice you have many, named with the convention `TimerX_AY`. Here, `X` denotes
+the timer module, and `Y` denotes the number of channels[^slides].
+
+By reading the manual and tables above, we can conclude that 
+`Timer0_A5` can be configured with the following registers:
+
+1. The main timer count is stored in `TA0R`.
+1. Each of the seven timer channels has a control register `TA0CCTLn`.
+1. The timer is controlled with the `TA0CTL` register.
     1. Bits 9 and 8 control `TASSEL`, which should usually be set to `10` to
        read from the `SMCLK`, the sub-main clock.
     1. Bits 7 and 6 control `ID`, the *prescaler*, which divides the input clock
@@ -71,8 +115,10 @@ By reading the manual and the diagram above, we know:
     1. Bit 0 controls `TAIFG`, which is set to 1 when there is an interrupt
        pending.
 
-1. Each channel is controlled by a `TAxCCTLn` register.
+1. Each channel is controlled by a `TA0CCTLn` register.
     1. Bit 4 is `CCIE`, enabling interrupts.
+
+1. For output-compare, we set a value in `TA0CCRn`
 
 # A Practical Example
 
@@ -178,9 +224,6 @@ __interrupt void TIMER0_A1_ISR(void)
 
 ![](/pics/timer/blink.gif)
 
-One silly thing to note: when looking at your timer modules in CCS, you'll
-notice you have many, named with the convention `TimerX_AY`. Here, `X` denotes
-the timer module, and `Y` denotes the number of channels[^slides].
 
 `__even_in_range()` allows the compiler to generate more efficient code for the
 switch, equivalent to switch(TA0IV)[^even_ir]
