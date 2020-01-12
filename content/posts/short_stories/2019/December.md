@@ -50,30 +50,28 @@ rain.
 
 <br />
 
-She held him like it was the last time she would ever see his stupid, beautiful
-face; burying her head in his neck and breathing the smells of sweat and pine.
-His strong arms gently, but firmly, were placed around her waist and back,
-drawing her further into the embrace. She could feel the heat of his body
-through her winter coat. The world grew dark around her as she melted into him,
-like warm syrup over pancakes, like cream into coffee, like the darkest of
-chocolates and the finest wine. Her soul was afloat on rivers of milk and honey.
+She held him like it was the last time she would ever see his stupid,
+beautiful face; burying her head in his neck and breathing the smells of
+sweat and pine. His strong arms gently, but firmly, were placed around her
+waist and back, drawing her further into the embrace. She could feel the heat
+of his body through her winter coat. The world grew dark around her as she
+melted into him, like warm syrup over pancakes, like cream into coffee, like
+the darkest of chocolates and the finest wine. Her soul was afloat on rivers
+of milk and honey.
 
-As she lay awake one night, she yearned to burn again, like she had that day in fall.
+As she lay awake one night, she yearned to burn again, like she had that day
+in fall.
 
-The ceiling, dimly illuminated by the moonlight flowing through the open balcony
-doors, stared back at her with apathy. A cool breeze blew across her body, half
-covered by soft white linen, pleasant in the humid warmth of the summer night.
-Why was John so distant, she wondered, thinking back to all the times when he
-had been so sweet and loving. Perhaps there was someone else. Perhaps he wasn't
-interested in her any longer. Perhaps he had never been interested in her.
+The ceiling, dimly illuminated by the moonlight flowing through the open
+balcony doors, stared back at her with apathy. A breeze blew across her body,
+half covered by soft white linen, cool and pleasant in the humid warmth of
+the summer night. Why was John so distant, she wondered, thinking back to all
+the times when he had been so sweet and loving. Perhaps there was someone
+else. Perhaps he wasn't interested in her any longer. Perhaps he had never
+been interested in her.
 
-She turned to touch his sleeping form.
-
-
-<br />
-
-He was a spectre that she would never truly touch.
-
+She turned to touch his sleeping form, but he was a specter that she would
+never truly touch.
 
 <br />
 
