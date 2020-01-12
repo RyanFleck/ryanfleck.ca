@@ -133,16 +133,87 @@ following:
 ```c
 #include "msp430f5529.h"
 
+void main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;
+
+    P4DIR |= BIT7;
+    P4OUT &= ~BIT7;
+
+    TA0CTL = TASSEL_2 + MC_2 + TACLR + ID_3;
+    TA0EX0 = TAIDEX_1;
+
+    TA0CCTL1 = CCIE;
+    TA0CCR1 = 0xFFFF;
+
+    _BIS_SR(LPM3_bits + GIE);
+}
+
+#pragma vector=TIMER0_A0_VECTOR
+__interrupt void TIMER0_A0_ISR(void){}
+
+#pragma vector=TIMER0_A1_VECTOR
+__interrupt void TIMER0_A1_ISR(void)
+{
+    P1OUT ^= 0x01;
+    switch (__even_in_range(TA0IV, TA0IV_TAIFG))
+    {
+    case TA0IV_TACCR1:
+        P4OUT ^= BIT7; // Toggle the LED bit.
+        break;
+    default:
+        __never_executed();
+    }
+}
+```
+
+Wow, that's really difficult to understand! All this program does is toggle an
+LED every second. Let's break it down.
+
+Firstly, I'm using a lot of *macros*, *definitions*, and TI compiler-specific
+pieces of code. Macro expansions like `MC_2` set the mode to *Timer A mode
+control: 2 - Continuous up* without specifying the exact bits that need to be
+changed. These macros and definitions can all be found in `msp430f5529.h`.
+
+Viewing the active registers in CCS, we can see the following:
+
+```
+Timer0_A5:
+Register:   Value:
+  TA0CTL    0x02E1 Timer0_A5 Control [Memory Mapped]
+    TASSEL  10 - TASSEL_2  Timer A clock source select
+    ID      11 - ID_3  Timer A clock input divider
+    MC      10 - MC_2  Timer A mode control
+    TACLR   0  Timer A counter clear
+    TAIE    0  Timer A counter interrupt enable
+    TAIFG   1  Timer A counter interrupt flag
+```
+
+`TA0CTL` holds the hex value `0x02E1`. If we wanted to, we could go ahead and
+replace the line setting `TA0CTL` with this value, but it would be more
+difficult to understand. This aside, we can see that the following bits have
+been set correctly:
+
+1. The `TASSEL` is set to source 2, the `SMCLK`.
+1. The `ID` is set to 3 which prescales the `SMCLK` by 8.
+1. The `MC` is set to 2, which is continuous mode.
+
+All of the registers on the MSP430F5529LP MCU can be inspected in this manner
+within Code Composer Studio.
+
+```c
+#include "msp430f5529.h"
+
 /**
  * Timer experiments.
  * Adapted by Ryan Fleck - Ryan.Fleck@protonmail.com
  *
- * Blinks LED2 at P4.7 @ 2Hz
- * 
+ * Blinks LED2 at P4.7
+ *
  * 2^16 = 65536
  * ~1MHz clock /8 = 125000 Hz
  * * 65536 ticks = 1.9 Hz blinks
- * Approximately half-second blinks
+ * + external prescaler /2 => ~1 Hz blinks.
  */
 
 void main(void)
@@ -157,13 +228,15 @@ void main(void)
     P4OUT &= ~BIT7; // Turns LED off.
 
     // Configure Timer A0.
-    TA0CTL = TASSEL_2 + MC_2 + TACLR;
+    TA0CTL = TASSEL_2 + MC_2 + TACLR + ID_3;
     // From TI example ta0_02:
     // - SMCLK set as clock.
     // - MC - mode control - timer counts up to FFFF and resets.
     // - Clears TAR, previous count, clock divider.
-    TA0CTL |= BIT7 + BIT6;
     // - Sets prescaler to 8.
+
+    TA0EX0 = TAIDEX_1;
+    // - Sets external prescaler to 2, total of 16
 
     // Configure Timer A0 Channel 0:
     //TA0CCR0 = 0xFFFF;
@@ -177,11 +250,9 @@ void main(void)
     TA0CCTL2 = CCIE;
     TA0CCR2 = 0xFFFA;
 
-    // Enable all interrupts.
-    __bis_SR_register(GIE);
+    // Wait for timer interrupts.
+    _BIS_SR(LPM3_bits + GIE);
 
-    while (1)
-        ;
 }
 
 /* TimerA has two interrupt vectors:
@@ -198,7 +269,9 @@ __interrupt void TIMER0_A0_ISR(void)
 #pragma vector=TIMER0_A1_VECTOR
 __interrupt void TIMER0_A1_ISR(void)
 {
-    P1OUT ^= 0x01;                            // Toggle P1.0
+    P1OUT ^= 0x01; // Toggle P1.0
+    // Allows the compiler to generate more efficient code for the switch, equivalent to switch(TA0IV)
+    // source: https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/557522?What-does-the-even-in-range-function-do-
     switch (__even_in_range(TA0IV, TA0IV_TAIFG))
     {
     case TA0IV_NONE:
@@ -216,8 +289,6 @@ __interrupt void TIMER0_A1_ISR(void)
         __never_executed();
     }
 }
-
-
 ```
 
 *Success!*
