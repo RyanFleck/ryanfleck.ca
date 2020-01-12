@@ -13,5 +13,7 @@ writing.
 <link rel="prefetch" href="/pics/compressed/fleck_uoe_racing.jpg">
 ![The Car!](/pics/compressed/fleck_uoe_racing.jpg)
 
+<p style="text-align:center"><small><i>UOE Racing Supermileage Team - Photo: Bijan Samiee</i></small></p>
+
 Please visit my [Github](https://github.com/ryanfleck/),
 [LinkedIn](https://www.linkedin.com/in/ryan-c-fleck/), or [old tech blog](https://ryanfleck.github.io) for more info.
