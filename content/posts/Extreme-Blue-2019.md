@@ -4,6 +4,8 @@ tags:
 - IBM
 date: 2019-08-11T12:58:51-04:00
 title: "Extreme Blue 2019"
+aliases:
+- "/posts/extreme-blue-2019/"
 ---
 
 IBM shipped all of the North American *Extreme Blue* interns out to New York
