@@ -14,6 +14,8 @@
 <meta name="description" content="{{ .Summary }}" />
 {{ end }}
 
+<link rel="canonical" href="{{ .Permalink }}" />
+
 <!-- Twitter & FB Meta -->
 <meta property="og:title" content="{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
 <meta name="twitter:title" content="{{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}" />
