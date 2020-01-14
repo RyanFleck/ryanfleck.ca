@@ -1,20 +1,20 @@
 ---
 tags:
 date: 2020-01-14T11:32:02-05:00
-title: "A Dumb HackerRank Problem"
+title: "Paper over Keyboard"
 draft: true
 ---
 
-<https://www.hackerrank.com/challenges/the-minion-game/problem>
-
-So, I did this HackerRank problem this morning to get my brain back into shape
-for upcoming interviews. The problem is titled *The Minion Game*. I'll cut to
-the chase; the lesson I learned while completing this problem was *measure
-twice, cut once*, **aka** I didn't spend enough time thinking about the problem
-before beginning. 
+So, I completed a HackerRank problem this morning to work my brain back into
+shape for upcoming interviews. The problem is titled *The Minion Game*, and
+the lesson I learned while completing this problem was *measure twice, cut
+once*, **aka** I didn't spend enough time thinking about the problem before
+programming.
 
 Working out a programming problem on paper first will help you solve it most of
 the time.
+
+[hackerrank.com/challenges/the-minion-game/problem](https://www.hackerrank.com/challenges/the-minion-game/problem)
 
 <br />
 
@@ -22,7 +22,7 @@ the time.
 
 Kevin and Stuart want to play the 'The Minion Game'.
 
-Game Rules
+**Game Rules**
 
 Both players are given the same string, *S*.
 Both players have to make substrings using the letters of the string *S*.
@@ -30,15 +30,25 @@ Stuart has to make words starting with consonants.
 Kevin has to make words starting with vowels.
 The game ends when both players have made all possible substrings.
 
-Scoring
+**Scoring**
+
 A player gets +1 point for each occurrence of the substring in the string *S*.
 
-For Example:
+**For Example:**
+
 String *S* = BANANA
 Kevin's vowel beginning word = ANA
 Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points. 
 
 ### Working Answer
+
+Here is my final, tidy answer that runs in `O(n)`. The single calculation `score
+= (string_len - iletter)` was previously completed by breaking the substring
+into a set of smaller substrings and counting them with a for loop. After
+sitting back, pondering the question, and understanding that this larger
+calculation was unneccesary (terrible original answer in next section,) my
+algorithm improved to `O(n)` time and was able to run in the time limit imposed
+by HackerRank.
 
 ```py
 def minion_game(string):
@@ -62,6 +72,9 @@ def minion_game(string):
 ```
 
 ### Original Answer
+
+This answer kept failing because it took far too long. It runs in `O(n^2)` and
+originally used *four* loops, three more than the working answer.
 
 ```py
 def v(word):
