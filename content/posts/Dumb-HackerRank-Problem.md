@@ -41,18 +41,14 @@ Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
 ### Working Answer
 
 ```py
-def vowelp(word):
-    return word[0] in ['A','E','I','O','U']
-
 def minion_game(string):
-    
     string_len = len(string)
     stuart = 0
     kevin = 0
 
     for iletter in range(string_len):
         score = (string_len - iletter)
-        if vowelp(string[iletter]):
+        if string[iletter] in ['A','E','I','O','U']:
             kevin = kevin + score
         else:
             stuart = stuart + score
@@ -63,11 +59,6 @@ def minion_game(string):
         print("Kevin " + str(kevin))
     else:
         print("Draw")
-
-
-if __name__ == '__main__':
-    s = input()
-    minion_game(s)
 ```
 
 ### Original Answer
@@ -119,7 +110,11 @@ def score(original_string, list_of_strings):
         total = total + icount
 
     return total
+```
 
+HR Snippet:
+
+```py
 if __name__ == '__main__':
     s = input()
     minion_game(s
