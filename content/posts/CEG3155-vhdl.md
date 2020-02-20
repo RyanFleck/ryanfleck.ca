@@ -174,6 +174,8 @@ begin
 end structural;
 ```
 
+![Component Simulation](/pics/vhdl/register_1.png)
+
 For an architecture to be considered as structural, *process* statements cannot be used within the body of the primary architecture.
 
 # Sequential/Behavioural VHDL
