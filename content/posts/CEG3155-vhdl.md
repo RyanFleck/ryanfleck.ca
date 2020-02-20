@@ -85,13 +85,23 @@ end de_arch;
 ```
 
 This logic is technically *concurrent*. Each assignment (`<=`) will run
-simultaneously when the signal reaches the component.
+simultaneously when the signal reaches the component. Note that only a single entity can be defined per VHDL file.
 
 # Internal Signals
 
-# Concurrent VHDL 
+Signals can be used to redirect logic within a component. Inputs cannot be written to, and outputs cannot be used for input to other systems, so signals are used to ferry internal outputs to internal inputs.
 
-# Sequential VHDL
+```vhdl
+--- Assume w, x, y, z are used as inputs.
+architecture arch of and_4 is
+  signal a, b : std_logic;
+
+  begin
+    a <= w and x;
+    b <= y and z;
+    output <= a and b;
+end arch;
+```
 
 # Inclusion of Components
 
@@ -140,6 +150,35 @@ architecture sample_arch of big_component is
 end sample_arch;
 ```
 
+# Concurrent/Structural VHDL
+
+Concurrent statements are used to model real systems. For instance, a D Flip Flop can be modeled in structural style:
+
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity register_1 is
+  port(
+    input, enable, clock, reset : in std_logic;
+    output : out std_logic
+  );
+end register_1;
+
+architecture structural of register_1 is
+begin
+
+  output <= '0' when (reset = '1') else
+        input when ( rising_edge(clock) and enable = '1');
+
+end structural;
+```
+
+For an architecture to be considered as structural, *process* statements cannot be used within the body of the primary architecture.
+
+# Sequential/Behavioural VHDL
+
+**Process** statements can be used to define logic with a familiar, imperative style. It is fine for creating test benches, but should not be used for modeling components which will be made into hardware.
 
 # Finite State Machines
 
