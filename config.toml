@@ -8,3 +8,6 @@ pygmentsStyle = "emacs"
 
 [permalinks]
     posts = "/:year/:title"
+
+[markup.goldmark.renderer]
+    unsafe = true
