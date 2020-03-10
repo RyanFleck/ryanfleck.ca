@@ -359,8 +359,10 @@ Our board can now:
 
 
 Now we can continue into advanced topics with good general knowledge of how to
-create and run a simple VHDL program on a physical board.
-
+create and run a simple VHDL program on a physical board. A complete copy of the
+source code, including `qpf` project file and pin assignment file, can be found
+on GitHub at
+[Projects/ vhdl/ cyclone_II_proof_of_concept](https://github.com/RyanFleck/Projects/tree/master/vhdl/cyclone_II_proof_of_concept)
 
 
 
