@@ -9,6 +9,9 @@ pygmentsStyle = "emacs"
 [permalinks]
     posts = "/:year/:title"
 
+[markup]
+    defaultMarkdownHandler = "goldmark"
+
 [markup.goldmark.renderer]
     unsafe = true
 
