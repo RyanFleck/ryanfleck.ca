@@ -11,3 +11,7 @@ pygmentsStyle = "emacs"
 
 [markup.goldmark.renderer]
     unsafe = true
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
