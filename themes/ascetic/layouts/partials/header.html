@@ -1,5 +1,7 @@
 {{ if .Title }}
 {{ if not .IsHome }}
+{{ if not (in .Kind "404") }}
 <h1 style="text-align: center; font-size:1.5rem">{{ .Title }}</h1>
+{{end}}
 {{end}}
 {{end}}

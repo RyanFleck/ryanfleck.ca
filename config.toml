@@ -7,7 +7,7 @@ pygmentsCodeFences = true
 pygmentsStyle = "emacs"
 
 [permalinks]
-    posts = "/:year/:title"
+    posts = "/:year/:filename"
 
 [markup]
     defaultMarkdownHandler = "goldmark"
