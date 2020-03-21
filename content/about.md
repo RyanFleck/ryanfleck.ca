@@ -17,7 +17,7 @@ Foundation* projects and the *UOE Racing Team*.
 
 <p style="text-align:center"><small><i>UOE Racing Supermileage Team - Photo: Bijan Samiee</i></small></p>
 
-This [minimalist](/2019/the-case-for-digital-minimalism/) website stores my
+This [minimalist](/2019/digital-minimalism/) website stores my
 long-form writing; records of experiments, musings, tutorials, and articles on
 technology.
 
