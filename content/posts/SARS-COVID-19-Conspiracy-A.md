@@ -59,11 +59,37 @@ it will only impact the dermis.
 a power dissipation of 30 kW. The effects are best described by the *US-DoD
 Non-Letal Weapons Program*[^dod-nlw]:
 
-> Adverse reactions are extremely rare, temporary and consist of skin blisters. Exposure to the Active Denial System can also result in a temporary reddening of the skin. Research shows there is only a 1/10th of 1% chance of injury from Active Denial System exposure. Normal, innate, self-protect behaviors such as eye blink, head turn and aversion response all minimize the risk of injury. The energy reaches a skin depth of only about 1/64th of an inch, the equivalent of three sheets of paper. The sensation immediately ceases when the individual moves out of the beam. 
+> Adverse reactions are extremely rare, temporary and consist of skin blisters.
+> Exposure to the Active Denial System can also result in a temporary reddening
+> of the skin. Research shows there is only a 1/10th of 1% chance of injury from
+> Active Denial System exposure. Normal, innate, self-protect behaviors such as
+> eye blink, head turn and aversion response all minimize the risk of injury.
+> The energy reaches a skin depth of only about 1/64th of an inch, the
+> equivalent of three sheets of paper. The sensation immediately ceases when the
+> individual moves out of the beam. [^dod-nlw]
 
 ### Cellular Delivery of Matter via Electroporation
 
-### Electromagnetic Corona
+Below is the abstract from the article *Transfection by Electroporation*[^tbe] by
+Huntington Potter, Ph.D.  and Richard Heller, Ph.D.:
+
+[^tbe]: **Transfection by Electroporation** <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2975437/>
+
+> Electroporation–the use of high-voltage electric shocks to introduce DNA into
+> cells–can be used with most cell types, yields a high frequency of both stable
+> transformation and transient gene expression and, because it requires fewer
+> steps, can be easier than alternate techniques. This unit describes
+> electroporation of mammalian cells, including ES cells for the preparation of
+> knockout, knockin, and transgenic mice, describes protocols for using
+> electroporation in vivo to perform gene therapy for cancer therapy and DNA
+> vaccination, and outlines modifications for preparation and transfection of
+> plant protoplasts. [^tbe] 
+
+In essence, a voltage is applied across a cell and, while the cell wall is
+disrupted, macromolecules can freely penetrate the cell.
+
+
+
 
 ### Differing Coronavirus Side Effects
 
@@ -76,6 +102,9 @@ Non-Letal Weapons Program*[^dod-nlw]:
 
 ### Media Preparation for a Viral Pandemic
 
+- Countless airborne viral pandemic movies are to program the population into
+  believing in the fictional phenomena of airborne viruses.
+
 - Netflix pandemic film.
 
 ### Microsoft and ID2020
@@ -84,6 +113,15 @@ Non-Letal Weapons Program*[^dod-nlw]:
 the future course of digital identity, ensuring that digital identity is
 responsibly implemented and widely accessible. - [ID2020 At a
 Glance](https://id2020.org/uploads/files/ID2020-Alliance-Overview.pdf)
+
+### Electromagnetic Corona
+
+> A corona discharge is an electrical discharge brought on by the ionization of
+> a fluid such as air surrounding a conductor that is electrically charged.
+> Spontaneous corona discharges occur naturally in high-voltage systems unless
+> care is taken to limit the electric field strength. [^electric-corona]
+
+[^electric-corona]: **Corona Discharge** <https://en.wikipedia.org/wiki/Corona_discharge>
 
 ### Wuhan's Mandatory Vaccination Program
 
@@ -113,6 +151,7 @@ Masonic Utopia.
 
 ## Millimeter-Wavelength Body Penetration
 
+## Effectiveness of 5G in Inducing Electroporation
 
 # References
 
