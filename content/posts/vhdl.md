@@ -167,7 +167,7 @@ end sample_arch;
 
 Here, we use the previously created decoder with file-name `decoder_2x4b.vhd` to
 create a complete, deployable example that uses the switches, 7-segment
-displays, and buttons on the Altera DE-1 Cyclone II EP2C20F48C7. Our example
+displays, and buttons on the Altera DE-1 Cyclone II EP2C20F484C7N. Our example
 will utilize these three files:
 
 1. `top.vhd`
