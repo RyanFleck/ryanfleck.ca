@@ -34,3 +34,5 @@ large, uninterrupted blocks of time.
 
 Please visit my [Github](https://github.com/ryanfleck/),
 [LinkedIn](https://www.linkedin.com/in/ryan-c-fleck/), or [old tech blog](https://ryanfleck.github.io) for more info.
+
+The *source code* for this website can be found [here](https://github.com/RyanFleck/ryanfleck.ca).
