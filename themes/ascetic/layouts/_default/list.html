@@ -27,7 +27,7 @@
 
         </ol>
 
-        <p>Page {{ .Paginator.PageNumber }};
+        <p id="paginator">Page {{ .Paginator.PageNumber }};
 
             {{ if .Paginator.HasPrev }}
             <a href="{{ .Paginator.Prev.URL }}">prev</a>,
