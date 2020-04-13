@@ -1,5 +1,5 @@
 ---
-title: "Age of Mythology: Crushing It with *Thor*"
+title: "Age of Mythology: Crushing It with Thor"
 date: 2020-04-13T06:43:11-04:00
 toc: true
 ---
@@ -9,7 +9,7 @@ toc: true
 Adapted from ["HellsRavage's Guide To Playing
 *Thor*"](https://aomguides.com/guides/hellsravages-*Thor*-guide) at [aomguides.com](https://aomguides.com).
 
-We must start off with a few key concepts to fully understanding the strengths and weaknesses. *Thor* is the most versatile god in AoT, and is most often considered one of, if not the strongest of the god choices. A few reasons for this is the fact that because *Thor* is Norse, he offers a offensive mindset, but because of his specific bonuses, wields a strong lategame and many different playing styles. Few gods have the ability to have a very good early game and lategame, and the ease to adapt to the opponent in a way that *Thor* can. If you are bad at *Thor*, either a)you are playing him wrong, meaning you arent using his strengths properly or b)you have been misinformed about exactly how to play *Thor* at his full potential.
+We must start off with a few key concepts to fully understanding the strengths and weaknesses. *Thor* is the most versatile god in AoT, and is most often considered one of, if not the strongest of the god choices. A few reasons for this is the fact that because *Thor* is *Norse*, he offers a offensive mindset, but because of his specific bonuses, wields a strong lategame and many different playing styles. Few gods have the ability to have a very good early game and lategame, and the ease to adapt to the opponent in a way that *Thor* can. If you are bad at *Thor*, either a)you are playing him wrong, meaning you arent using his strengths properly or b)you have been misinformed about exactly how to play *Thor* at his full potential.
 
 The key concepts of *Thor* are as follows:
 
@@ -44,8 +44,6 @@ Not only is armory important as any god on AoT, it becomes a even larger role in
 Dwarves can perform a large role in your economy as *Thor*. However some think that the bonus *Thor's* dwarves get are more than it actually is, which is why its important that you understand how to use this bonus.*Thor* Dwarves do get a bonus on other resources, however not a large enough one where you should have more anywhere close the a 1:1 dwarf:gatherer ratio.As *Thor*, you should still usually only have dwarves on gol,d unless you are in a food shortage or you have an excess amount of gold. You should always be looking to replace dwarves on food or wood with gatherers, and moving those dwarves to gold. Having a few dwarves on each resource wont hurt, but it wont help as much as some people think. His dwarves are also cheaper, sometimes making it tempting to make them instead of gatherers, which can be a common mistake.
  
 # Raiding Effectively
-
-
 
 Raiding is a key part of winning with *Thor*. If you cannot raid and disrupt your opponent's eco, then you will surely lose the game, unless he cannot do the same either(don't bet on it).Raiding can make or break the game for you. It takes up micro time from your opponent by making him respond to your raids, it weakens his eco as you are causing idle time, and possibly killing them. Effective raiding does not have to mean killing villagers!!!. Making his vills idle by making them run away from you is a raiding success as well. However you should always aim to kill villagers.
 
@@ -83,87 +81,156 @@ Also, make sure that your farming is efficiently placed.You want the walking tim
 
 
 
-## *Thor* vs Egyptian On High Hunt
+## *Thor* vs *Egyptian* On High Hunt
 
-You can do 2 strategies in this situation, both strategies calling for a 5:15 advance. Full raiding calvary (preferably done on open maps such as Savannah) and 2 tc semi fast heroic(preferably on closed maps such as Watering Hole) are your best bet.
+You can do 2 strategies in this situation, both strategies calling for a 5:15
+advance. Full raiding calvary (preferably done on open maps such as Savannah)
+and 2 tc semi fast heroic(preferably on closed maps such as Watering Hole) are
+your best bet. Here the Build Order(which is done for both strats, you just
+decide whether to making longhouses and make full RC or go to build a 2nd town
+center after advance):
 
-Here the Build Order(which is done for both strats, you just decide whether to making longhouses and make full RC or go to build a 2nd town center after advance):
-Dwarven mine-->2 dwarves to gold
-6 to food
-2 to wood
-cart to wood
-1 to wood
-ulfsark
-1 dwarf to gold
-2 to food
-1 dwarf to gold
-cart to gold
-2 to wood
-1 to gold
+Dwarven mine-->
 
-With the Full raider strat, you want to get full pop with raiders, then take them off AQ to make a 2nd town center around 10-12 minutes. This strat works more vs Ra and Set than Isis because she will have A+E to protect herself against your raiders when building her forward migdol.After classical, you want to AQ dwarves to gold, then gatheres to herdables.
+1. 2 dwarves to gold
+1. 6 to food
+1. 2 to wood
+1. cart to wood
+1. 1 to wood
+1. ulfsark
+1. 1 dwarf to gold
+1. 2 to food
+1. 1 dwarf to gold
+1. cart to gold
+1. 2 to wood
+1. 1 to gold
 
-The 2 tc Heroic works very well because you will have a stronger economy by 10 minutes than the egyptian, the only problem with this strategy is that on open maps, it is very easy for the eggy player to be aggresive towards you, and possibly severely weaken your economy while you are transitioning to Heroic.When you reach classical, have 1 tc AQ gatherers to herdables while 1 tc AQ dwarves to gold. Your Hersir you build should be making longhouses and your armory.When you start going heroic, queue up 5-10 RC from your longhouse to keep your opponent busy in case he plans on disrupting your hill fort building. A combo of Jarls+ulfsarks+Battle Boars with Flaming Weapons can be very effective vs Chariots and Elephants. The only problem you might have is vs mass myth units. If you feel he will probably do this, then you should go forseti and make more Hersir than Jarl, and get the Hall of Thanes tech as soon as you get the 300 wood after you make a hill fort. Example game : glhfuwillneedit vs OtB_Ro Watering Hole.rcx
+With the Full raider strat, you want to get full pop with raiders, then take
+them off AQ to make a 2nd town center around 10-12 minutes. This strat works
+more vs Ra and Set than Isis because she will have A+E to protect herself
+against your raiders when building her forward migdol.After classical, you want
+to AQ dwarves to gold, then gatheres to herdables.
 
-## *Thor* vs Egyptian OnLow Hunt
+The 2 tc Heroic works very well because you will have a stronger economy by 10
+minutes than the *Egyptian*, the only problem with this strategy is that on open
+maps, it is very easy for the eggy player to be aggresive towards you, and
+possibly severely weaken your economy while you are transitioning to Heroic.When
+you reach classical, have 1 tc AQ gatherers to herdables while 1 tc AQ dwarves
+to gold. Your Hersir you build should be making longhouses and your armory.When
+you start going heroic, queue up 5-10 RC from your longhouse to keep your
+opponent busy in case he plans on disrupting your hill fort building. A combo of
+Jarls+ulfsarks+Battle Boars with Flaming Weapons can be very effective vs
+Chariots and Elephants. The only problem you might have is vs mass myth units.
+If you feel he will probably do this, then you should go forseti and make more
+Hersir than Jarl, and get the Hall of Thanes tech as soon as you get the 300
+wood after you make a hill fort. Example game : glhfuwillneedit vs OtB_Ro
+Watering Hole.rcx
 
-Usually the best plan is a boom style of play. The important part on low hunt is too injure your opponents economy as much as you can because on low hunt Egyptian is very dangerous with migdol spam and chariots. Making raiders while really focusing on economy upgrades (get them earlier than usual) will be essential here. So make groups of raiders and raid him, especially his few food sources, and boom until you can hopefully afford expensive jarls vs the egyptian.Example Game : makemyniggasgrow vs ONU Velhow Oasis .rcx
+## *Thor* vs *Egyptian* OnLow Hunt
 
-## *Thor* vs Egyptian on Water
+Usually the best plan is a boom style of play. The important part on low hunt is
+too injure your opponents economy as much as you can because on low hunt
+*Egyptian* is very dangerous with migdol spam and chariots. Making raiders while
+really focusing on economy upgrades (get them earlier than usual) will be
+essential here. So make groups of raiders and raid him, especially his few food
+sources, and boom until you can hopefully afford expensive jarls vs the
+*Egyptian*.Example Game : makemyniggasgrow vs ONU Velhow Oasis .rcx
+
+## *Thor* vs *Egyptian* on Water
 
 You want to push them off fishing so they cannot achieve a good heroic time. Then use the food you gain by winning water to manage a good economy while achieving a good heroic time. Here is the water build order i use.
 
-1)At start of game queue up an ulfsark, send your free ulfsark to build a dock.
-2)Take dwarves and put them on straggler tree, use dwarven mine normally,
-3) Queue up 4 villagers onto that straggler tree. Take the 2nd ulfsark and build another dock away from your 1st dock, then a house. You should still have enough wood to start making fishing ships from your 1st dock.
-4) Now you should have 3 gatherers+ 2 dwarves on that tree. Now move dwarves to the DM.
-5) move villagers to a forest after that straggler tree is depleted.
+1. At start of game queue up an ulfsark, send your free ulfsark to build a dock.
+1. Take dwarves and put them on straggler tree, use dwarven mine normally,
+1. Queue up 4 villagers onto that straggler tree. Take the 2nd ulfsark and build another dock away from your 1st dock, then a house. You should still have enough wood to start making fishing ships from your 1st dock.
+1. Now you should have 3 gatherers+ 2 dwarves on that tree. Now move dwarves to the DM.
+1. move villagers to a forest after that straggler tree is depleted.
+
 Now you should have 4 gatherers on wood and 2 dwarves on your DM. Scout with both ulfs for pigs and gold, tcs etc etc.
-dwarf to wood 
-dwarf to gold 
-dwarf to wood (you should have enough wood to be making ships out of both docks now.
-1 dwarf to gold
-2 dwarfs to wood( stop making fishing ships out of 1 dock and make temple at home)
-ox cart to gold mine, and another dwarf to gold.
-1 gatherer and 2 dwarfs to pigs
+1. dwarf to wood 
+1. dwarf to gold 
+1. dwarf to wood (you should have enough wood to be making ships out of both docks now.
+1. 1 dwarf to gold
+1. 2 dwarfs to wood( stop making fishing ships out of 1 dock and make temple at home)
+1. ox cart to gold mine, and another dwarf to gold.
+1. 1 gatherer and 2 dwarfs to pigs
+
 You should end up with 6-7 dwarves on gold, 4 gatherers and 4 dwarves on wood and 1 gatherer and 2 dwarves on goats.
-Advance through Frejya at around 4:30 (press the button then)
+Advance through Freya at around 4:30 (press the button then)
 
-This is a very good BO because it allows for a very strong economy when you get to classical. Normally with this build order you make 3-5 longhouses to protect your fishing ships then going heroic with a few hersir. Great booming BO. Hard BO and takes a lot of precision, gl!
+This is a very good BO because it allows for a very strong economy when you get
+to classical. Normally with this build order you make 3-5 longhouses to protect
+your fishing ships then going heroic with a few Hersir. Great booming BO. Hard
+BO and takes a lot of precision, gl!
 
-P.S on Anatolia make docks on opposite sides and on Midgard make docks on opposite corners.
+P.S on Anatolia make docks on opposite sides and on Midgard make docks on
+opposite corners.
 
 ## *Thor* vs Zeus.
 
-Use the build order for vs egyptians on high hunt for this matchup as well. You usually want to go Forseti as Zeus's Athena Rush is very strong vs *Thor*. This will probably the the hardest matchup in the game for you as *Thor*. The key to winning this matchup is putting up a good defensive and still being able to have a decent heroic time to secure a 2nd gold mine.Never fight restoration, always be aware of how much gold you have access to and having a good amount of hersir is important. The later the game goes on, the better chance *Thor* probably has in this matchup. Especially middle to late Heroic Age when *Thor* armory techs will eventually balance out the naturally stronger greek units.Normally Frost is the better choice over Bragi to secure a 2nd gold mine, but that is situational of course.
+Use the build order for vs *Egyptian*s on high hunt for this matchup as well. You
+usually want to go Forseti as Zeus's Athena Rush is very strong vs *Thor*. This
+will probably the the hardest matchup in the game for you as *Thor*. The key to
+winning this matchup is putting up a good defensive and still being able to have
+a decent heroic time to secure a 2nd gold mine.Never fight restoration, always
+be aware of how much gold you have access to and having a good amount of hersir
+is important. The later the game goes on, the better chance *Thor* probably has
+in this matchup. Especially middle to late Heroic Age when *Thor* armory techs
+will eventually balance out the naturally stronger *Greek* units.Normally Frost is
+the better choice over Bragi to secure a 2nd gold mine, but that is situational
+of course.
 
 
-## *Thor* vs Poseidon and Hades
+## *Thor* vs *Poseidon* and *Hades*
 
-You want to RC spam always, doesn't matter high hunt or low hunt. RC spam is very effective because with cheaper armory upgrades, they are more pop effective than Poseidon's hippikons and very good vs Hades' archers. With a good heroic time after the RC spam, while raiding, this should be an easy win for *Thor*. 
+You want to RC spam always, doesn't matter high hunt or low hunt. RC spam is
+very effective because with cheaper armory upgrades, they are more pop effective
+than *Poseidon's* hippikons and very good vs *Hades'* archers. With a good heroic
+time after the RC spam, while raiding, this should be an easy win for *Thor*.
 
-## *Thor* vs Greeks on water
+## *Thor* vs *Greeks* on water
 
-Against Greeks on water, you should aim for a early advance probably 4:30ish because your economy can sustain a constant flow of ships earlier than they can. Instead of building 2 docks, only build 1 and instead of sending more than 7 to wood, start AQing dwarves earlier to herdables for a faster advance.
+Against *Greeks* on water, you should aim for a early advance probably 4:30ish
+because your economy can sustain a constant flow of ships earlier than they can.
+Instead of building 2 docks, only build 1 and instead of sending more than 7 to
+wood, start AQing dwarves earlier to herdables for a faster advance.
 
-## *Thor* vs Atlantean
+## *Thor* vs *Atlantean*
 
-Im not going to put high hunt or low hunt because you should be aiming to do the same thing on both vs atlanteans, which is raid him(as idle time for atlantean hurts their economy more than any other civ) while making a variety of units to counter his. Your variety of soft counters defeats Attys variety of strong counters. As long as you can survive the 1st 10 minutes against atlantean you will most often win the game due to Atty's horrible lategame and *Thor's* very strong one.
-On water, do same strategy as vs Greeks. 
+Im not going to put high hunt or low hunt because you should be aiming to do the
+same thing on both vs *Atlanteans*, which is raid him(as idle time for *Atlantean*
+hurts their economy more than any other civ) while making a variety of units to
+counter his. Your variety of soft counters defeats Attys variety of strong
+counters. As long as you can survive the 1st 10 minutes against *Atlantean* you
+will most often win the game due to Atty's horrible lategame and *Thor's* very
+strong.
 
-## *Thor* vs Norse on High Hunt
+On water, do same strategy as vs *Greeks*. 
 
-You can 1 of 2 things: Ulfsark rush if map is open and your opponents hunt or gold is forward or RC spam. Go 7-4-4 if you want to ulfsark rush(simplest BO in game) and make your temple forward. Your goal is to push your opponent into starvation and outspamming him early. On closed maps you want to RC spam, because closed maps are often a death sentence to rushs because of choke points with your opponents TA. Use the 4:15 build order above for it.
+## *Thor* vs *Norse* on High Hunt
 
-## *Thor* vs Norse on Low Hunt
+You can 1 of 2 things: Ulfsark rush if map is open and your opponents hunt or
+gold is forward or RC spam. Go 7-4-4 if you want to ulfsark rush(simplest BO in
+game) and make your temple forward. Your goal is to push your opponent into
+starvation and outspamming him early. On closed maps you want to RC spam,
+because closed maps are often a death sentence to rushs because of choke points
+with your opponents TA. Use the 4:15 build order above for it.
 
-Always RC spam because they cost less food than other units, allowing for a better flow of villagers from your TC.Just make sure you raid effectively and dont lose too many RC to tc/tower fire or your opponent's attempts at trapping your raiders.
+## *Thor* vs *Norse* on Low Hunt
+
+Always RC spam because they cost less food than other units, allowing for a
+better flow of villagers from your TC.Just make sure you raid effectively and
+dont lose too many RC to tc/tower fire or your opponent's attempts at trapping
+your raiders.
 
 # Ending Thoughts
 
-Go baldr 99% of time. Rag is OP. Dont care if its lame. So is max tower and migdol.If your opponent responds to rag by saying "you lame". Say "Yes, I do , and now i am 30 pts higher and you are 30 pts lower".
+Go baldr 99% of time. Rag is OP. Dont care if its lame. So is max tower and
+migdol.If your opponent responds to rag by saying "you lame". Say "Yes, I do ,
+and now I am 30 pts higher and you are 30 pts lower".
 
+If you learn to use *Thor*, I can insure you the level of fun you will be having on this game will higher as well as your rating. He can do so many exciting strategies. I hope you liked the guide, as I put a good amount time and effort into :)
 
-If you learn to use *Thor*, I can insure you the level of fun you will be having on this game will higher as well as your rating. He can do so many exciting strategies. I hope you liked the guide, as I put a good amount time and effort into smile.gif.
+Hope it was an easy read.
 
-Hope it was an easy read 
+*HellsRavage*
