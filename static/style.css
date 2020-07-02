@@ -1,0 +1,430 @@
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+  max-width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  background: white;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  font-size: 20px;
+  /* text-shadow: 0px 0px 0.5px #CCC; */
+  /* Page fade in. */
+  opacity: 0;
+
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+
+  background-color: #fff;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Places where eyeballs go should be comfortable and serifed. */
+p,
+li,
+tr,
+td,
+th {
+  font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD,
+    Georgia, serif;
+  line-height: 1.4rem;
+  /* color: rgba(0, 0, 0, 0.7); */
+}
+
+body {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(83, 83, 221);
+}
+
+ul {
+  list-style: decimal-leading-zero;
+}
+
+::selection {
+  background: rgba(255, 255, 44, 0.76);
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 44, 0.76);
+}
+
+code::selection,
+pre ::selection {
+  background: #ff00ff80;
+}
+
+code::-moz-selection,
+pre ::-moz-selection {
+  background: #ff00ff80;
+}
+
+/*
+article p:first-child:first-letter {
+float: left;
+font-size: 3rem;
+line-height: 3rem;
+padding-top: 5px;
+padding-right: 8px;
+padding-left: 3px;
+}
+*/
+.pagin-mobile {
+  display: none;
+  font-size: 0.7em;
+  padding-top: 0.5rem;
+}
+
+.pagin-desktop {
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .pagin-desktop {
+    display: none;
+  }
+
+  .pagin-mobile {
+    display: block;
+  }
+
+  #listcontent > ol > li {
+    text-align: left;
+  }
+  #paginator {
+    padding-top: 1em;
+    text-align: left;
+  }
+  .toc-article-link{
+      font-size: 1.2rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 2em;
+}
+
+code,
+pre,
+.highlight {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", "Noto Mono", Menlo,
+    Courier, monospace;
+  background-color: transparent !important;
+  color: black;
+  font-size: 0.8rem;
+}
+
+article > div.highlight,
+article > pre {
+  overflow-x: auto;
+  margin-right: calc(-50vw + 51%);
+  padding: 0;
+}
+
+div.highlight > pre {
+  margin: 0;
+}
+
+hr {
+  border-style: dashed;
+}
+
+blockquote {
+  margin-left: 2ch;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.8rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+#R {
+  margin: 20px auto;
+  display: block;
+  width: 70%;
+  max-width: 400px;
+}
+
+#buttons {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #buttons {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  p#mdot1 {
+    display: none;
+  }
+
+  p#mdot2 {
+    display: none;
+  }
+}
+
+.button {
+  font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD,
+    Georgia, serif;
+  /* text-shadow: 0px 0px 0.5px #CCC; */
+  border: 0px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 26px;
+  background: transparent;
+  display: block;
+  margin: 2px;
+  color: #333;
+  transition: color 0.2s;
+}
+
+#buttons > .button:hover {
+  color: rgb(83, 83, 221);
+  transition: color 0.2s;
+}
+
+#home {
+  min-height: 70vh;
+}
+
+li > p {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+
+  /* Images fade in. */
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.about-img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 100%;
+  max-width: 400px;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  padding-right: 3px;
+}
+
+a[href^="https://"],
+  a[href^="http://"]
+{
+  background: url(/external.png) right no-repeat;
+  /* In the future, make a larger icon and scale it down. */
+  background-size: 10px 10px;
+  padding-right: 12px;
+}
+
+a[href^="https://ryanfleck.ca"]
+{
+  background: none;
+  padding-right: 0px;
+}
+
+a[href^="http://localhost:1313/"]
+{
+  background: none;
+  padding-right: 0px;
+}
+
+#buttons > a.button {
+  background: none;
+  padding-right: 0px;
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: rgb(141, 141, 228);
+}
+
+.rcf-glitch {
+  filter: drop-shadow(10px 10px 2mm white) blur(0px);
+  /*filter: blur(0px) opacity(100%);*/
+  transition: filter 1s;
+}
+
+.rcf-glitch:hover {
+  filter: drop-shadow(-15px -15px 11px red) blur(5px);
+  /*filter: blur(10px) opacity(80%);*/
+  transition: filter 1s;
+}
+
+@media (max-width: 600px) {
+  #mdot1 {
+    display: none;
+  }
+
+  #mdot2 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  #c-parent {
+    height: 90vh;
+  }
+
+  #c-floater {
+    float: left;
+    height: 40%;
+    width: 100%;
+    margin-bottom: -25%;
+  }
+
+  #c-child {
+    clear: both;
+    height: 0vh;
+  }
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}
+
+sup.footnote-ref > a {
+  color: grey;
+  font-size: 0.5rem;
+}
