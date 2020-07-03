@@ -55,10 +55,10 @@ th {
   /* color: rgba(0, 0, 0, 0.7); */
 }
 
-body {
+#web-wrap {
   margin: 0 auto;
   max-width: 700px;
-  padding: 5px;
+  padding: 0.6em;
 }
 
 a {

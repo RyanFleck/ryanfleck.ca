@@ -6,12 +6,16 @@
 </head>
 
 <body>
+    <div id="header-tool"></div>
+    <div id="web-wrap">
     {{- partial "draft-message.html" . -}}
     {{- partial "header.html" . -}}
     <div id="content">
     {{- block "main" . }}{{- end }}
     </div>
     {{- partial "footer.html" . -}}
+    </div>
+    <div id="footer-tool"></div>
 </body>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
