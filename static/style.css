@@ -231,6 +231,18 @@ blockquote {
   transition: color 0.2s;
 }
 
+/* Header links */
+
+.header-anchor-link{
+  opacity: 0;
+  transition: .5s;
+}
+
+h3:hover > .header-anchor-link{
+  opacity: 1;
+  transition: .5s;
+}
+
 #home {
   min-height: 70vh;
 }
