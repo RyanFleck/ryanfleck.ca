@@ -128,8 +128,8 @@ padding-left: 3px;
     padding-top: 1em;
     text-align: left;
   }
-  .toc-article-link{
-      font-size: 1.2rem;
+  .toc-article-link {
+    font-size: 1.2rem;
   }
 }
 
@@ -140,7 +140,7 @@ h4,
 h5,
 h6 {
   padding-top: 2em;
-  text-decoration: underline #F4F4F4;
+  text-decoration: underline #f4f4f4;
 }
 
 code,
@@ -233,14 +233,19 @@ blockquote {
 
 /* Header links */
 
-.header-anchor-link{
+.header-anchor-link {
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-h3:hover > .header-anchor-link{
+h1:hover > .header-anchor-link,
+h2:hover > .header-anchor-link,
+h3:hover > .header-anchor-link,
+h4:hover > .header-anchor-link,
+h5:hover > .header-anchor-link,
+h6:hover > .header-anchor-link {
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #home {
