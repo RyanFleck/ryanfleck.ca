@@ -5,10 +5,6 @@ title: "The Case for Digital Minimalism"
 subtitle: "Our senses are overburdened with a plethora of decisions to make; it is better to have fewer."
 ---
 
-<p style="text-align:center;">(Work in progress.)</p>
-
-<br />
-
 **Exhausted.** At the end of our workdays, Gen Zs all end up drained and numb,
 even if we don't seem to actually accomplish anything. Older adults puzzle over
 why, exactly, we all appear to be dead and passionless.
