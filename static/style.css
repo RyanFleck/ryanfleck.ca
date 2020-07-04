@@ -248,6 +248,12 @@ h6:hover > .header-anchor-link {
   transition: 0.5s;
 }
 
+@media (max-width: 600px) {
+  .header-anchor-link {
+    display: none;
+  }
+}
+
 #home {
   min-height: 70vh;
 }
