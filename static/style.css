@@ -121,13 +121,15 @@ padding-left: 3px;
     display: block;
   }
 
-  #listcontent > ol > li {
+  #listcontent>ol>li {
     text-align: left;
   }
+
   #paginator {
     padding-top: 1em;
     text-align: left;
   }
+
   .toc-article-link {
     font-size: 1.2rem;
   }
@@ -153,14 +155,14 @@ pre,
   font-size: 0.8rem;
 }
 
-article > div.highlight,
-article > pre {
+article>div.highlight,
+article>pre {
   overflow-x: auto;
   margin-right: calc(-50vw + 51%);
   padding: 0;
 }
 
-div.highlight > pre {
+div.highlight>pre {
   margin: 0;
 }
 
@@ -226,7 +228,7 @@ blockquote {
   transition: color 0.2s;
 }
 
-#buttons > .button:hover {
+#buttons>.button:hover {
   color: rgb(83, 83, 221);
   transition: color 0.2s;
 }
@@ -238,12 +240,12 @@ blockquote {
   transition: 0.5s;
 }
 
-h1:hover > .header-anchor-link,
-h2:hover > .header-anchor-link,
-h3:hover > .header-anchor-link,
-h4:hover > .header-anchor-link,
-h5:hover > .header-anchor-link,
-h6:hover > .header-anchor-link {
+h1:hover>.header-anchor-link,
+h2:hover>.header-anchor-link,
+h3:hover>.header-anchor-link,
+h4:hover>.header-anchor-link,
+h5:hover>.header-anchor-link,
+h6:hover>.header-anchor-link {
   opacity: 1;
   transition: 0.5s;
 }
@@ -258,7 +260,7 @@ h6:hover > .header-anchor-link {
   min-height: 70vh;
 }
 
-li > p {
+li>p {
   margin: 0px;
 }
 
@@ -364,27 +366,24 @@ td {
 }
 
 a[href^="https://"],
-  a[href^="http://"]
-{
+a[href^="http://"] {
   background: url(/external.png) right no-repeat;
   /* In the future, make a larger icon and scale it down. */
   background-size: 10px 10px;
   padding-right: 12px;
 }
 
-a[href^="https://ryanfleck.ca"]
-{
+a[href^="https://ryanfleck.ca"] {
   background: none;
   padding-right: 0px;
 }
 
-a[href^="http://localhost:1313/"]
-{
+a[href^="http://localhost:1313/"] {
   background: none;
   padding-right: 0px;
 }
 
-#buttons > a.button {
+#buttons>a.button {
   background: none;
   padding-right: 0px;
 }
@@ -448,7 +447,20 @@ sub {
   top: 0.4em;
 }
 
-sup.footnote-ref > a {
+sup.footnote-ref>a {
   color: grey;
   font-size: 0.5rem;
+}
+
+
+/* WebKit Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCC;
 }
