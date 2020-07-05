@@ -17,18 +17,20 @@ window.addEventListener("load", function (event) {
   var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
   headers.forEach(function (header) {
     if (!header.classList.contains("page-title")) {
-      // Create the elements.
-      var anchorLink = document.createElement("a");
+      if (header.id !== "") {
+        // Create the elements.
+        var anchorLink = document.createElement("a");
 
-      // Add required attributes.
-      anchorLink.text = "~";
-      anchorLink.href = "#" + header.id;
-      anchorLink.className = "header-anchor-link";
-      anchorLink.style.float = "left";
-      anchorLink.style.marginLeft = "-20px";
+        // Add required attributes.
+        anchorLink.text = "~";
+        anchorLink.href = "#" + header.id;
+        anchorLink.className = "header-anchor-link";
+        anchorLink.style.float = "left";
+        anchorLink.style.marginLeft = "-20px";
 
-      // Append to header.
-      header.appendChild(anchorLink);
+        // Append to header.
+        header.appendChild(anchorLink);
+      }
     }
   });
 });
