@@ -15,7 +15,7 @@ Foundation* projects and the *UOE Racing Team*.
 
 ![The Car!](/pics/compressed/fleck_uoe_racing_cropped_min.jpg)
 
-<p style="text-align:center"><small><i>UOE Racing Supermileage Team - Photo: Bijan Samiee</i></small></p>
+<p style="text-align:center"><small><i>UOE Racing Supermileage Team - Photo: Bijan Samiee - I am bottom left</i></small></p>
 
 This [minimalist](/2019/digital-minimalism/) website stores my
 long-form writing; records of experiments, musings, tutorials, and articles on
