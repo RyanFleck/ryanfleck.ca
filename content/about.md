@@ -13,7 +13,7 @@ Foundation* projects and the *UOE Racing Team*.
 
 <link rel="prefetch" href="/pics/compressed/fleck_uoe_racing.jpg">
 
-![The Car!](/pics/compressed/fleck_uoe_racing.jpg)
+![The Car!](/pics/compressed/fleck_uoe_racing_cropped_min.jpg)
 
 <p style="text-align:center"><small><i>UOE Racing Supermileage Team - Photo: Bijan Samiee</i></small></p>
 
