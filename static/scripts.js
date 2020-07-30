@@ -29,4 +29,13 @@ window.addEventListener("load", function (event) {
       }
     }
   });
+  /*
+  // Feature 2: Replace Xg and Xgs with explanation.
+  var paragraphs = document.getElementsByTagName("p");
+  for (let x = 0; x < paragraphs.length; x++) {
+    var para = paragraphs[x];
+    para.innerHTML = para.innerHTML.replace("Xg", "ykh");
+    para.innerHTML = para.innerHTML.replace("Xgs", "ykhs");
+  }
+  */
 });
