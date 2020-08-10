@@ -18,7 +18,7 @@ window.addEventListener("load", function (event) {
         var anchorLink = document.createElement("a");
 
         // Add required attributes.
-        anchorLink.text = "¶";
+        anchorLink.text = "~"; // Could be pilcrow ¶
         anchorLink.href = "#" + header.id;
         anchorLink.className = "header-anchor-link";
         anchorLink.style.float = "left";
