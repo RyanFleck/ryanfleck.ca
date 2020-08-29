@@ -1,10 +1,184 @@
 ---
 tags:
 date: 2020-08-29T09:07:13-06:00
-title: "How To Survive ITI 1120"
+title: "How To Survive ITI 1120: Python Basics"
 draft: true
 toc: true
 ---
+
+<div style="position: fixed; bottom:0; right: 0;">
+<button onclick="forward()" class="slideshow-button">
+Next Slide
+</button>
+</div>
+
+<div style="position: fixed; bottom:0; left: 0;">
+<button onclick="back()" class="slideshow-button">
+Previous Slide
+</button>
+</div>
+
+<div id="interactive-warning">
+
+# Interactive Presentation
+
+This page is an interactive slideshow.
+
+Press this button to disable the scripting magick.
+
+<button onclick="disableMagic()" id="slideshow-enabler" class="slideshow-button">
+Disable The Slideshow Magicks
+</button>
+
+</div>
+
+<div class="slideshow-section">
+
+# Section 0 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+</div>
+<div class="slideshow-section">
+
+# Section 1 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+This is a very long slide
+
+</div>
+<div class="slideshow-section">
+
+# Section 2 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+</div>
+<div class="slideshow-section">
+
+# Section 3 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+</div>
+<div class="slideshow-section">
+
+# Section 4 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+</div>
+<div class="slideshow-section">
+
+# Section 5 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+</div>
+<div class="slideshow-section">
+
+# Section 6 Heading
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+Yada
+
+</div>
+
+<!-- SLIDESHOW MAGICKS, BEWAERE YE WHO ENTER THIS REALME OF JAVASCRIPTES -->
 
 <script>
 var magic = true
@@ -20,12 +194,7 @@ function getSlideInViewport(){
     console.log("Properties for section "+x);
     var bounds = sections[x].getBoundingClientRect()
     console.log(bounds);
-    if(
-        bounds.top >=(-200) &&
-        bounds.bottom <= winHeight+200
-    ){
-        return x;
-    }
+    if(bounds.top >=(-100)){return x;}
   }
 
 }
@@ -112,157 +281,3 @@ window.addEventListener('load', function(event){
 });
 
 </script>
-
-<div style="position: fixed; bottom:0; right: 0;">
-<button onclick="forward()" class="slideshow-button">
-Next Slide
-</button>
-</div>
-
-<div style="position: fixed; bottom:0; left: 0;">
-<button onclick="back()" class="slideshow-button">
-Previous Slide
-</button>
-</div>
-
-
-<div id="interactive-warning">
-
-# Interactive Presentation
-
-This page is an interactive slideshow. Press this button to disable the magic.
-
-<button onclick="disableMagic()" id="slideshow-enabler" class="slideshow-button">
-Disable The Slideshow Magicks
-</button>
-
-</div>
-
-
-
-<div class="slideshow-section">
-
-# Section 0 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
-<div class="slideshow-section">
-
-# Section 1 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
-<div class="slideshow-section">
-
-# Section 2 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
-<div class="slideshow-section">
-
-# Section 3 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
-<div class="slideshow-section">
-
-# Section 4 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
-<div class="slideshow-section">
-
-# Section 5 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
-<div class="slideshow-section">
-
-# Section 6 Heading 
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-
-</div>
