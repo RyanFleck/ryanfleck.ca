@@ -137,6 +137,8 @@ Allow me to demonstrate...
 
 # Hello World in Assembler
 
+This program will be assembled into bytecode.
+
 ```asm
 extrn MessageBoxA: PROC
 extrn ExitProcess: PROC
@@ -170,6 +172,8 @@ Source: <https://stackoverflow.com/questions/1023593/how-to-write-hello-world-in
 
 # Hello World in C
 
+This program will be _compiled_ to **assembly**.
+
 ```c
 #include <stdio.h>
 
@@ -185,6 +189,10 @@ int main(void) {
 
 # Hello World in Python
 
+This program will be _interpreted_ with code written in **C**
+
+[^1]: I know it's not exactly like this.
+
 ```py
 print("Hello, World!")
 ```
@@ -193,19 +201,24 @@ print("Hello, World!")
 
 <div class="slideshow-section">
 
-# Section 4 Heading
+# Higher Abstractions and 4GLs
 
-Yada
+We can use languages that abide by _logical_, _functional_, or even better/stranger
+paradigms to truly **free our thinking from the bounds of computer hardware.**
 
-Yada
+A great paper on all the paradigms can be found [here](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf), titled
+_Programming Paradigms for Dummies: What Every Programmer Should Know_ by _Peter Van Roy._
 
-Yada
+Graphical languages called **4GLs** (fourth generation languages) have been proposed
+but always die because they become messy with complexity.
 
-Yada
+</div>
 
-Yada
+<div class="slideshow-section">
 
-Yada
+# Programming Is...
+
+Embedding your own mind and personality into machines.
 
 </div>
 
@@ -355,13 +368,13 @@ window.addEventListener('load', function(event){
 
 </script>
 
-<div style="position: fixed; bottom:0; right: 0;">
+<div style="position: fixed; bottom:0; right: 0; opacity: 50%;">
 <button onclick="forward()" class="slideshow-button">
 Next
 </button>
 </div>
 
-<div style="position: fixed; bottom:0; left: 0;">
+<div style="position: fixed; bottom:0; left: 0; opacity: 50%;">
 <button onclick="back()" class="slideshow-button">
 Previous
 </button>
