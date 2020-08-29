@@ -1,7 +1,7 @@
 ---
 tags:
 date: 2020-08-29T09:07:13-06:00
-title: "How To Survive ITI 1120: Python Basics"
+title: "How To Survive ITI 1120: Programming Basics In Python"
 draft: true
 toc: true
 ---
@@ -34,62 +34,41 @@ Disable The Slideshow Magicks
 
 <div class="slideshow-section">
 
-# Section 0 Heading
+# Why You Are Here
 
-Yada
+Welcome to my "`ITI1120: Introduction to Computing I`" bootcamp.
 
-Yada
+You are here (good on you for taking initiative,) because you want a head
+start in `ITI1120`, which will be a bird course if you understand the
+content of this presentation.
 
-Yada
-
-Yada
-
-Yada
-
-Yada
+This is not a python lecture, it is a programming lecture.
 
 </div>
+
 <div class="slideshow-section">
 
-# Section 1 Heading
+# Why You Ought To Listen To Me
 
-Yada
+Primary Reasons:
 
-Yada
+1. I am currently a professional python developer at _Wise Assistant_
+1. I have probably written a little more python code than you
+1. I am at least three times as engaging as the average prof
 
-Yada
+Other cool things that I am:
 
-Yada
+1. A lead developer on our electric car team
+1. IEEE uOttawa WEBMASTER Executive
+1. Get paid to work from a hammock
+</div>
 
-Yada
+<div class="slideshow-section">
 
-Yada
+# Presentation Content
 
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-This is a very long slide
+1. Types
+1.
 
 </div>
 <div class="slideshow-section">
@@ -162,19 +141,12 @@ Yada
 </div>
 <div class="slideshow-section">
 
-# Section 6 Heading
+# Resources
 
-Yada
+Here are a few of the things I read to create this presentation
 
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
+1. The Python Book
+1. This [finding if an element is in the viewport](https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/) in vanilla js
 
 </div>
 
@@ -189,6 +161,9 @@ var sections
 function getSlideInViewport(){
   var winHeight = (window.innerHeight || document.documentElement.clientHeight);
   console.log("Properties for window: Height "+winHeight+"px");
+
+  console.log(sections[0].getBoundingClientRect().top);
+  if(sections[0].getBoundingClientRect().top > 20) return -1;
 
   for(let x=0; x < sections.length; x++){
     console.log("Properties for section "+x);
