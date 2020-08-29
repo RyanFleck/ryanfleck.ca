@@ -2,31 +2,36 @@
 tags:
 date: 2020-08-29T09:07:13-06:00
 title: "How To Survive ITI 1120: Programming Basics In Python"
-draft: true
 toc: true
 ---
 
-<div style="position: fixed; bottom:0; right: 0;">
-<button onclick="forward()" class="slideshow-button">
-Next Slide
-</button>
-</div>
-
-<div style="position: fixed; bottom:0; left: 0;">
-<button onclick="back()" class="slideshow-button">
-Previous Slide
-</button>
-</div>
-
 <div id="interactive-warning">
 
-# Interactive Presentation
+# Preamble
 
-This page is an interactive slideshow.
+**Hit space now** if you'd like to skip all this garbage and start the slideshow.
+
+It should be noted that this public copy is a draft, here it is in big red letters so people
+notice and refrain from sending me emails about incomplete content on my website. I know already. I'm working on it.
+
+<h1 style="color: red; font-size: 5rem; padding: 0; margin: 0; text-decoration: none;">
+DRAFT!
+</h1>
+
+Whille keeping this in mind, enjoy!
+
+## Interactive Presentation
+
+This page is an _interactive slideshow_ that can be controlled with space, the arrow
+keys, and the spacebar. **Hit space now** to advance to the first slide.
 
 Press this button to disable the scripting magick.
 
-<button onclick="disableMagic()" id="slideshow-enabler" class="slideshow-button">
+<button
+onclick="disableMagic()"
+id="slideshow-enabler"
+class="slideshow-button"
+style="color:red; background: black; width: 100%; height: 3rem;">
 Disable The Slideshow Magicks
 </button>
 
@@ -37,8 +42,12 @@ Disable The Slideshow Magicks
 # Welcome To
 
 <h1 style="font-size:3.2rem; padding: 0; margin: 0;">HOW TO PROGRAM</h1>
-
-An introduction to programming and Python for `ITI1120` students
+<p style="padding: 0; margin: 0">
+An Introduction to Programming and Python for ITI1120 Students
+</p>
+<p style="font-size: 0.7rem; color: #AAA; padding: 0; margin: 0">
+CC BY-SA 4.0 Ryan Fleck 2020
+</p>
 
 </div>
 
@@ -60,26 +69,26 @@ You can read the slides afterwards at [ryanfleck.ca](https://ryanfleck.ca)
 
 # Why You Ought To Listen To Me
 
-Primary Reasons:
+**Primary Reasons:**
 
 1. I am currently a professional python developer at _Wise Assistant_
 1. I have probably written a little more python code than you
 1. I am at least three times as engaging as the average prof
 
-Other cool things that I am:
+**Other cool things that I am:**
 
 1. A lead developer on our electric car team
 1. IEEE uOttawa WEBMASTER Executive
-1. Get paid to work from a hammock
+1. paid to work from a hammock
 </div>
 
 <div class="slideshow-section">
 
 # Presentation Content
 
-1. What even is programming?
-1. The object-oriented paradigm (type) of programming
-1. Practical python for completing assignments
+1. [What even is programming?](#section-1)
+1. [The object-oriented paradigm (type) of programming](#section-2)
+1. [Practical python for completing assignments](#section-3)
 
 </div>
 
@@ -87,7 +96,7 @@ Other cool things that I am:
 
 # Section 1
 
-<h1 style="font-size:3rem; padding: 0; margin: 0;">WHAT IS THIS SH*T!?</h1>
+<h1 style="font-size:3.4rem; padding: 0; margin: 0;">WHAT IS THIS SH*T!?</h1>
 
 An introduction to the beautiful world of computer programming
 
@@ -97,7 +106,7 @@ _CPU = Computer Processing Unit = Processor_
 
 <div class="slideshow-section">
 
-# Function and Abstraction
+# Computers Are Fast
 
 In the time it takes for light to move 6cm through space, a processor will have enough time to complete the execution of a single instruction.
 
@@ -109,7 +118,7 @@ _Calculation: 5GHz CPU at 1 IPC, light-speed = 299792458 m/s_
 
 <div class="slideshow-section">
 
-# Function and Abstraction
+# Abstractions
 
 But **assembly languages** allow extremely precise control of all parts of a CPU.
 
@@ -199,6 +208,31 @@ Yada
 Yada
 
 </div>
+
+<div class="slideshow-section">
+
+# Section 2
+
+<h1 style="font-size:7rem; padding: 0; margin: 0;">OBJECTS</h1>
+
+The things that we use to think in the object-oriented paradigm
+
+_AKA OOP pronounced Oh-Oh-Pee, I kid you not_
+
+</div>
+
+<div class="slideshow-section">
+
+# Section 3
+
+<h1 style="font-size:4rem; padding: 0; margin: 0;">Practical Python</h1>
+
+It's easy to write, easy to make mistakes with, and easy to enjoy
+
+_Guido van Rossum is the BDFL (Benevolent Dictator for Life) of Python_
+
+</div>
+
 <div class="slideshow-section">
 
 # Section 5 Heading
@@ -320,3 +354,15 @@ window.addEventListener('load', function(event){
 });
 
 </script>
+
+<div style="position: fixed; bottom:0; right: 0;">
+<button onclick="forward()" class="slideshow-button">
+Next
+</button>
+</div>
+
+<div style="position: fixed; bottom:0; left: 0;">
+<button onclick="back()" class="slideshow-button">
+Previous
+</button>
+</div>
