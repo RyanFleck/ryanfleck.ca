@@ -160,27 +160,19 @@ var sections
 
 function getSlideInViewport(){
   var winHeight = (window.innerHeight || document.documentElement.clientHeight);
-  console.log("Properties for window: Height "+winHeight+"px");
-
-  console.log(sections[0].getBoundingClientRect().top);
   if(sections[0].getBoundingClientRect().top > 20) return -1;
 
   for(let x=0; x < sections.length; x++){
-    console.log("Properties for section "+x);
     var bounds = sections[x].getBoundingClientRect()
-    console.log(bounds);
     if(bounds.top >=(-100)){return x;}
   }
 
 }
 function forward(){
-  console.log("Moving forward...");
   var current = getSlideInViewport();
-  console.log("Element "+current+" of type "+(typeof current)+" is in the viewport");
   if(typeof current == "number"){
     var next = current + 1;
     if(next < sections.length){
-      console.log("Scrolling to "+next);
       var elem = sections[next];
       elem.scrollIntoView();
     }
@@ -190,13 +182,10 @@ function forward(){
 }
 
 function back(){
-  console.log("Moving backwards...");
   var current = getSlideInViewport();
-  console.log("Element "+current+" of type "+(typeof current)+" is in the viewport");
   if(typeof current == "number"){
     var next = current - 1;
     if(next >= 0){
-      console.log("Scrolling to "+next);
       var elem = sections[next];
       elem.scrollIntoView();
     }
@@ -226,9 +215,7 @@ function disableMagic(){
 
 
 window.addEventListener('load', function(event){
-    console.log("DOM loaded, getting sections...");
     sections = document.getElementsByClassName("slideshow-section");
-    console.log("There are "+sections.length+" slides in this slideshow.");
 
 
     document.body.onkeydown = function(event){
