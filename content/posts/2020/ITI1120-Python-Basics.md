@@ -87,8 +87,9 @@ You can read the slides afterwards at [ryanfleck.ca](https://ryanfleck.ca)
 ## Presentation Content
 
 1. [What even is programming?](#section-1)
-1. [The object-oriented paradigm (type) of programming](#section-2)
-1. [Practical python for completing assignments](#section-3)
+1. [The basics of programming in Python](#section-2)
+1. [The object-oriented paradigm (type) of programming](#section-3)
+1. [Practical python for completing assignments](#section-4)
 
 </div>
 
@@ -96,7 +97,7 @@ You can read the slides afterwards at [ryanfleck.ca](https://ryanfleck.ca)
 
 # Section 1
 
-<h1 style="font-size:3.4rem; padding: 0; margin: 0;">WHAT IS THIS SH*T!?</h1>
+<h1 style="font-size:3.4rem; padding: 0; margin: 0;">HELLO COMPUTER</h1>
 
 An introduction to the beautiful world of computer programming
 
@@ -226,6 +227,77 @@ Embedding your own mind and personality into machines.
 
 # Section 2
 
+<h1 style="font-size:7rem; padding: 0; margin: 0;">Python</h1>
+
+There is divine beauty and strength in simplicity.
+
+</div>
+
+<div class="slideshow-section">
+
+## Why You Are Learning This
+
+- To pass the class
+- You can get paid to program in Python
+- Genuine interest and curiosity
+
+</div>
+
+<div class="slideshow-section">
+
+## Setting Up A Development Environment
+
+I recommend following along past this point in a jupyter notebook. It's very easy to create a new one in _Google Colab_ AKA _Collaboratory_.
+
+Far easier, at least, than setting up python for each of you:
+
+<a href="https://colab.research.google.com/#create=true" target="_blank">colab.research.google.com/#create=true</a>
+
+![google colab notebook](/pics/py/colab.png)
+
+</div>
+
+<div class="slideshow-section">
+
+## The Canonical First Program
+
+<br />
+
+```py
+print("Hello, World!")
+```
+
+<br />
+
+</div>
+
+<div class="slideshow-section">
+
+## Dealing with Variables and Data
+
+We can express a number of different data types in Python. Here, we assign a
+few different things to variables with different names.
+
+```py
+# Integers
+total = 9001
+
+# Strings
+name = "Ryan"
+
+# Floating Points
+angle = 192.3289
+
+```
+
+You don't need to worry about the types when you create the variables; Python does that for you.
+
+</div>
+
+<div class="slideshow-section">
+
+# Section 3
+
 <h1 style="font-size:7rem; padding: 0; margin: 0;">OBJECTS</h1>
 
 The things that we use to think in the object-oriented paradigm
@@ -327,7 +399,7 @@ Duck.attack(JimTheDuck)
 
 <div class="slideshow-section">
 
-## Recap on Objects
+## Recap on Objects: Encapsulation
 
 They **encapsulate** (hold) stuff:
 
@@ -379,7 +451,6 @@ Now, we programmers know that we can create as many duck objects as we want.
 
 How can we use these ducks?
 
-
 </div>
 
 <div class="slideshow-section">
@@ -392,7 +463,7 @@ Yada
 
 <div class="slideshow-section">
 
-# Section 3
+# Section 4
 
 <h1 style="font-size:4rem; padding: 0; margin: 0;">Practical Python</h1>
 
@@ -446,7 +517,7 @@ function getSlideInViewport(){
 
   for(let x=0; x < sections.length; x++){
     var bounds = sections[x].getBoundingClientRect()
-    if(bounds.top >=(-100)){return x;}
+    if(bounds.top >=(-(winHeight))){return x;}
   }
 
 }
