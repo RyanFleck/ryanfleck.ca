@@ -23,7 +23,7 @@ Whille keeping this in mind, enjoy!
 ## Interactive Presentation
 
 This page is an _interactive slideshow_ that can be controlled with space, the arrow
-keys, and the spacebar. **Hit space now** to advance to the first slide.
+keys, vim keys, and the spacebar. **Hit space or j now** to advance to the first slide.
 
 Press this button to disable the scripting magick.
 
@@ -39,7 +39,7 @@ Disable The Slideshow Magicks
 
 <div class="slideshow-section">
 
-# Welcome To
+# Introduction
 
 <h1 style="font-size:3.2rem; padding: 0; margin: 0;">HOW TO PROGRAM</h1>
 <p style="padding: 0; margin: 0">
@@ -53,7 +53,7 @@ CC BY-SA 4.0 Ryan Fleck 2020
 
 <div class="slideshow-section">
 
-# Why You Are Here
+## Why You Are Here
 
 Welcome to my "`ITI1120: Introduction to Computing I`" bootcamp.
 
@@ -67,7 +67,7 @@ You can read the slides afterwards at [ryanfleck.ca](https://ryanfleck.ca)
 
 <div class="slideshow-section">
 
-# Why You Ought To Listen To Me
+## Why You Ought To Listen To Me
 
 **Primary Reasons:**
 
@@ -84,7 +84,7 @@ You can read the slides afterwards at [ryanfleck.ca](https://ryanfleck.ca)
 
 <div class="slideshow-section">
 
-# Presentation Content
+## Presentation Content
 
 1. [What even is programming?](#section-1)
 1. [The object-oriented paradigm (type) of programming](#section-2)
@@ -106,7 +106,7 @@ _CPU = Computer Processing Unit = Processor_
 
 <div class="slideshow-section">
 
-# Computers Are Fast
+## Computers Are Fast
 
 In the time it takes for light to move 6cm through space, a processor will have enough time to complete the execution of a single instruction.
 
@@ -118,7 +118,7 @@ _Calculation: 5GHz CPU at 1 IPC, light-speed = 299792458 m/s_
 
 <div class="slideshow-section">
 
-# Abstractions
+## Abstractions
 
 But **assembly languages** allow extremely precise control of all parts of a CPU.
 
@@ -135,7 +135,7 @@ Allow me to demonstrate...
 
 <div class="slideshow-section">
 
-# Hello World in Assembler
+## Hello World in Assembler
 
 This program will be assembled into bytecode.
 
@@ -170,7 +170,7 @@ Source: <https://stackoverflow.com/questions/1023593/how-to-write-hello-world-in
 
 <div class="slideshow-section">
 
-# Hello World in C
+## Hello World in C
 
 This program will be _compiled_ to **assembly**.
 
@@ -187,7 +187,7 @@ int main(void) {
 
 <div class="slideshow-section">
 
-# Hello World in Python
+## Hello World in Python
 
 This program will be _interpreted_ with code written in **C**
 
@@ -201,7 +201,7 @@ print("Hello, World!")
 
 <div class="slideshow-section">
 
-# Higher Abstractions and 4GLs
+## Higher Abstractions and 4GLs
 
 We can use languages that abide by _logical_, _functional_, or even better/stranger
 paradigms to truly **free our thinking from the bounds of computer hardware.**
@@ -216,7 +216,7 @@ but always die because they become messy with complexity.
 
 <div class="slideshow-section">
 
-# Programming Is...
+## Programming Is...
 
 Embedding your own mind and personality into machines.
 
@@ -236,6 +236,162 @@ _AKA OOP pronounced Oh-Oh-Pee, I kid you not_
 
 <div class="slideshow-section">
 
+## Why You Are Learning This
+
+Python (And Java in `ITI1121`) are object-oriented languages.
+
+This means that they are languages with functionality built around _creating and manipulating objects_ to solve problems.
+
+So, what are objects?
+
+</div>
+
+<div class="slideshow-section">
+
+## A Simple Object
+
+**Imagine a duck.**
+
+Ducks have many **attributes**, or properties:
+
+```
+  weight, height, name
+```
+
+Ducks also have many **functions**, or things that it can do:
+
+```
+  walk, quack, fly, attack, drink
+```
+
+</div>
+
+<div class="slideshow-section">
+
+## Objects Store Attributes and Functions
+
+All of these attributes and functions are stored within an object.
+
+Objects hold groups of related attributes and functions.
+
+</div>
+
+<div class="slideshow-section">
+
+## Simple Object Example
+
+Don't worry about the syntax for now. **This isn't real python.**
+What matters is that we can group attributes and functions
+into useful collections that we organize in objects.
+
+```py
+object Duck
+  weight = 10    # attributes
+  height = 30
+  name = "Dave"
+
+  def quack():
+    print(f"Hello, I am a Duck named {self.name}")
+
+  def attack(enemy_duck):
+    print(f"QUAAACK! PREPARE TO DIE {enemy_duck}!")
+
+```
+
+See here, a simple way to store everything we need to know about a duck and
+how it works!
+
+</div>
+
+<div class="slideshow-section">
+
+<br />
+
+Given the above, we can now use the `Duck` like so:
+
+```py
+print(Duck.name)
+# prints Dave
+
+print(Duck.height)
+# prints 30
+
+Duck.quack()
+# prints Hello, I am a Duck named Dave
+
+Duck.attack(JimTheDuck)
+# prints QUAAACK! PREPARE TO DIE JIM!
+```
+
+</div>
+
+<div class="slideshow-section">
+
+## Recap on Objects
+
+They **encapsulate** (hold) stuff:
+
+1. They have attributes
+1. They have functions
+
+...so, how do we make objects? By using **Classes**.
+
+</div>
+
+<div class="slideshow-section">
+
+## Classes are Templates for Objects
+
+We can define the attributes and behaviour for many objects by writing a class.
+**This is real Python,** but don't worry about the syntax yet.
+
+All you need to know here is that `__init__` is called when you are creating
+a new `Duck`, and `self` represents the object that the class is referring to.
+
+```python
+class Duck:
+    def __init__(self, name, height, weight):
+        self.name = name
+        self.height = height
+        self.weight = weight
+
+    def quack(self):
+        print("QUACK!")
+
+    def greet(self):
+        print(f"Hello, my name is {self.name}")
+
+howard = Duck("Howard", 10, 10)
+howard.quack()  # QUACK!
+howard.greet()  # Hello, my name is Howard
+```
+
+I know that this is a complicated example, but I promise I'll touch on all of
+this syntax, bit by bit, later in the presentation.
+
+</div>
+
+<div class="slideshow-section">
+
+## Weighing Ducks
+
+Now, we programmers know that we can create as many duck objects as we want.
+
+How can we use these ducks?
+
+
+</div>
+
+<div class="slideshow-section">
+
+## Section
+
+Yada
+
+</div>
+
+<div class="slideshow-section">
+
 # Section 3
 
 <h1 style="font-size:4rem; padding: 0; margin: 0;">Practical Python</h1>
@@ -248,21 +404,20 @@ _Guido van Rossum is the BDFL (Benevolent Dictator for Life) of Python_
 
 <div class="slideshow-section">
 
-# Section 5 Heading
-
-Yada
-
-Yada
-
-Yada
-
-Yada
-
-Yada
+## Section
 
 Yada
 
 </div>
+
+<div class="slideshow-section">
+
+## Section
+
+Yada
+
+</div>
+
 <div class="slideshow-section">
 
 # Resources
@@ -278,9 +433,12 @@ Here are a few of the things I read to create this presentation
 
 <script>
 var magic = true
-var advance
-var retreat
-var sections 
+var sections
+var space = 32;
+var left = 37;
+var right = 39;
+var j = 74;
+var k = 75;
 
 function getSlideInViewport(){
   var winHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -344,20 +502,22 @@ window.addEventListener('load', function(event){
 
     document.body.onkeydown = function(event){
 
+        var key = event.keyCode;
+
         // Spacebar was pressed.
-        if(event.keyCode == 32){
+        if(key == space){
             event.preventDefault();
             forward();
         }
 
-        // Left arrow key.
-        if(event.keyCode == 37){
+        // Left arrow key or K.
+        if(key == left || key == k){
             event.preventDefault();
             back();
         }
-        
-        // Right arrow key.
-        if(event.keyCode == 39){
+
+        // Right arrow key or J.
+        if(key == right || key == j){
             event.preventDefault();
             forward();
         }
@@ -379,3 +539,4 @@ Next
 Previous
 </button>
 </div>
+```
