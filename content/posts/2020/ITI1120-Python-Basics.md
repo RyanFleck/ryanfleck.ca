@@ -602,15 +602,14 @@ window.addEventListener('load', function(event){
 
 </script>
 
-<div style="position: fixed; bottom:0; right: 0; opacity: 50%;">
+<div style="position: fixed; bottom:0; right: 0;">
 <button onclick="forward()" class="slideshow-button">
 Next
 </button>
 </div>
 
-<div style="position: fixed; bottom:0; left: 0; opacity: 50%;">
+<div style="position: fixed; bottom:0; left: 0;">
 <button onclick="back()" class="slideshow-button">
 Previous
 </button>
 </div>
-```
