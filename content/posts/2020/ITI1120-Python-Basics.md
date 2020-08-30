@@ -31,8 +31,8 @@ Press this button to disable the scripting magick.
 onclick="disableMagic()"
 id="slideshow-enabler"
 class="slideshow-button"
-style="color:red; background: black; width: 100%; height: 3rem;">
-Disable The Slideshow Magicks
+style="background: #EEE; font-size: 1.3rem; width: 100%; height: 4rem; padding: 1rem; opacity: 100%;">
+Disable Slideshow Magick
 </button>
 
 </div>
