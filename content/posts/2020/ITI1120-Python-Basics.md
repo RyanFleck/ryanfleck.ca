@@ -517,7 +517,7 @@ function getSlideInViewport(){
 
   for(let x=0; x < sections.length; x++){
     var bounds = sections[x].getBoundingClientRect()
-    if(bounds.top >=(-(winHeight))){return x;}
+    if(bounds.top >=(-(winHeight/2))){return x;}
   }
 
 }
@@ -593,6 +593,9 @@ window.addEventListener('load', function(event){
             forward();
         }
     }
+
+    // Debug slide height/detection value
+    // window.setInterval(function(){console.log(getSlideInViewport());},500);
 
 
 });
