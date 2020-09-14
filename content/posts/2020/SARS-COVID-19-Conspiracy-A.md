@@ -21,7 +21,7 @@ As I write this, on **March 21st, 2020**, the City of Ottawa is quiet.
 
 # Argument
 
-In a single thought, the Coronavirus is a psyop[^psyop] to bring in the NWO[^nwo].
+In a single thought, the coronavirus is a psyop[^psyop] to bring in the NWO[^nwo].
 
 - Coronavirus is part of WHO/UN Agendas 21[^un-21] and 30[^un-30].
 - Viral symptoms are caused by 5G and pollution.

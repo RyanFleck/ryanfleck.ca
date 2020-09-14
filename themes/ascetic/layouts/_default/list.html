@@ -1,48 +1,33 @@
-
 {{ define "main" }}
 <main>
-    
-    <article id="listcontent">
-        {{ .Content }}
+  <article id="listcontent">
+    {{ .Content }}
 
-        <ol reversed
-            style="list-style: none;padding-left: 0px;">
-            {{ range .Paginator.Pages }}
-            <li>
-                {{ if .Date }}
-                <span class="pagin-desktop" style="aria-hidden: true;">  
-                {{.Date.Format "2006-01-02"}} -
-                </span> 
-                <span class="pagin-mobile">  
-                {{.Date.Format "2006-01-02"}}
-                </span> 
-                {{end}}
-                <a href="{{.Permalink}}" class="toc-article-link">
-                    {{ if .Draft }}
-                    <span style="color:red;">DRAFT:</span>
-                    {{ end }}
-                    {{.Title}}</a>
-            </li>
-            {{ end }}
+    <ol reversed style="list-style: none; padding-left: 0px">
+      {{ range .Paginator.Pages }}
+      <li>
+        {{ if .Date }}
+        <span class="pagin-desktop" style="aria-hidden: true">
+          {{.Date.Format "2006-01-02"}} -
+        </span>
+        <span class="pagin-mobile"> {{.Date.Format "2006-01-02"}} </span>
+        {{end}}
+        <a href="{{.Permalink}}" class="toc-article-link">
+          {{ if .Draft }}
+          <span style="color: red">DRAFT:</span>
+          {{ end }} {{.Title}}</a
+        >
+      </li>
+      {{ end }}
+    </ol>
 
-        </ol>
-
-        <p id="paginator">Page {{ .Paginator.PageNumber }};
-
-            {{ if .Paginator.HasPrev }}
-            <a href="{{ .Paginator.Prev.URL }}">prev</a>,
-            {{ else }}
-            prev,
-            {{ end }}
-
-            {{ if .Paginator.HasNext }}
-            <a href="{{ .Paginator.Next.URL }}">next</a>.
-            {{ else }}
-            next.
-            {{ end }}
-
-        </p>
-
-    </article>
+    <p id="paginator">
+      Page {{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}; 
+      {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}">prev</a>, {{ else }} prev, {{ end }}
+      {{ if .Paginator.HasNext }} <a href="{{ .Paginator.Next.URL }}">next</a>.
+      {{ else }} next. {{ end }}
+    </p>
+  </article>
 </main>
 {{end}}
