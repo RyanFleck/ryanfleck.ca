@@ -22,6 +22,10 @@ Here's the A-Frame rendering a portion of the image:
 
 Using <https://social.shorthand.com/hadders/j2uMHSOuUT/using-360degree-media-in-your-web-pages>
 
+Potentially more performant solutions:
+
+- [Sharing 360 photos](https://photography.tutsplus.com/tutorials/how-to-share-360-panorama-photos-with-webvr-and-a-frame--cms-27648)
+
 Failures:
 
 - Using <https://developers.google.com/vr/develop/web/vrview-web> failed.
