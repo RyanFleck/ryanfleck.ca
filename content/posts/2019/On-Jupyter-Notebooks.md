@@ -1,6 +1,7 @@
 ---
 date: 2019-07-17T12:34:56-04:00
 title: "Jupyter Notebooks"
+draft: true
 tags:
   - Python
   - Programming
