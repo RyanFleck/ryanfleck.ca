@@ -4,7 +4,7 @@ title: "Jupyter Notebooks"
 tags:
 - Python 
 - Programming
-- Jupyter Notebooks
+- Jupyter-Notebooks
 ---
 
 If you are a Python programmer, you absolutely must use the fantastic

@@ -1,11 +1,11 @@
 ---
-tags: ASM, Assembly, HC12
 date: 2019-10-09T13:24:10-04:00
 title: "Notes on HC12 Assembly"
 toc: true
 tags:
 - Programming
 - Assembly 
+- HC12
 ---
 
 # Introduction

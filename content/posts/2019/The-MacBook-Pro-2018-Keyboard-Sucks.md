@@ -5,8 +5,9 @@ subtitle: "Goodbye efficiency, hello carpal tunnel!"
 aliases:
 - "/posts/the-macbook-pro-2018-keyboard-sucks/"
 tags:
-- MacBook Pro
-- Butterfly Keyboard
+- Review
+- MacBook-Pro
+- Butterfly-Keyboard
 ---
 
 As an intern at IBM, I was assigned an incredibly high-quality machine: A 2018, 15-inch MacBook Pro with 16 Gigs of DDR4 and the infamous touchbar. To buy this thing new, for personal use, it'd cost me over $3500 of the near-worthless cash we Canadians call Dollars. Certainly a pricey machine, and it isn't for naught: The screen is excellent. I'm sure that people have suffered for screens like this; surreal clarity, even lighting, vivid colors, a pixel density that'll let you set the text so small you can read it with a microscope. The screen is fantastic. As art, the build quality and materials are undeniably excellent.

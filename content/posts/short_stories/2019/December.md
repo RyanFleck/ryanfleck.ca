@@ -1,9 +1,11 @@
 ---
-tags:
 date: 2019-12-05T15:27:36-05:00
 title: "December's Collected Short Stories"
 draft: true
 toc: true
+tags:
+- Writing
+- Poetry
 ---
 
 

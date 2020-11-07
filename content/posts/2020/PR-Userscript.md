@@ -1,8 +1,11 @@
 ---
-tags:
 date: 2020-08-05T09:23:51-04:00
 title: "PR Userscript"
 draft: true
+tags:
+- Programming
+- Userscripts
+- JavaScript
 ---
 
 Had my first foray into the wonderful world of userscripts today.

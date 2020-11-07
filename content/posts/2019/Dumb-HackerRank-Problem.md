@@ -1,10 +1,9 @@
 ---
-tags:
 date: 2020-01-14T11:32:02-05:00
 title: "Paper over Keyboard"
 draft: false 
 tags:
-- Life Lessons
+- Life-Lessons
 - Programming 
 ---
 

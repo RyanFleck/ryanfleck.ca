@@ -1,8 +1,11 @@
 ---
-tags:
 date: 2020-01-11T18:27:35-05:00
 title: "MSP430 Timer Module"
 toc: true
+tags:
+- MSP430
+- Programming
+- C
 ---
 
 

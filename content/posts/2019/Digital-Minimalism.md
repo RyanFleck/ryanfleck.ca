@@ -1,10 +1,9 @@
 ---
-tags:
 date: 2019-07-08T21:22:30-04:00
 title: "The Case for Digital Minimalism"
 subtitle: "Our senses are overburdened with a plethora of decisions to make; it is better to have fewer."
 tags:
-- Life Lessons
+- Life-Lessons
 ---
 
 **Exhausted.** At the end of our workdays, Gen Zs all end up drained and numb,

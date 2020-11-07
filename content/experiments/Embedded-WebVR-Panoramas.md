@@ -1,9 +1,10 @@
 ---
-tags:
-  - WebVR
 date: 2020-09-14T02:34:37-06:00
 title: "Embedded WebVR Panoramas"
 draft: false
+tags:
+- WebVR
+- JavaScript
 ---
 
 This is a test to embed WebVR content on a webpage.
