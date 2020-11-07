@@ -3,6 +3,9 @@ tags:
 date: 2019-10-13T10:30:49-04:00
 title: "Notes on VHDL"
 toc: true
+tags:
+- Programming
+- VHDL 
 ---
 
 # Preamble

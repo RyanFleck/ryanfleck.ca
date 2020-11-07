@@ -4,7 +4,10 @@ date: 2020-08-29T09:07:13.000-06:00
 title: 'How To Survive ITI 1120: Programming Basics In Python'
 toc: true
 draft: true
-
+tags:
+- Python 
+- Programming
+- Tutorial
 ---
 <div id="interactive-warning">
 

@@ -1,10 +1,10 @@
 ---
-tags:
-- technology
-- politics
 date: 2020-07-10T09:19:51.000-04:00
 title: Technocracy
 draft: true
+tags:
+- Technology
+- Politics 
 ---
 
 _Article Structure_

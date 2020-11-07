@@ -1,6 +1,8 @@
 ---
 tags:
-- internship
+- Internship
+- Life Lessons
+- Java
 - IBM
 date: 2019-08-11T12:58:51-04:00
 title: "Extreme Blue 2019"

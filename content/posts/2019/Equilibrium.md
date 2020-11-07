@@ -3,6 +3,9 @@ tags:
 - Film Review
 date: 2019-07-08T22:11:40-04:00
 title: "Film Review: Equilibrium"
+tags:
+- Life Lessons
+- Film Review 
 ---
 
 As anybody who has ever spoken to me will know, I hold the writing of authors

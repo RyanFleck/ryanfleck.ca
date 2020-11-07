@@ -2,6 +2,9 @@
 tags:
 date: 2019-10-11T17:54:00-04:00
 title: "Passing Structs in C++"
+tags:
+- Programming
+- C++ 
 ---
 
 After a conversation with a friend revolving around passing structures to

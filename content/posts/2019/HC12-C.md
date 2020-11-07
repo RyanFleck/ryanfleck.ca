@@ -4,6 +4,9 @@ date: 2019-12-07T10:36:16-05:00
 title: "Programming the HCS12 CPU in C"
 draft: true
 toc: true
+tags:
+- Programming
+- C 
 ---
 
 # Introduction

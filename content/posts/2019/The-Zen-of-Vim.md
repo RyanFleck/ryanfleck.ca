@@ -1,10 +1,10 @@
 ---
-tags:
-- Vim
-- Programming tools
 date: 2019-07-10T14:21:00-04:00
 title: "The Zen of Vim"
 subtitle: "Ever wanted a programming tool which maintains the same relationship as a sword to the knight, the hammer to the smith?"
+tags:
+- Vim
+- Programming
 ---
 
 When is a tool more than a tool?

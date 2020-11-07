@@ -1,8 +1,10 @@
 ---
-tags:
 date: {{ .Date }}
 title: "{{ replace .Name "-" " " | title }}"
 draft: true
+toc: true 
+tags:
+- Untagged 
 ---
 
 

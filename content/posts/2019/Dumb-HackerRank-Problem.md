@@ -2,7 +2,10 @@
 tags:
 date: 2020-01-14T11:32:02-05:00
 title: "Paper over Keyboard"
-draft: true
+draft: false 
+tags:
+- Life Lessons
+- Programming 
 ---
 
 So, I completed a HackerRank problem this morning to work my brain back into

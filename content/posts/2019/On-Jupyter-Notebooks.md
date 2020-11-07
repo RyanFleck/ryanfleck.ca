@@ -1,6 +1,10 @@
 ---
 date: 2019-07-17T12:34:56-04:00
 title: "Jupyter Notebooks"
+tags:
+- Python 
+- Programming
+- Jupyter Notebooks
 ---
 
 If you are a Python programmer, you absolutely must use the fantastic
