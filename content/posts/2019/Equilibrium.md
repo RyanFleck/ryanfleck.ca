@@ -2,16 +2,16 @@
 date: 2019-07-08T22:11:40-04:00
 title: "Film Review: Equilibrium"
 tags:
-- Life-Lessons
-- Film-Review 
+  - Life-Lessons
+  - Film-Review
 ---
 
 As anybody who has ever spoken to me will know, I hold the writing of authors
 Aldous Huxley and George Orwell in very high regard. Equilibrium, while it
 didn't perform well in the Box Office, was thoroughly enjoyable and did a
 fantastic job of mixing together elements from two of the greatest dystopian
-novels ever written: Brave New World, and 1984. *Additionally,* a friend pointed
-out it also has *firemen* from Ray Bradbury's *Fahrenheit 451*, another great
+novels ever written: Brave New World, and 1984. _Additionally,_ a friend pointed
+out it also has _firemen_ from Ray Bradbury's _Fahrenheit 451_, another great
 dystopian novel.
 
 The film touched me personally, as it is heavily centered around the themes of
@@ -23,16 +23,16 @@ At the end of the review, I will draw parallels to our modern world.
 **Spoiler alert.** I will be discussing the themes of this film in-depth and
 sparing no plot details past this point.
 
-# The State of Libra 
+# The State of Libra
 
 The protagonist of the film is John Preston, who works as a Cleric for the
 city-state of Libra. Clerics are elite operators responsible for enforcing the
-rules and regulations of the regime, utilizing the martial art *Gunkata*...
+rules and regulations of the regime, utilizing the martial art _Gunkata_...
 Think the matrix.
 
 John Preston's society was formed from the ashes of the third world war, a
 nuclear holocaust. The new society, designed to prevent another global conflict,
-is built upon the chemical repression of emotions through the drug *Prozium.* It
+is built upon the chemical repression of emotions through the drug _Prozium._ It
 is thought that, by sacrificing the chaos of emotion, war, murder and violence
 will cease to exist. For a sizable portion of the world, this becomes reality;
 citizens of Libra take timed doses of Prozium throughout the working week. As
@@ -42,7 +42,7 @@ everybody around them, perfect citizens, all working in a similar way as to not
 invoke jealousy. For the rest of the population, this is not the case.
 
 Most art, literature, entertainment and is banned, as they can invoke emotions,
-turning a user into a *thought-crimin...*, er, *sense-offender*. Sense-offenders
+turning a user into a _thought-crimin..._, er, _sense-offender_. Sense-offenders
 are considered as, at best, enemies of the state, and at worst, terrorists.
 
 It is John Preston's duty to find and punish these sense offenders.
@@ -66,7 +66,7 @@ puppies,) draws suspicion from his new partner. The Council have suspicions that
 a Cleric is feeling.
 
 Eventually this leads John to become a member of an underground resistance who
-is plotting to kill *Father,* a Big-Brother-like figure who gives orders and
+is plotting to kill _Father,_ a Big-Brother-like figure who gives orders and
 propaganda to society. An assasination plot is formed, but John Preston is
 caught hours before as he begins weeping over the incineration of a woman whose
 life he saved.
@@ -86,7 +86,7 @@ all the displays in the city.
 At the same moment, the underground destroys the Prozium distribution
 facilities, and a riot begins. The Librian government has fallen.
 
-# Why Equilibrium Resonated With Me 
+# Why Equilibrium Resonated With Me
 
 For a time, boiling alive in a chaotic sea of confused anguish, I thought the
 best way forward was simply to shut off everything human. If I could turn off
@@ -99,7 +99,7 @@ past these ideas, arriving at a better place, recognizing that what ties us to
 this world and those around us is exactly the set of feelings I wanted to
 repress.
 
-*Equilibrium* demonstrates, through similar observations and character
+_Equilibrium_ demonstrates, through similar observations and character
 transformations, the meaninglessness of a life without feeling.
 
 # A Warning from Science Fiction
@@ -115,31 +115,31 @@ values, and tribal interests.
 
 [^b]: Matthew 6:24
 
-*Equilibrium* solves the problem of *global* differences by sedating the entire
+_Equilibrium_ solves the problem of _global_ differences by sedating the entire
 population and repressing human emotions, ensuring everyone feels that they
-belong to the same *monoculture*. In effect, this obliterates everything unique
+belong to the same _monoculture_. In effect, this obliterates everything unique
 about each person's culture, reducing each member of the society to an atom,
 ensuring they have no commonality with any other man, for any reason apart from
 belonging to a group controlled by the state.
 
-In effect, *Libra* ensures it has control by chemically enforcing an unnatural
-*monoculture*, tribalizing the society down to an atomic level.  Parallels
-can be seen in the new religion of *Intersectionality*: the fewer people who
+In effect, _Libra_ ensures it has control by chemically enforcing an unnatural
+_monoculture_, tribalizing the society down to an atomic level. Parallels
+can be seen in the new religion of _Intersectionality_: the fewer people who
 identify with one another, the easier they are to subvert and control. Divided,
 we fall.
 
-*Divided, we fall...*
+_Divided, we fall..._
 
-*Then again,* it is equally easy to control a group of people who identify
+_Then again,_ it is equally easy to control a group of people who identify
 strongly with one another.
 
 Hm... We'll have to think more about this.
 
-...Isn't Facebook's new cryptocurrency called *Libra?*
+...Isn't Facebook's new cryptocurrency called _Libra?_
 
 # Atmosphere and Cinematography
 
-While low-budget, the atmosphere of *Libra* is immersive, clean, and utterly
+While low-budget, the atmosphere of _Libra_ is immersive, clean, and utterly
 real. The set, costumes, color grading, all convey a sort of perfect emptiness.
 The citizens go about their lives like trains on tracks, like a cat trapped in a
 box on antibiotics, unthinking, just moving forward.
@@ -151,5 +151,3 @@ Nothing that I saw broke my immersion.
 - You should probably watch this film.
 - You should definitely watch this film if you're into dystopian science fiction.
 - Is it better to face the chaos of human emotion, or cease to live altogether?
-
-

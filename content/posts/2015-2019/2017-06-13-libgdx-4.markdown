@@ -1,0 +1,54 @@
+---
+title: "LibGDX Experiment: Battle Commander Part 04"
+date: 2017-06-13 18:01:01 -0400
+draft: true
+---
+
+The latest alpha for BCOM, 0.2.1, was released mere moments ago. I worked pretty hard on this.
+
+Useful links:
+
+- The release in question: **[BattleCommander.jar](https://github.com/RyanFleck/BattleCommander/releases/tag/v0.2.1)**
+- Latest release: **[BattleCommander.jar](https://github.com/RyanFleck/BattleCommander/releases)**
+- Your criticism: **[Gripe.html](https://github.com/RyanFleck/BattleCommander/issues/1)**
+
+Immediately below is a screenshot of the running game, discluding the ballin' new _generated_ cursor that replaces the system cursor. You'll need to play the game to see that.
+
+![Desktop screenshot of BCOM.](/legacy/Alpha021.png)
+
+**Q:** "But Ryan, it looks the same! Apart from these overlays, it doesn't look like you changed a thing!"
+
+**A:** "Yes, I re-used my art and assets. But the game is a totally different beast under the hood."
+
+**So, here's the lowdown on the major changes:**
+
+- **Soldier** class is now a fully-fledged actor, and will soon be able to spawn his or her very own particles and effects.
+- **BCOM** class is now a clean, lean machine (apart from UI rendering, but I'll fix that soon,) and has been entirely written to accommodate a brand new stage, _Unit_ actors, and multiplexed input from the stage, itself and the UI (soon).
+- **Documentation** within the code has taken leaps and bounds forward, and everything now has a simple layout and explanation where necessary. I'm very proud of this, as previously, I simply kept track of everything in my head. _This is quite possibly the absolute worst programming habit you can possibly have._
+- **Graphics** will improve as I begin to utilize the power of the _Actor_ class that _Soldier_ extends. Doubtlessly, there are going to be several major overhauls of the map system during the development of this game. I'm also planning on adding floating information above the units and some terrain, to give the user insight into the state of his battlefield.
+
+Unfortunately, I've got work for the next three days, so there will be little to no development occurring. The next time I'm going to be able to program, conceptualize, and document is on June 17th. Before then I need to make a major decision about the game regarding the movement and combat systems:
+
+### OPTION ONE:
+
+I stay true to my original vision and attempt to recreate the quiet intensity of the _Advance Wars_ franchise. This will mean implementing a grid-based movement and obstacle system, which has some admirable benefits. Since combat will be all random number generation and action-packed animations, I won't need to spend time implementing bullet systems, hit detection, bullet animations, fair aiming systems, movement over/around terrain, and the chaos of free movement.
+
+Computer science courses have taught me about one really cool thing: data structures. This option's AI will need to weigh the travel, health and attack distance to a target. This is actually relatively doable for a development team of one. (With input from the stands.)
+
+Overall, the game will be akin to a game of chess, rather than rugby, and players will need to squint inquisitively at the screen, weighing different strategies, before they make a move.
+
+### OPTION TWO:
+
+I like the idea of a spray of bullets crashing into terrain, sending pixel-y chunks of rock and debris about, soldiers panicking, the thrill of a real time strategy game! The art for this game would be very fun to make, until I got to the movement folder. (Yay, draw the same tank travelling in eight different directions!) This game style is very appealing because of the sheer joy that seeing tiny pixelated men fight brings us. And by us, I'm mostly referring to CS/CompEng students. If you've ever played _BROFORCE_ on a couch with friends, you too will know how a beautifully chaotic, artfully pixelated warzone can bring people together.
+
+The biggest drawback to this plan is AI - I'm simply not smart or experienced enough to make the kind of AI I envision for an RTS, even at this small scale. An AI that, after a few warmup games, will play _just hard enough_ that it has a slim victory, leaving the player eager to improve and, more importantly, angry at the AI's tiny pixel men. At best, my free-movement AI will be able to shuffle together into squads and, much like a horde of zombies, aimlessly drift about the map until they find an enemy. I'd need to find a pre-existing solution on github or a very smart person.
+
+Now that I think about it and read back through this post, there's no way I'll be able to pull this variant off unless I get some help. Maybe I'll branch the project, start on both, and decide when development on one picks up or piques my interest.
+
+_To wrap things up,_ developing this game has been a blast, even though I had to rewrite it to implement a single feature. Best decision I ever made.
+
+Input? Comments? Questions? Post all constructive criticism **[here](https://github.com/RyanFleck/BattleCommander/issues/1)**. If your comment took less than two seconds to think of, post it **[here](https://github.com/RyanFleck/BattleCommander/issues/1)**.
+
+Thanks for reading.
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

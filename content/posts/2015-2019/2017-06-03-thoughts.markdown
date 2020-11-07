@@ -1,0 +1,46 @@
+---
+title: "Jekyll Setup 02"
+date: 2017-06-03 23:55:20 -0400
+draft: true
+---
+
+This post is _mostly_ going to be markdown tests, along with some thoughts on my future career moves and how I'm going to deal with my persistent brain fog. I really want to see how headers and code work with different css colors and page fonts.
+
+I'll be using [this](https://en.support.wordpress.com/markdown-quick-reference/) markdown quick reference, along with other sites. There are included at the bottom of this post.[^1]
+
+So, this should look like code: 'this is code. print("test")'
+
+This is python in a block:
+
+```python
+print("Hello, Github.")
+```
+
+This is ruby in a block:
+
+```ruby
+puts "Hello, Github."
+```
+
+This is java in a block:
+
+```java
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, Github.");
+}}
+```
+
+# BIG TITLE
+
+###### little title
+
+A title
+:A name given to a body of work, which often descibes the content.
+
+This should expand as an abbreviation: [GNU]: Gnu's not Unix.
+
+[^1]: Stack overflow, lifehacker, the fsf and daringfireball's pages.
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

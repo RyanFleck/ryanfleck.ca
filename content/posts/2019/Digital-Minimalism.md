@@ -3,22 +3,22 @@ date: 2019-07-08T21:22:30-04:00
 title: "The Case for Digital Minimalism"
 subtitle: "Our senses are overburdened with a plethora of decisions to make; it is better to have fewer."
 tags:
-- Life-Lessons
+  - Life-Lessons
 ---
 
 **Exhausted.** At the end of our workdays, Gen Zs all end up drained and numb,
 even if we don't seem to actually accomplish anything. Older adults puzzle over
 why, exactly, we all appear to be dead and passionless.
 
-Certainly, part of my personal issue was my attatchment to *the new drug*,
+Certainly, part of my personal issue was my attatchment to _the new drug_,
 digital media. I'm certain my personal issues are also present in most members
 of my generation. Primar
 
 It takes a fierce grip, tempting the mind with an open firehose of facts and
-events, keeping us hooked on *knowing*. Like an alcoholic or heroin addict,
-becoming absorbed in the *now* of the world takes you out of your personal
-*now*. It estranges us from our roommates, families, communities, religions, and
-*the good*.
+events, keeping us hooked on _knowing_. Like an alcoholic or heroin addict,
+becoming absorbed in the _now_ of the world takes you out of your personal
+_now_. It estranges us from our roommates, families, communities, religions, and
+_the good_.
 
 The new drug is endless, shallow infotainment.
 
@@ -26,17 +26,17 @@ The new drug is endless, shallow infotainment.
 
 I've done my best to design my life, and this new site, to address this issue.
 
-While I *could* go through the effort to implement sharing buttons, google
+While I _could_ go through the effort to implement sharing buttons, google
 analytics, forms, facebook chatbot integrations, complex menu systems, and the
 like, I've done that before. For a time, inserting and tweaking these things are
 fun. After a long time, though, they become a chore. You feel the need to stay
 up to date and implement the latest and greatest every time it rolls around.
 
 I've been planning to do a minimal re-write for a while, and here it is! No
-sharing buttons, menus, tracking, Facebook or Google, and above all, *no
-JavaScript!*
+sharing buttons, menus, tracking, Facebook or Google, and above all, _no
+JavaScript!_
 
-Don't get me wrong, I *love* JavaScript. At a point, though, shoveling
+Don't get me wrong, I _love_ JavaScript. At a point, though, shoveling
 JavaScript at a user becomes an ethical issue for any programmer who cares about
 those in the developing world, operating on low-perf devices.
 
@@ -44,7 +44,7 @@ those in the developing world, operating on low-perf devices.
 
 Our senses are overburdened with digital events to process; I feel it is better
 to have fewer, and so, I have designed my site to address the issue. Not
-intentionally, really; I just wrote a paginator in *Hugo* and liked it so much I
+intentionally, really; I just wrote a paginator in _Hugo_ and liked it so much I
 decided that my entire site would just be one paginator.
 
 Lately I've been feeling that, like many others in my discipline, I've caught a

@@ -3,30 +3,28 @@ date: 2019-10-13T10:30:49-04:00
 title: "Notes on VHDL"
 toc: true
 tags:
-- Programming
-- VHDL 
+  - Programming
+  - VHDL
 ---
 
 # Preamble
 
-*VHDL* stands for *Very High Speed Integrated Circuit Hardware Design Language*.
+_VHDL_ stands for _Very High Speed Integrated Circuit Hardware Design Language_.
 No, I'm not kidding. Despite being a mouthful, the language is used
 by engineers to prototype and describe industrial digital logic.
 
-This document started as a copy of living notes for the *CEG3155* course I was 
-taking, *Digital Systems II*. It lives on as I implement MIPS processors in
-*CEG3156*, *Computer System Design*.
+This document started as a copy of living notes for the _CEG3155_ course I was
+taking, _Digital Systems II_. It lives on as I implement MIPS processors in
+_CEG3156_, _Computer System Design_.
 
 The two primary types of VHDL logic the course deals with (and I deal with
-within this document) are called *concurrent* and *sequential*, where
-*concurrent* logic obviously runs *concurrently*, and *sequential* logic runs
-*sequentially* within process statements.
+within this document) are called _concurrent_ and _sequential_, where
+_concurrent_ logic obviously runs _concurrently_, and _sequential_ logic runs
+_sequentially_ within process statements.
 
 <br />
 
 ![Board](/pics/altera/board.jpg)
-
-
 
 # A Basic VHDL Program
 
@@ -63,6 +61,7 @@ like `std_logic`.
 library ieee;
 use ieee.std_logic_1164.all;
 ```
+
 After importing libraries, we describe our entity by providing the inputs and
 outputs. Here, `a`, `b`, and `en` are of type `std_logic`, a simple binary
 operator that can hold `0` or `1`. Our output is a `std_logic_vector`, which is
@@ -79,7 +78,7 @@ end decoder_enable;
 ```
 
 After describing our entity, we describe the internals of the entity with an
-*architecture* block. The output `d` is written to with the arrow operator `<=`,
+_architecture_ block. The output `d` is written to with the arrow operator `<=`,
 and using `when` and `else` statements. The first condition that is true will be
 written to the output `d`.
 
@@ -94,7 +93,7 @@ begin
 end structural;
 ```
 
-This logic is technically *concurrent*. Each assignment (`<=`) will run
+This logic is technically _concurrent_. Each assignment (`<=`) will run
 simultaneously when the signal reaches the component. Note that only a single entity can be defined per VHDL file.
 
 # Internal Signals
@@ -116,8 +115,8 @@ end arch;
 # Inclusion of Components
 
 Large digital systems can be implemented by combining large amounts of
-components defined in *other VHDL files*. We accomplish this with *internal
-signals* and *component statements*.
+components defined in _other VHDL files_. We accomplish this with _internal
+signals_ and _component statements_.
 
 For instance, a trivial NAND component with one input and output can be defined
 in its own VHDL file, like so:
@@ -156,8 +155,8 @@ architecture sample_arch of big_component is
 
   begin
     L0: NAND(
-        x => SW(0), 
-        y => SW(1), 
+        x => SW(0),
+        y => SW(1),
         z => H
     );
 
@@ -233,15 +232,13 @@ begin
     en => '1',
     d => LEDG(3 downto 0)
   );
-  
+
 end structural;
 ```
 
 Now we can use physical switches to test our decoder!
 
-
 ![Seven Segment](/pics/altera/decoder.gif)
-
 
 In addition to this, add the following component as `encoder_7seg.vhd` to your
 project to make use of the seven-segment displays:
@@ -285,7 +282,6 @@ Looking back at the code, adding this component to our `top` file, and
 connecting each HEX component to an input and HEX output yields the following
 file:
 
-
 ```vhdl
 library ieee;
 use ieee.std_logic_1164.all;
@@ -326,17 +322,17 @@ begin
     en => '1',
     d => LEDG(3 downto 0)
   );
-  
+
   HEXd3 : encoder_7seg port map(
     word_in => SW(9 downto 6),
     hex_out => HEX3
   );
-  
+
   HEXd2 : encoder_7seg port map(
     word_in => SW(5 downto 2),
     hex_out => HEX2
   );
-  
+
   HEXd1 : encoder_7seg port map(
     word_in => x"0",
     hex_out => HEX1
@@ -356,17 +352,13 @@ Our board can now:
 2. Display switches 9-6 and 5-2 as HEX characters on the display.
 3. Display keys 3-0 as a HEX character on HEX0.
 
-
 ![Seven Segment](/pics/altera/seven_seg.gif)
-
 
 Now we can continue into advanced topics with good general knowledge of how to
 create and run a simple VHDL program on a physical board. A complete copy of the
 source code, including `qpf` project file and pin assignment file, can be found
 on GitHub at
 [Projects/ vhdl/ cyclone_II_proof_of_concept](https://github.com/RyanFleck/Projects/tree/master/vhdl/cyclone_II_proof_of_concept)
-
-
 
 # Concurrent/Structural VHDL
 
@@ -394,15 +386,10 @@ end structural;
 
 ![Component Simulation](/pics/vhdl/register_1.png)
 
-For an architecture to be considered as structural, *process* statements cannot be used within the body of the primary architecture.
+For an architecture to be considered as structural, _process_ statements cannot be used within the body of the primary architecture.
 
 # Sequential/Behavioural VHDL
 
 **Process** statements can be used to define logic with a familiar, imperative style. It is fine for creating test benches, but should not be used for modeling components which will be made into hardware.
 
 # Finite State Machines
-
-
-
-
-

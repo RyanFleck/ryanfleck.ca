@@ -5,7 +5,7 @@ toc: true
 draft: true
 ---
 
-# Introduction 
+# Introduction
 
 With everybody stuck indoors with plenty of time to think, the internet is
 abuzz with conversation and speculation. The topic that the mainstream can't
@@ -37,27 +37,27 @@ real science. Afterwards, I'll break down the inconsistencies.
 
 ### Military Use of Millimeter-Wave Bombardments
 
-Militaries are currently in a race to develop *directed energy weapons* or
-*DEWs*, to counteract a wide variety of situations, from crowd dispersal
-(*Active Denial Systems*[^ads] like *V-MADS*[^vmads],) to particle beams, plasma
-weapons like *MARAUDER*, and laser weapons.
+Militaries are currently in a race to develop _directed energy weapons_ or
+_DEWs_, to counteract a wide variety of situations, from crowd dispersal
+(_Active Denial Systems_[^ads] like _V-MADS_[^vmads],) to particle beams, plasma
+weapons like _MARAUDER_, and laser weapons.
 
-*Raytheon* and the *U.S. Air Force* are currently developing an *ADS*,
+_Raytheon_ and the _U.S. Air Force_ are currently developing an _ADS_,
 essentially a microwave beam designed to superheat the skin of humans, momentarily
 causing excruciating pain. The system can also destroy unshielded electronics.
 
-*ADS* functions by firing a beam of **95 GHz** electromagnetic waves at a
+_ADS_ functions by firing a beam of **95 GHz** electromagnetic waves at a
 target. At this frequency, the EMF wavelength is **3.2 mm**, and will be
 absorbed into the first **0.4 mm** of human tissue, which allows the weapon to
 avoid nerve endings and blood vessels, unless used against babies[^ads-baby].
 
 Compared to microwave ovens, which use a **2.45 GHz** frequency and penetrate
-**17 mm** into human tissue, the *ADS* is far safer to direct at a human because
+**17 mm** into human tissue, the _ADS_ is far safer to direct at a human because
 it will only impact the dermis.
 
-*Raytheon* released a smaller version of the ADS, which has a similar beam with
-a power dissipation of 30 kW. The effects are best described by the *US-DoD
-Non-Letal Weapons Program*[^dod-nlw]:
+_Raytheon_ released a smaller version of the ADS, which has a similar beam with
+a power dissipation of 30 kW. The effects are best described by the _US-DoD
+Non-Letal Weapons Program_[^dod-nlw]:
 
 > Adverse reactions are extremely rare, temporary and consist of skin blisters.
 > Exposure to the Active Denial System can also result in a temporary reddening
@@ -70,8 +70,8 @@ Non-Letal Weapons Program*[^dod-nlw]:
 
 ### Cellular Delivery of Matter via Electroporation
 
-Below is the abstract from the article *Transfection by Electroporation*[^tbe] by
-Huntington Potter, Ph.D.  and Richard Heller, Ph.D.:
+Below is the abstract from the article _Transfection by Electroporation_[^tbe] by
+Huntington Potter, Ph.D. and Richard Heller, Ph.D.:
 
 [^tbe]: **Transfection by Electroporation** <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2975437/>
 
@@ -83,18 +83,15 @@ Huntington Potter, Ph.D.  and Richard Heller, Ph.D.:
 > knockout, knockin, and transgenic mice, describes protocols for using
 > electroporation in vivo to perform gene therapy for cancer therapy and DNA
 > vaccination, and outlines modifications for preparation and transfection of
-> plant protoplasts. [^tbe] 
+> plant protoplasts. [^tbe]
 
 In essence, a voltage is applied across a cell and, while the cell wall is
 disrupted, macromolecules can freely penetrate the cell.
 
-
-
-
 ### Differing Coronavirus Side Effects
 
 - Coronavirus symptoms
-- Similar to 
+- Similar to
 
 ### Ongoing Global 5G Roll-Out
 
@@ -110,9 +107,9 @@ disrupted, macromolecules can freely penetrate the cell.
 ### Microsoft and ID2020
 
 > The ID2020 Alliance is a global public-private partnership setting
-the future course of digital identity, ensuring that digital identity is
-responsibly implemented and widely accessible. - [ID2020 At a
-Glance](https://id2020.org/uploads/files/ID2020-Alliance-Overview.pdf)
+> the future course of digital identity, ensuring that digital identity is
+> responsibly implemented and widely accessible. - [ID2020 At a
+> Glance](https://id2020.org/uploads/files/ID2020-Alliance-Overview.pdf)
 
 ### Electromagnetic Corona
 
@@ -125,15 +122,13 @@ Glance](https://id2020.org/uploads/files/ID2020-Alliance-Overview.pdf)
 
 ### Wuhan's Mandatory Vaccination Program
 
-### We Cannot Prove Viruses are Real 
+### We Cannot Prove Viruses are Real
 
 - Dr. Stefan Lanka
 
-*Greppendemia und Tamiflu*[^history-infection-theory]
+_Greppendemia und Tamiflu_[^history-infection-theory]
 
 ### Masonic Symbolism
-
-
 
 ## Connecting the Dots
 
@@ -142,7 +137,7 @@ Glance](https://id2020.org/uploads/files/ID2020-Alliance-Overview.pdf)
 The virus is fake, and the side effects are due to 5G cellular radiation enabling
 human cellular Electroporation, inhibiting oxygen uptake and causing the 'viral'
 symptoms by allowing viral matter from vaccines (and polluted water supplies)
-into human cells.  Ultimately, the goal is to communize the globe through the
+into human cells. Ultimately, the goal is to communize the globe through the
 destruction of private enterprise, while also forcing universal digital
 identification[^id2020] and moving the globe closer to a centrally-controlled
 Masonic Utopia.
@@ -155,23 +150,13 @@ Masonic Utopia.
 
 # References
 
-[^nwo]: **New World Order**, a vague catch-all for an interconnected system of global governments that controls the world's industry, economies, and people. Also see: *UN*, *EU*, *WHO*. 
-
-[^history-infection-theory]: English Transcript for *“Grippepandemie und Tamiflu”*, The **History of Infection Theory**. [link](https://abruptearthchanges.com/2017/11/17/dr-stefan-lanka-the-history-of-the-infection-theory/).
-
-[^un-21]: **UN Agenda 21** for Sustainable Development <https://en.wikipedia.org/wiki/Agenda_21> 
-
+[^nwo]: **New World Order**, a vague catch-all for an interconnected system of global governments that controls the world's industry, economies, and people. Also see: _UN_, _EU_, _WHO_.
+[^history-infection-theory]: English Transcript for _“Grippepandemie und Tamiflu”_, The **History of Infection Theory**. [link](https://abruptearthchanges.com/2017/11/17/dr-stefan-lanka-the-history-of-the-infection-theory/).
+[^un-21]: **UN Agenda 21** for Sustainable Development <https://en.wikipedia.org/wiki/Agenda_21>
 [^un-30]: **Transforming our world: the 2030 Agenda** for Sustainable Development <https://sustainabledevelopment.un.org/post2015/transformingourworld>
-
-[^id2020]: **ID2020** <https://id2020.org/alliance> 
-
+[^id2020]: **ID2020** <https://id2020.org/alliance>
 [^psyop]: **PSYOP**: Psychological Operations <https://en.wikipedia.org/wiki/Psychological_operations_(United_States)>
-
 [^ads]: **Active Denial System** <https://en.wikipedia.org/wiki/Active_Denial_System>
-
 [^vmads]: **Vehicle-Mounted Active Denial System** <http://www.redicecreations.com/specialreports/v-mads.html>
-
 [^ads-baby]: **ADS Controversy** <https://en.wikipedia.org/wiki/Active_Denial_System#Controversy>
-
 [^dod-nlw]: **Active Denial System FAQ** <https://jnlwp.defense.gov/About/Frequently-Asked-Questions/Active-Denial-System-FAQs/>
-

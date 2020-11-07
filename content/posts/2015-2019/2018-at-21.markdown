@@ -1,0 +1,346 @@
+---
+title: "2018 at 21"
+date: 2019-02-16 00:10:22
+draft: true
+---
+
+Another year has come and gone, certainly my most important year to date. I spent the entire year acclimatizing to private industry, forming relationships at MNP LLP and observing a technology consultancy from the inside. I made plenty of mistakes, learned from them as best as I could, and summarized the most important lessons in this post.
+
+Hopefully, by organizing my thoughts 'on paper', I'll be able to reduce my experiences to a few robust bullet points, enabling me to give more concise explanations and advice during conversations.
+
+This post is divided into X parts. The most important parts are included first. For additional context, please refer to the (clearly marked) [context](#context) section.
+
+<br />
+
+<h3>Table of Contents</h3>
+1. Seed entry for TOC
+{:toc}
+
+<br />
+
+<br />
+
+<br />
+
+> We've come a long way since we last shook hands  
+> Still got a long way to go  
+> We couldn't see the flowers since we last shook hands  
+> Couldn't see the flowers on account of the snow  
+> What did you do with your burden and your cross  
+> Did you carry it yourself or did you crack  
+> You and I know that a burden and a cross  
+> Can only be carried on one man's back  
+> All my life I wanted to roam  
+> To go to the ends of the earth  
+> But the earth really ends where you started to roam  
+> You and I know what a circle is worth  
+> Let's drink a cup to what went down  
+> There's not much left to reveal  
+> I think I changed my mind after what went down  
+> As to who in the end got the better deal  
+> Give me your hand for the parting touch  
+> Fare thee well and thanks a lot  
+> I know that we promised we would keep in touch  
+> But you and I know that we both forgot  
+> We've come a long way since we last shook hands  
+> Still got a long way to go  
+> Couldn't see the flowers when we last shook hands  
+> Couldn't see the flowers on account of the snow
+
+<br />
+**Come a Long Way**  
+Written by [Kate McGarrigle.](https://en.wikipedia.org/wiki/Kate_McGarrigle)  
+Notably performed by [Loudon Wainwright III on *Attempted Moustache*.](https://www.youtube.com/watch?v=PSJ6wlTzBB4)
+
+<br />
+
+<br />
+
+<br />
+
+# Lessons
+
+## Business Relationships
+
+My first and most important lesson: In business, relationships are everything. Building and maintaining relationships with clients, partners, and coworkers is the key to success in industry. As far as I can see, the 'successful business asshole' is an illusion. Those who build and maintain trust, adhering to the [virtues of business,](#virtue-in-business), will continue to see success with their current partners, and grow their network through referrals and social events. To complete shoddy work, to fail to meet deadlines without explanation, to let down your partners in business, will only lead to the failure of your team or company.
+
+Relationships with your coworkers are just as important, if not more important. Knowing the strengths and weaknesses of your peers, and ensuring you have a fantastic working relationship with each of them, is critical to your personal success.
+
+Personally, I struggled learning and applying this lesson. My story goes like this:
+
+When first joining the Sitecore team at MNP, I recieved a lot of flak from a member of the team. At the time, it felt like she was out to get me. It took me months to realize that this coworker was honest, a straight shooter, and I really was making mistakes, but was too ignorant and prideful to recognize them. Over the duration of the work term, and despite how difficult the relationship seemed at first, I came to appreciate this member of the team, and am now very thankful for those initial interactions.
+
+## Speak with Intention
+
+_Um, er, hm?_
+
+## Eye on the Ball
+
+There are two very different types of software development. When developing a piece of software to sell, to businesses or consumers, the ultimate goal is to create a very reliable and well-crafted solution. I have only spoken with people in this role, but I would imagine there is a heavy emphasis on code standards, unit testing and producing a bug-free experience for the end user, whether the target is a business-person, user or developer. When in a consultancy, the goal is to fulfill client requirements while optimizing for development time. This means utilizing as many tools, libraries and timesavers as possible, while still ensuring that every step is version-controlled , QA'ed and continuously tested. I struggled with this, perhaps needlessly.
+
+While the quality and depth of the standards depended largely on the development team and age/scope of the project, as I began development work I found myself trying to (when I wasn't struggling to complete the minimum functionality,) return and improve working solutions. This was discouraged, as the ultimate goal in a consulting environment is to deliver a solution that meets requirements.
+
+_Why would a manager spend 40h of their developer time on something that met requirements at 10h of development?_
+
+If the goal is to deliver the client solution with minimum development and return a greater profit margin, there is no reason to slow. As an added benefit, software that meets requirements but has not been implemented in a safe and extensible way will ensure that the client will return with bugs, spending more, and extending the system will take more time, ensuring the client will spend more.
+
+_However_, as discussed in [Business Relationships](#business-relationships), simply meeting requirements is terrible for optics. During my time at MNP, the management handled this differently based on the project. Fortunately, my managers were not androids, and understood that giving more time to complete features _well_ ensured the client would be happier with the solution.
+
+Another tricky situation that managers can encounter is short development timelines. It is very difficult to optimize here; from personal experience, pushing developers to quickly procure the bare minimum led to piles of bugs, resulting in an abundance of _technical debt_ that had to be addressed immediately in order to continue developent.
+
+The primary takeaway: the critical path of software development is difficult to identify, and it is important to balance personal quality standards with the requirements and timeline of the current project. It is essential that open communication is maintained with the project manager to ensure development does not fall into any hazardous zones.
+
+## Virtue in Business
+
+## The Meaning of Life
+
+<!--NOTES-->
+
+# Notes
+
+## A Self-Portrait from January
+
+At the beginning of January, I was still [riddled with guilt and having a pretty hard time.](2017-12-23-hardsemester.markdown)
+
+- Comfortable with new people
+- Met april and new people
+- Interacted well with everyone
+- Had struggles because of mom
+- Still torn trying to please mom/keep happy/not wanting to be intrusive
+- Stress with constant tugging to go do things
+-
+
+## Working Relationships
+
+## Personal Relationships
+
+## The Meaning of Life
+
+## A Self-Portrait from December
+
+If there is one thing I've gained over the year, it's a bit of _gravity_. I'm less apt to be blown away or pulled in a direction.
+
+# Analysis
+
+# Conclusions
+
+_What do you want to do with your life?_ In my lesser youth, I answered this question with confidence; an enjoyable career, a home, a wife, children. The canonical question, spoken by adults to children, has taken on a far greater meaning as of late, as I begin to connect with those around me and partake in our societal games.
+
+Get the core ideas down first. This can be an essay.
+
+This past year changed me for the better.
+
+What insights can I draw from:
+
+- My life at work.
+
+  - Consulting bootcamp in Toronto.
+  - Work on the Sitecore team.
+    - Hospital Client.
+    - Internal projects.
+  - Work on the TeamSite team.
+    - Transition to Bank Client.
+    - Airline Client.
+
+- My life before and after work.
+
+  - Mornings of calculus.
+  - Constantly changing direction.
+  - Xalgorithms and community involvement.
+  - 5 month relationship with Jayde.
+
+- What is meaningful to me?
+
+  - Technology is a fantastic tool for connection.
+  - I am competent at using technology to bring ideas to life.
+  - I find implementing accessible and intuitive tech meaningful.
+  - Perhaps this is what I want to do with my life.
+
+- How have I improved over the past year?
+  - Programming has improved dramatically.
+  - Communication skills have improved dramatically.
+  - Far more resourceful, socially intelligent, connected.
+  - What lessons can be drawn from my experience?
+
+## People
+
+- Who am I thankful for?
+  - Jason.
+    - Kind of a Father in Ottawa to me. Spoke to me like a guy. Wanted me to
+      improve. Lots of neat life stories about working abroad, then coming
+      back to Canada.
+  - Vicki.
+    - Definitely the most difficult to get along with, my biggest hurdle at
+      work, but I'm certain this is just because she didn't tolerate some
+      of my more childish/bizzare behavior. Really helped to shape my
+      communication and
+  - Tamara.
+    - Drives me home, forever greatful for this. Still need to learn more
+      about her. Mostly thankful for the rides home and good company.
+  - Patrick.
+    - Talks a lot. Did an entire side-project with this guy, made a small tech
+      demo to learn Socket.IO/Express/PostGreSQL. Lots of neat life stories,
+      about how the industry has changed over time, this guy has been all over.
+    - Driven by family.
+  - Joseph.
+    - Appreciates my continued involvement in the Xalgorithms project, and I
+      appreciate being involved in such a risky, potentially global system.
+  - Richard.
+    - Made a surprise appearance at my consulting bootcamp.
+    - My connection for MNP. This guy kickstarted my journey.
+  - Lisa
+    - In the back of my head, always referred to as **L.P.**
+    - Failed my last chat with her. Seems just as afraid as I am.
+  - Soraya
+    - Can't help but step on Soraya's toes constantly, accidentally rude.
+    - The sweetest lady.
+  - Denise
+    - Probably one of the most important people at the company; remembers people's names, always friendly.
+
+> The crucible is for silver, and the furnace is for gold, and a man is tested by his praise.
+
+What is _Fun?_ What do I want in life?
+
+What insights can I draw from all this material to help others?
+
+**Twelve months.** Twelve months I've spent with two teams, four projects, heaps of technology, friends, mentors, deadlines, crunch time, rewards, comradery and clients. The kid who shakily agreed to a tech consulting internship a year ago might not recognize me today; the chip buffed out of my shoulder, gaze steady, speech thoughtful and clear. I've been given direction and seen progress. I have my fantastic colleagues and managers to thank for this.
+
+<br />
+<hr />
+
+Hello MNP Kanata,
+
+During the past twelve months, I have spoken attentively with each of you, and been rewarded with a heap of valuable lessons.
+Your guidance has enabled me to take a confident first step into this competitive and rewarding industry.
+I enter my next two years of University a far more resourceful, socially intelligent, competent kid.
+
+I can’t thank you all enough for this.
+
+R
+
+Please keep in touch:
+
+Email: ryan.fleck@protonmail.com  
+Linkedin: https://www.linkedin.com/in/ryan-c-fleck  
+Github: RyanFleck – https://ryanfleck.github.io
+
+<hr />
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+# Additional Context
+
+## Cast
+
+The people who I have to thank for everything. Mentors, colleagues, friends:
+
+**MNP**
+
+- **Lisa:** My first manager, from January until July. Very patient.
+- **Vicki:** Manager. Process-based, ensures requirements and expectations are crystal clear.
+- **Jason:** Developer. Grizzled veteran of photography and design. Has cool car.
+- **Dan:** Developer. Humble, quiet, excellent developer.
+- **Patrick:** Designer. Frontend web dev, lived and worked all over, lots of good stories.
+- **Robert:** QA.
+- **Tamara:** QA. Drove me home a bunch.
+- **Sanket:** Developer, hired at the same time as me.
+- **Chris:** Manager. My Mentor at MNP.
+- **Richard:** Exec. Referred me to Chris for an interview, the origin of my MNP internship offer.
+- **Gwynne:** Manager.
+- **Rick:** Manager.
+- **Peter:** Manager/Developer.
+- **Dulce:** HR.
+- **Denise:** Secretary to the Office?
+- **Soraya:** Proposal Manager. Splendid lady.
+
+**Xalgorithms**
+
+- **Joseph:** Director of the Xalgorithms Alliance. Kickstarted my free software contributions.
+- **Don:** Xalgorithms programming lead. No-BS, experienced software architect.
+
+## Timeline
+
+1. **January -> July** - QA, CMS Development for a Canadian hospital specializing in mental health.
+1. **April** - Attended one of Joseph's talks with RMS, began collaborating with the Xalgorithms people.
+1. **July -> August** - According to my journal, I only struggled with a preprocessor written in PHP?
+1. **September -> October** - QA for an extension to the CMS for a Canadian bank.
+1. **October -> November** - Development to extend the CMS for a Canadian airline.
+1. **November** - Had the pleasure of attending MNP's Consulting Bootcamp in Toronto.
+1. **November -> December** - Airline CMS + Work on AEM prototype for client bid.
+
+### January
+
+<!--1. **January -> July** - QA, CMS Development for a Canadian hospital specializing in mental health.-->
+<!--JAN 01-->
+
+My first few weeks at MNP were an absoulute mess. I had come down with a bad case of something like strep throat, and I was left lying low my second and third week of work. I recall spending plenty of time half-awake, half-dead, strugging to process the online Sitecore documentation that was watered-down and less than useful. It wasn't until February that I really began working; I had many hours of ramp-up, health & safety, and weclome material to chew through while ill.
+
+I posted a fairly thourough recount of my first four months at the company [here](2018-04-28-WorkTermOne.markdown)
+
+<img src="/legacy/MNP.png" alt="Drawing" style="width: 300px; border-radius:0;"/>|<img src="/legacy/AHA.png" alt="Drawing" style="width: 400px; border-radius:0;"/>
+
+### February to April
+
+<!--FEB 02-->
+
+<!--MAR 03-->
+
+<!--APR 04-->
+<!--1. **April** - Attended one of Joseph's talks with RMS, began collaborating with the Xalgorithms people.-->
+
+At the end of April I attended a talk, jointly hosted by Joseph Potvin and Richard Stallman, discussing how libre software could be used to solve the Phoenix pay problem.
+
+<!--MAY 05-->
+
+<!--JUN 06-->
+
+In June, I began to take journalling far more seriously. I took some time to set up some scripts that would, first, add an entry into my private journal with some simple metadata. Another script was added that would open a text editor to the line I would begin writing on, right below a fresh timestamp. This system continued to evolve over the course of the year. Perhaps not so surprisingly, my recollection of events is far better past this point.
+
+### May to June
+
+<!--1. **July -> August** - According to my journal, I only struggled with a preprocessor written in PHP?-->
+
+<!--JUL 07-->
+
+<!--AUG 08-->
+
+My diet took a turn in August as, in quick succession, I had Octopus, Bacon, then Steak.
+
+### September & October
+
+<!--1. **September -> October** - QA for an extension to the CMS for a Canadian bank.-->
+
+<!--SEP 09-->
+
+<!--OCT 10-->
+<!--1. **October -> November** - Development to extend the CMS for a Canadian airline.-->
+
+Starting on the fifth, and continuing through the rest of the month, Patrick and I worked on a NodeJS, SocketIO and Express app as a proof-of-concept for prototyping small interactive systems. <http://trivia.ahundredanswers.com/> may or may not still be up and active. The open-source parts of this project, that I still need to migrate some conceptual improvements back to, are available at <https://github.com/RyanFleck/SocketIOTriviaApp>
+
+### November & December
+
+<!--1. **November -> December** - Airline CMS + Work on AEM prototype for client bid.-->
+
+<!--NOV 11-->
+<!--1. **November** - Had the pleasure of attending MNP's Consulting Bootcamp in Toronto.-->
+
+<!--DEC 12-->
+
+Near the beginning of November, I was lucky enough (or maybe it was hard work paying off?) to be invited to the MNP bootcamp. This experience was pretty mind-blowing for me. All expenses paid, a train to Toronto, three nights in a hotel, three days of useful courses... it was pretty fantastic.
+
+Detail courses here.
+
+AEM
+
+Last Day
+
+Exit Interviews
+
+# 2019 Inbound
+
+I ended up finishing this post during the reading week of Winter Semester 2019. Currently, I'm taking four courses, varying in difficulty. Come April, I'll be interning at the IBM Software Lab in Toronto as an Extreme Blue Intern.

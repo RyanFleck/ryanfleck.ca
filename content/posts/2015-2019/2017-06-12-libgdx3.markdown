@@ -1,0 +1,25 @@
+---
+title: "LibGDX Experiment: Battle Commander Part 03"
+date: 2017-06-12 21:20:19 -0400
+draft: true
+---
+
+Though it does not reflect the current build, you can download the last stable BCOM concept here: **[BattleCommander.jar](https://github.com/RyanFleck/BattleCommander/releases)**
+
+_Sigh_.
+
+I ran into some trouble that I couldn't solve. So, instead of trying to restructure my code to accomodate a new _extends_, I've decided to scrap my work and restart from square one.
+
+Scene2D seems like a very logical next step, as it will make the creation/implementation of unit heirarchies, hit detection, and input much easier.
+
+**Q:** "_But Ryan, your units already extend ACTOR, part of Scene2D!_"
+
+**A:** Yes, they do. But I implemented a lot of things that didn't need to be there had I known about Scene2D. I still get to keep all my art assets, so rebuilding from the ground up seems like a better plan.
+
+## The current state of BCOM:
+
+![Back at the beginning.](/legacy/CurrentState.Jun12.17.png)
+
+...after half an hour of new development. Still gotta instantiate my _Tiled_ map.
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

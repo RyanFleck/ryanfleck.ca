@@ -3,16 +3,16 @@ date: 2020-07-10T09:19:51.000-04:00
 title: Technocracy
 draft: true
 tags:
-- Technology
-- Politics 
+  - Technology
+  - Politics
 ---
 
 _Article Structure_
 
-* Intro to Technocracy
-* Society leeching into technology
-* Danger of excluding human principles from technology
-* Conclusions
+- Intro to Technocracy
+- Society leeching into technology
+- Danger of excluding human principles from technology
+- Conclusions
 
 The Technocratic political movement emerged in the 1930s as Scientists and
 Engineers proposed a better and brighter way forward, paved by the relentless
@@ -25,8 +25,8 @@ engineering problems, the most fair and efficient solutions could be produced,
 and the top-heavy and slow legislative process could be deprecated.
 
 A monad, representing the balance between production and consumption, was used
-by Howard Scott as the logo for Technocracy Inc. Interestingly, the monad is 
-also associated with many philosophical and religious beliefs, particularly 
+by Howard Scott as the logo for Technocracy Inc. Interestingly, the monad is
+also associated with many philosophical and religious beliefs, particularly
 _gnosticism_.
 
 Interestingly, Canada banned Technocracy in 1940, allegedly due to opposition to

@@ -3,14 +3,14 @@ date: 2019-07-10T19:11:00-04:00
 title: "The 2018 MacBook Pro Keyboard"
 subtitle: "Goodbye efficiency, hello carpal tunnel!"
 aliases:
-- "/posts/the-macbook-pro-2018-keyboard-sucks/"
+  - "/posts/the-macbook-pro-2018-keyboard-sucks/"
 tags:
-- Review
-- MacBook-Pro
-- Butterfly-Keyboard
+  - Review
+  - MacBook-Pro
+  - Butterfly-Keyboard
 ---
 
-As an intern at IBM, I was assigned an incredibly high-quality machine: A 2018, 15-inch MacBook Pro with 16 Gigs of DDR4 and the infamous touchbar. To buy this thing new, for personal use, it'd cost me over $3500 of the near-worthless cash we Canadians call Dollars. Certainly a pricey machine, and it isn't for naught: The screen is excellent. I'm sure that people have suffered for screens like this; surreal clarity, even lighting, vivid colors, a pixel density that'll let you set the text so small you can read it with a microscope. The screen is fantastic. As art, the build quality and materials are undeniably excellent.
+As an intern at IBM, I was assigned an incredibly high-quality machine: A 2018, 15-inch MacBook Pro with 16 Gigs of DDR4 and the infamous touchbar. To buy this thing new, for personal use, it'd cost me over \$3500 of the near-worthless cash we Canadians call Dollars. Certainly a pricey machine, and it isn't for naught: The screen is excellent. I'm sure that people have suffered for screens like this; surreal clarity, even lighting, vivid colors, a pixel density that'll let you set the text so small you can read it with a microscope. The screen is fantastic. As art, the build quality and materials are undeniably excellent.
 
 Everything else about the machine, from the engineering of the keyboard and the trackpad, to sacrificing battery life for a thin chassis, the gimmicky (though fun) touchbar, is detrimental to the user experience. It is undeniable that almost every aspect of this machine is a marvel of modern engineering, but without the vision of a competent developer machine behind each hardware iteration... It is easy to conclude that Apple no longer designs professional computers for professionals, but incompetent computers for Python programmers.
 
@@ -23,4 +23,3 @@ At high speeds, the keyboard is an inaccurate menace that gives such mixed tacti
 All in all, my time with the MacBook Pro's butterfly switches has been something of a disaster. While I was genuinely excited to use the computer at the beginning of my internship, I now have a deep and growing disdain for this catastrophe of a machine, and judging from the pain in my wrists and fingers, it hates me too.
 
 I admire the careful engineering, but in order for Apple to produce a computer that will please developers who spend all day writing, they'll need to make a machine that is powerful enough to compute, with battery to last, and a keyboard that is comfortable enough to type on all day. This is not that machine, and it does not have that keyboard. With the extraordinary engineering team at Apple, I have full confidence they'll get it right someday.
-

@@ -1,0 +1,28 @@
+---
+title: "Three.js and Input Polling"
+date: 2018-10-01 03:12:13
+draft: true
+---
+
+Demo live at [experiments/cubefield](https://ryanfleck.github.io/experiments/cubefield).
+
+Tinkering with Three.JS has been neat. This demo utilizes tilt input on mobile devices, and the cursor position on desktop.
+
+Data like this is displayed on the left:
+
+```
+Running rcf039 three.js experiment: CUBEFIELD
+Testing ENABLED f21502 mouse
+Input Screen Location: 260,10
+Input Screen Ratio: 0.2714,0.01531
+Input Velocity Delta: -7,-17
+
+Active key keycodes: 65, 68, 70, 73
+
+Gyroscopic Sensor Output: false
+	Alpha x: 0
+	Beta  y: 0
+	Gamma z: 0
+```
+
+These are all polled at different rates. Near source in projects repo. <https://github.com/RyanFleck/Projects/blob/master/js/rcf037_Three05.js>

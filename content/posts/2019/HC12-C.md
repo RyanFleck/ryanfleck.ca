@@ -4,8 +4,8 @@ title: "Programming the HCS12 CPU in C"
 draft: true
 toc: true
 tags:
-- Programming
-- C 
+  - Programming
+  - C
 ---
 
 # Introduction
@@ -56,11 +56,11 @@ int main(void){
 
   // If-elseif-else
   if( a > b ){
-    gt = 'A'; 
+    gt = 'A';
   }else if(b > a){
-    gt = 'B'; 
+    gt = 'B';
   }else{
-    gt = 'X'; 
+    gt = 'X';
   }
 
   // While-do
@@ -68,7 +68,7 @@ int main(void){
     a--;
   }
 
-  // The mc9s12 header allows us to set registers 
+  // The mc9s12 header allows us to set registers
   DDRB = 0xFF
 
   // We can use bitwise operators to turn bits:
@@ -96,23 +96,23 @@ int increment_by_three(int * x){
 # The Dragonboard
 
 ![](/pics/dragon12.jpg)
-*Picture used (permission pending) from EVBplus.com*
+_Picture used (permission pending) from EVBplus.com_
 
 Laboratories enabled students to attain embedded development experience on the
-Dragon12 board. 
+Dragon12 board.
 
 # Utilizing a 7-Segment Display
 
-*Based on the content of CEG3136 Lab 3*
+_Based on the content of CEG3136 Lab 3_
 
 # Utilizing a Hitachi LCD
 
-*Based on the content of CEG3136 Lab 3*
+_Based on the content of CEG3136 Lab 3_
 
 # Using Interrupts
 
-*Based on the content of CEG3136 Lab 4*
+_Based on the content of CEG3136 Lab 4_
 
 # Analog to Digital Conversion
 
-*Based on the content of CEG3136 Lab 5*
+_Based on the content of CEG3136 Lab 5_

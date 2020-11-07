@@ -80,7 +80,7 @@ Expression | Referenced Data Type
 **Great,** now you can read the docs like a *master!* NXP has quite a few
 publicly available documents with the instruction set thoroughly detailed, like
 [this
-one](https://www.nxp.com/assets/documents/data/en/reference-manuals/S12XCPUV1.pdf).
+one](https://www.nxp.com/legacy/documents/data/en/reference-manuals/S12XCPUV1.pdf).
 
 
 # Using the Stack

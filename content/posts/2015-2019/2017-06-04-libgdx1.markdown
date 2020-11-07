@@ -1,0 +1,28 @@
+---
+title: "LibGDX Experiment: Battle Commander, Part 01"
+date: 2017-06-04 02:26:23 -0400
+draft: true
+---
+
+![Soldiers on the move!](/legacy/BetaGameLarge.png)
+
+In my few hours with the library, LibGDX has impressed me in a number of small ways. The installlation was hassle-free with gradle, and so far documentation has been very easy to find, both official and unnoficial.
+
+I appreciate the simple yet powerful workflow:
+
+```java
+@Override
+public void render () {
+	queryInput();
+	adjustVariables();
+	drawGraphics();
+}
+```
+
+This post was created primarily as an image-display test. Hopefully you see an image of the game above: a few soldiers running around a test map, sparsely populated with rocks and cacti, essentially barren.
+
+As this game is developed, I'll post updates here. If development becomes serious, it'll get it's own website.
+
+ttfn,
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

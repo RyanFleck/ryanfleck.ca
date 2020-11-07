@@ -2,10 +2,10 @@
 date: 2019-12-04T13:14:55-05:00
 title: "Commuting Through Fog"
 tags:
-- Writing
+  - Writing
 ---
 
-*Written 2019-12-04. A short story about a man driving home.*
+_Written 2019-12-04. A short story about a man driving home._
 
 <br />
 

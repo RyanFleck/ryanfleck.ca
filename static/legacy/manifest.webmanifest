@@ -1,0 +1,41 @@
+{
+  "name": "RCF Archive",
+  "short_name": "RCF",
+  "description": "Ryan Fleck Technical Blog",
+  "start_url": "/archive/",
+  "display": "minimal-ui",
+  "theme_color": "#FFF",
+  "background_color": "#FFF",
+  "scope": "/",
+  "icons": [{
+    "src": "wam/rcf48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "wam/rcf72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "wam/rcf96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "wam/rcf144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "wam/rcf168.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "wam/rcf192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "wam/rcf512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}
+

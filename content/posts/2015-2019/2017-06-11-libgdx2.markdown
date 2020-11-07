@@ -1,0 +1,48 @@
+---
+title: "LibGDX Experiment: Battle Commander Part 02"
+date: 2017-06-11 18:34:04 -0400
+draft: true
+---
+
+![Soldiers on the move, in the desert!](/legacy/DesertFighters.png)
+
+Continuing development on my game. You can download the latest release here: **[BattleCommander.jar](https://github.com/RyanFleck/BattleCommander/releases)**
+
+It's still _much_ more an experiment than an actual game right now, but here's a short list of what I've implemented, and plan to implement in my next release:
+
+**Current release, Alpha 0.1.1:**
+
+- New desert map!
+- Movement sounds!
+- Prevents new orders until current ones are complete.
+- Extremely basic movement and 'running' sprite.
+- Pan around map with arrows.
+
+**Next Alpha 0.2.0 targets:**
+
+- Separately select-able units.
+- Animated running and standing soldier poses.
+- Basic combat.
+- Cursor that is context-aware.
+
+As this is an experiment, my code is _spaghetti_. I'll be rewriting the soldier class many times during the duration of this experiment. Hell, I've already re-written _BattleCommander.java_ three times.
+
+The current state of my **SUPER COMPLEX** movement system:
+
+```java
+@Override
+    public boolean touchUp(  variables...  ) {
+    	Vector3 i = new Vector3(screenX,screenY,0);
+    	Vector3 j = cam.unproject(i);
+    	soldierA.Move((int)j.x,(int)j.y);
+    	soldierB.Move(2*(int)j.x/3,2*(int)j.y/3);
+    	soldierC.Move((int)j.x/3,(int)j.y/3);}
+```
+
+This moves three soldiers to stand along a vector connecting 0,0 and the click location. Each soldier stands at a respective third of the length. My next research topic is getting the code to recognize when a unit is being clicked, and actions after that.
+
+I spent most of today downtown, learning more C. Hopefully I'll be able to push more changes this coming week. Enjoy the _two literal seconds_ of playtime the game has to offer right now!
+
+ttfn,
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

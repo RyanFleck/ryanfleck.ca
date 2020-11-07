@@ -1,0 +1,28 @@
+---
+title: "Vacation"
+date: 2017-06-26 18:01:01 -0600
+draft: true
+---
+
+So, I've taken a brief trip to Calgary. I’ve been casually going through this amazing book, allegedly the bible of C programming: ‘The C Programming Language (2ed, Kernighan/Ritchie).’ It’s been a decent read, and C is a personal favourite of mine, not because I know it well in any way, but because of what it has been used to build in the past, namely all the Unix-y underpinnings of today's software world.
+
+![Desktop screenshot.](/legacy/July2617.png)
+
+At the suggestion of a good friend, I’ve also considered investing a bit of time in COBOL, which I previously dismissed as an antiquated, dried-up language of yesterday. He made quite the case for it- COBOL is allegedly still used in 80+% of the world’s business data processing applications, and many of the programmers who originally wrote and maintained the code are retiring or moving up to management. In his words, _“You can make a ton of money programming in COBOL because banks still use it for everything.”_ After some light research, I totally agree. Erik, if you’re reading this, contact me on github, we can learn together.
+
+```cobol
+IDENTIFICATION DIVISION.
+PROGRAM-ID.  TinyProgram.
+
+PROCEDURE DIVISION.
+DisplayGreeting.
+   DISPLAY "Hello, world!".
+   STOP RUN.
+
+```
+
+It's quite funny how english-like COBOL is. Line endings are periods rather than semicolons.I expected much worse. Guess I gotta challenge all my other preconceived notions regarding programming now.
+
+Thanks for reading.
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

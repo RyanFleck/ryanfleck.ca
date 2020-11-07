@@ -1,16 +1,16 @@
 ---
 date: 2020-01-14T11:32:02-05:00
 title: "Paper over Keyboard"
-draft: false 
+draft: false
 tags:
-- Life-Lessons
-- Programming 
+  - Life-Lessons
+  - Programming
 ---
 
 So, I completed a HackerRank problem this morning to work my brain back into
-shape for upcoming interviews. The problem is titled *The Minion Game*, and
-the lesson I learned while completing this problem was *measure twice, cut
-once*, **aka** I didn't spend enough time thinking about the problem before
+shape for upcoming interviews. The problem is titled _The Minion Game_, and
+the lesson I learned while completing this problem was _measure twice, cut
+once_, **aka** I didn't spend enough time thinking about the problem before
 programming.
 
 Working out a programming problem on paper first will help you solve it most of
@@ -26,26 +26,25 @@ Kevin and Stuart want to play the 'The Minion Game'.
 
 **Game Rules**
 
-Both players are given the same string, *S*.
-Both players have to make substrings using the letters of the string *S*.
+Both players are given the same string, _S_.
+Both players have to make substrings using the letters of the string _S_.
 Stuart has to make words starting with consonants.
 Kevin has to make words starting with vowels.
 The game ends when both players have made all possible substrings.
 
 **Scoring**
 
-A player gets +1 point for each occurrence of the substring in the string *S*.
+A player gets +1 point for each occurrence of the substring in the string _S_.
 
 **For Example:**
 
-String *S* = BANANA
+String _S_ = BANANA
 Kevin's vowel beginning word = ANA
-Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points. 
+Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
 
 ### Working Answer
 
-Here is my final, tidy answer that runs in `O(n)`. The single calculation `score
-= (string_len - iletter)` was previously completed by breaking the substring
+Here is my final, tidy answer that runs in `O(n)`. The single calculation `score = (string_len - iletter)` was previously completed by breaking the substring
 into a set of smaller substrings and counting them with a for loop. After
 sitting back, pondering the question, and understanding that this larger
 calculation was unneccesary (terrible original answer in next section,) my
@@ -76,7 +75,7 @@ def minion_game(string):
 ### Original Answer
 
 This answer kept failing because it took far too long. It runs in `O(n^2)` and
-originally used *four* loops, three more than the working answer.
+originally used _four_ loops, three more than the working answer.
 
 ```py
 def v(word):
@@ -86,7 +85,7 @@ def v(word):
         return False
 
 def minion_game(string):
-    
+
     substrings = []
     substrings_vowels = []
     string_len = len(string)
@@ -103,7 +102,7 @@ def minion_game(string):
 
     # Stuart - Consonants
     print("\nStuart")
-    stuart = score(string, substrings) 
+    stuart = score(string, substrings)
 
     # Kevin - Vowels
 

@@ -2,9 +2,9 @@
 date: 2019-07-17T12:34:56-04:00
 title: "Jupyter Notebooks"
 tags:
-- Python 
-- Programming
-- Jupyter-Notebooks
+  - Python
+  - Programming
+  - Jupyter-Notebooks
 ---
 
 If you are a Python programmer, you absolutely must use the fantastic
@@ -20,7 +20,7 @@ After this, you can simply tell your console `juptyer notebook` in your project
 folder, and your default browser will open a window to a file list. Clicking
 'new', then 'Python 3 Notebook', will get you started right quick.
 
-*What have you just opened up?*
+_What have you just opened up?_
 
 Before you is the splendor of an `.ipynb` file. You can add and intermingle
 'cells' containing code and text. Hitting `ENTER` edits the cell, and
@@ -28,14 +28,12 @@ Before you is the splendor of an `.ipynb` file. You can add and intermingle
 any results immediately below the cell. The output can be
 anything from text, to tables, to images and graphs.
 
-Even better, the editor supports most *vim* keybindings: `j` and `k` for upwards
+Even better, the editor supports most _vim_ keybindings: `j` and `k` for upwards
 and downwards movement, and `esc` kicks the user into command mode.
 
 Changing the cell type is as easy as hitting `m` for markdown, or `y` for
 code. New cells can be created with `b`. If you've forgotten anything, it's
 easy to use `h` to see commands, or `p` to search commands.
-
-
 
 At this point, you should go and read some tutorials on using common data
 science and plotting libraries like pandas and matplotlib. Enjoy your new tool!

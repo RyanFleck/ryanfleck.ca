@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Playfair+Display:700');
+
+html{
+  background: linear-gradient(#CCC, #F66);
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Libre Baskerville', serif;
+    color: #222;
+    font-size: 16px;
+}
+
+p {font-family: 'Libre Baskerville', serif;}
+h1 {font-family: 'Playfair Display', serif;}
+h2 {font-family: 'Playfair Display', serif;}
+h3 {font-family: 'Playfair Display', serif;}
+h4 {font-family: 'Playfair Display', serif;}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* CSS GRID CONFIGURATION */
+.rcf-grid{
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(6,auto);
+}
+.card {
+    background-color: #FFF;
+    border-right: 5px solid #AAA;
+    border-bottom: 5px solid #AAA;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: auto;
+}
+.news {
+  width: 400px;
+  grid-row-end: span 5;
+  grid-column-end: span 2;
+}
+.infoleft {width: 200px;grid-area: 1/1/2/2;text-align: center;}
+.inforight{width: 200px;grid-area: 1/6/2/7;text-align: center;}
+.personalintro{width: 400px;grid-area: 2/1/4/3;}
+.navigation{width: 400px;grid-area: 4/1/8/3;}
+.links{width: 400px;grid-area: 2/5/3/7;}
+.site-info{width: 400px;grid-column-end: span 2;}
+.title{
+  grid-area: 1/2/2/6;
+  text-align: center;
+  font-size: 40px;
+  line-height: 0%;
+  text-transform: uppercase;
+  letter-spacing: +5px;
+}
+
+img{
+  max-width: 380px;
+  border-left: 5px solid #AAA;
+  border-top: 5px solid #AAA;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.readmore{
+  float: right;
+}
+
+@media only screen and (max-width : 1380px) {
+.rcf-grid{
+  grid-template-columns: auto auto;
+}
+.news {
+  width: 400px;
+  grid-row-end: span 3;
+  grid-column-end: span 1;
+}
+.infoleft {width: 400px;grid-area: auto;text-align: center;}
+.inforight{width: 400px;grid-area: auto;text-align: center;}
+.personalintro{width: 400px;grid-area: auto;}
+.navigation{width: 400px;grid-area: auto;}
+.links{width: 400px;grid-area: auto;}
+.site-info{width: 400px;grid-column-end: span 2;}
+.title{
+  width: 400px;
+  grid-area: auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 200%;
+  text-transform: uppercase;
+  letter-spacing: +5px;
+  grid-column-end: span 1;
+  grid-row-end: span 2;
+}
+}
+
+@media only screen and (max-width : 920px) {
+.rcf-grid{
+  grid-template-columns: auto;
+}
+.news {
+  width: 400px;
+  grid-row-end: span 1;
+  grid-column-end: span 1;
+}
+.infoleft {grid-area: auto;text-align: center;}
+.inforight{grid-area: auto;text-align: center;}
+.personalintro{width: 400px;grid-area: auto;}
+.navigation{width: 400px;grid-area: auto;}
+.links{width: 400px;grid-area: auto;}
+.site-info{width: 400px;grid-column-end: span 1;}
+.title{
+  width: 400px;
+  grid-area: auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 200%;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+}
+
+@media only screen and (max-width : 470px) {
+.rcf-grid{
+  grid-template-columns: auto;
+}
+.news {
+  width: 300px;
+  grid-row-end: span 1;
+  grid-column-end: span 1;
+}
+.infoleft {width: 300px; grid-area: auto;text-align: center;}
+.inforight{width: 300px; grid-area: auto;text-align: center;}
+.personalintro{width: 300px;grid-area: auto;}
+.navigation{width: 300px;grid-area: auto;}
+.links{width: 300px;grid-area: auto;}
+.site-info{width: 300px;grid-column-end: span 1;}
+.title{
+  width: 300px;
+  grid-area: auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 200%;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+}
+@media only screen and (max-width : 370px) {
+.rcf-grid{
+  grid-template-columns: auto;
+}
+.news {
+  width: 200px;
+  grid-row-end: span 1;
+  grid-column-end: span 1;
+}
+.infoleft {width: 200px; grid-area: auto;text-align: center;}
+.inforight{width: 200px; grid-area: auto;text-align: center;}
+.personalintro{width: 200px;grid-area: auto;}
+.navigation{width: 200px;grid-area: auto;}
+.links{width: 200px;grid-area: auto;}
+.site-info{width: 200px;grid-column-end: span 1;}
+.title{
+  width: 200px;
+  grid-area: auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 200%;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+}

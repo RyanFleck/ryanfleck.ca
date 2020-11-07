@@ -1,0 +1,34 @@
+---
+title: "Jekyll/Markdown First Impressions"
+date: 2017-06-02 23:28:18 -0400
+draft: true
+---
+
+So, this is probably the third time I've deleted this repository and put a new one up.
+
+It looks like I've cracked the initial jekyll formula- now for customization!
+
+Let's test these code snippets:
+
+```python
+if(jekyll == "Awesome"):
+    print("I agree, static websites are great.")
+```
+
+### **TEST:** Titles
+
+# H1 Title!
+
+## H2 Title!
+
+### H3 Title!
+
+#### H4 Title!
+
+##### H5 Title!
+
+###### H6 Title!
+
+### **TEST:** Lists:
+
+<img src="/legacy/art/s.png" alt="RCF" style="border-radius:0; width: 289px;"/>

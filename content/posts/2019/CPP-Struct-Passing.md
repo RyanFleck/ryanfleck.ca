@@ -2,13 +2,13 @@
 date: 2019-10-11T17:54:00-04:00
 title: "Passing Structs in C++"
 tags:
-- Programming
-- C++ 
+  - Programming
+  - C++
 ---
 
 After a conversation with a friend revolving around passing structures to
 functions, I decided to write a short tutorial on passing structures to
-functions in *three different ways!* I am **not** a very experienced C++
+functions in _three different ways!_ I am **not** a very experienced C++
 programmer, but hopefully these examples will illustrate to a beginner the
 medley of ways that data can be passed into functions, and the pros & cons of
 each method. Skip to the [end](#final-final-example) if you learn better by
@@ -18,7 +18,6 @@ We will pass the structure below by:
 1. [Value](#pass-by-value)
 2. [Pointer](#pass-by-pointer)
 3. [Reference](#pass-by-reference)
-
 
 ```cpp
 // Our test structure:
@@ -34,11 +33,11 @@ void display_by_pointer(Complex *pc);
 void display_by_reference(Complex &rc);
 ```
 
-# Source 
+# Source
 
 After installing `g++` and ensuring it runs from the command line, copy the
-following C++ source code into a text file and save it as *whatever you would
-like*, as long as the filename ends with `.cpp`, for instance, `structures.cpp`.
+following C++ source code into a text file and save it as _whatever you would
+like_, as long as the filename ends with `.cpp`, for instance, `structures.cpp`.
 
 ```cpp
 #include <iostream>
@@ -65,16 +64,15 @@ moment,) you are ready to go!
 
 For the greedy and patience impaired, skip to [here](#final-example) to see the
 final source, or
-[this file](https://github.com/RyanFleck/Projects/blob/master/cpp/rcf007_DataToFunctions.cpp) 
+[this file](https://github.com/RyanFleck/Projects/blob/master/cpp/rcf007_DataToFunctions.cpp)
 to see the version-controlled one that may be
 updated as I become a better C++ programmer.
 
-
 # Pass by Value
 
-To pass **by value** is to *make a copy* for the function to use. The data
+To pass **by value** is to _make a copy_ for the function to use. The data
 structure you pass to the function will be cloned on the stack and used by the
-function. If you modify a structure that is passed *by value*, the original will
+function. If you modify a structure that is passed _by value_, the original will
 not be modified.
 
 Passing by value is the easiest to program. First, add a function declaration
@@ -88,6 +86,7 @@ void display_by_value(Complex c);
 void display_by_value(Complex c) {
 }
 ```
+
 After adding these, your file will look like this (I won't repeat this in future
 examples, to keep the article of the length reasonable.)
 
@@ -113,10 +112,9 @@ void display_by_value(Complex c) {
 }
 ```
 
-Our function takes a `Complex` structure as input. As with in *main*, you'll be
-able to access the properties of the properties of a *struct* using the `.`
+Our function takes a `Complex` structure as input. As with in _main_, you'll be
+able to access the properties of the properties of a _struct_ using the `.`
 operator.
-
 
 ```cpp
 void display_by_value(Complex c) {
@@ -144,7 +142,7 @@ int main(void) {
   thing.i = 4;
 
   display_by_value(thing);
-  //cout> 2 4 
+  //cout> 2 4
 
   return 0;
 }
@@ -154,9 +152,9 @@ void display_by_value(Complex c) {
 }
 ```
 
-It is **very important** to note that passing by value passes a new copy of *the
-entire object.* Modifications made within the function are made to this *new
-copy*, and do not effect the original structure. To do that, you'll need to pass
+It is **very important** to note that passing by value passes a new copy of _the
+entire object._ Modifications made within the function are made to this _new
+copy_, and do not effect the original structure. To do that, you'll need to pass
 by reference or pointer.
 
 # Pass by Pointer
@@ -188,8 +186,9 @@ display_by_pointer(ptr);
 struct Complex thing;
 display_by_pointer(&thing);
 ```
-Both cases will pass the *address* of the Complex struct `thing` to the function
-`display_by_pointer(Complex * pc)`. Passing the pointer does *not* make a copy
+
+Both cases will pass the _address_ of the Complex struct `thing` to the function
+`display_by_pointer(Complex * pc)`. Passing the pointer does _not_ make a copy
 of the original object, instead allowing the function to directly modify the
 original object in place. Below, both function calls perform the same action:
 
@@ -256,7 +255,7 @@ void display_by_reference(Complex &rc) {
 ```
 
 It is important to remember that the structure manipulated inside the function
-is *the original structure*. Changes made will effect the original, and persist
+is _the original structure_. Changes made will effect the original, and persist
 after the function exits.
 
 # Final Example
@@ -305,10 +304,9 @@ void display_by_reference(Complex &rc) {
 
 # Final Final Example
 
-Additionally, to prove that changes made when passing by value will *not* effect
-the original object, and passing by pointer and reference *will*, run the
+Additionally, to prove that changes made when passing by value will _not_ effect
+the original object, and passing by pointer and reference _will_, run the
 following example:
-
 
 ```cpp
 #include <iostream>
@@ -316,7 +314,7 @@ following example:
 /*
  * In this program, I'll use the following
  * types of comments to illustrate how things
- * are working: 
+ * are working:
  *   // Regular comment.
  *   //> Printed output
  */
@@ -393,6 +391,7 @@ void display_by_reference(Complex &rc) {
   std::cout << rc.r << " " << rc.i << "\n";
 }
 ```
+
 <br />
 <hr />
 

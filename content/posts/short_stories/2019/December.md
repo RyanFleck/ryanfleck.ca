@@ -4,11 +4,9 @@ title: "December's Collected Short Stories"
 draft: true
 toc: true
 tags:
-- Writing
-- Poetry
+  - Writing
+  - Poetry
 ---
-
-
 
 <br />
 
@@ -23,7 +21,7 @@ It began slowly.
 Ever so slowly.
 
 Here and there, rain would trickle through a gap in the mouldering pine shakes
-and Frederick would hear a *tat* as a drop noiselessly slipped from a crack in
+and Frederick would hear a _tat_ as a drop noiselessly slipped from a crack in
 the ceiling and landed resonantly on the floorboards.
 
 Turning with indifference, Frederick would coldly search the floorboards for the
@@ -34,7 +32,7 @@ failing to mention the pests, leaks, heating problems and lack of property
 maintenance staff.
 
 He recalled the first time a droplet had fallen. It had been during a downpour;
-the first gentle *tap* had turned into a dribbling *hiss* as a small waterfall 
+the first gentle _tap_ had turned into a dribbling _hiss_ as a small waterfall
 materialized in the ceiling of his apartment.
 
 Now, as he sat staring at his ceiling, he could only raise an eyebrow at the new
@@ -45,10 +43,9 @@ that he hated those like his greedy, lying land-lady, placing it on a pile with
 many others, a heap of kindling that would only grow dry with the falling of
 rain.
 
-
 <br />
 
-# June and the Ghost 
+# June and the Ghost
 
 <br />
 
@@ -108,13 +105,12 @@ Option three was to wait until the fire went out. It shouldn't take too long.
 After all, how much time could it possibly take for all the crude to pour out of
 a tanker and burn?
 
-*four hours later*
+_four hours later_
 
 I was comfortable under the water. The fiery and inky-black patterns of burning
 crude flowing across the surface lit the sea floor with a lively orange hue now
 that the sun had set. I would surely die of lung cancer in a few years, with the
 volume of smoke that I had inhaled, but the small...
-
 
 **Uh oh.** this scenario doesn't make any sense. The amount of dead,
 oxygen-deprived air between the diver's mouth and the end of the tube would be
@@ -122,6 +118,5 @@ larger than the volume of air the diver could inhale. Though the diver could
 never _exhale_ through the tube.
 
 ...no, wait, he could just inhale and block the tube with his thumb.
-
 
 <!-- https://www.gutenberg.org/files/13085/13085-h/13085-h.htm#page443 -->

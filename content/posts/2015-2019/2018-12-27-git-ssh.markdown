@@ -1,0 +1,39 @@
+---
+title: "Accessing Git Repos with SSH"
+date: 2018-12-27 09:12:13
+draft: true
+---
+
+SSH keys provide a convenient way to authenticate and interact securely with a git server. GitHub strongly recommends using SSH, and so do I.
+
+To generate a key, you'll need to open a console window. If using Windows, you'll need to utilize the `PuTTY` tool to generate a key pair. If using a good operating system, enter the following, replacing the generic email with your own:
+
+```sh
+ssh-keygen -t rsa -b 4096 -C "email@email.com"
+```
+
+Running this will prompt you to enter a password. Save the key in the suggested location. Once generated, add the key to your ssh service by entering the following to start the service and add the key:
+
+```sh
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+
+The public key is stored as a text file in `./ssh/id_rsa.pub`. It can now be added to your repository service for secure access. For example, the key can be used with Github to clone and push to repositories:
+
+```sh
+# Ensure your global git configs are set:
+git config --global user.name "First Last"
+git config --global user.email "email@email.com"
+git config --global core.editor "vim"
+
+# Now you can add repos, like so:
+git clone ssh://git@github.com/RyanFleck/School.git
+git clone ssh://git@github.com/RyanFleck/Projects.git
+```
+
+The first time a repository is cloned from a new address, you will be asked if the address is correct to prevent man-in-the-middle attacks. If the address of your remote changes, you will be prompted again.
+
+Now, you won't need to enter a username (and optionally, password,) every time you push a commit to your repository. This small step, along with some scripts to rush the add/commit process, have likely saved me hundreds of hours. _Enjoy._
+
+**R**
