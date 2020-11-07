@@ -1,12 +1,12 @@
 ---
 title: "Build a Personal Website in an Afternoon"
 date: 2018-03-30 09:16:02
-draft: true
+toc: true
 ---
 
-If you've ever wanted a personal website; a place to showcase your experiments and opinions, away from pre-configured themes and terribly named domain postfixes, [_Jekyll_](https://jekyllrb.com/), [_Kramdown_](https://kramdown.gettalong.org/), [_SASS_](https://sass-lang.com/), and [_Github Pages_](https://pages.github.com/) may be just the tools for you. The following post will present, in a thoughtful and concise manner, the material needed to get a website up and running at _yourname.github.io_.
+# Tutorial Overview
 
-## Tutorial Overview
+If you've ever wanted a personal website; a place to showcase your experiments and opinions, away from pre-configured themes and terribly named domain postfixes, [_Jekyll_](https://jekyllrb.com/), [_Kramdown_](https://kramdown.gettalong.org/), [_SASS_](https://sass-lang.com/), and [_Github Pages_](https://pages.github.com/) may be just the tools for you. The following post will present, in a thoughtful and concise manner, the material needed to get a website up and running at _yourname.github.io_.
 
 By following this tutorial, you will learn how to use git and github to manage your code, html to structure pages, sass to style them, and jekyll to dynamically smash html together. First, we will **setup** by installing ruby, git and electron. If you want to use a different method, or already have ruby and git installed, that is _excellent._ The github.io domain is free to use (see [pages.github.com](https://pages.github.com/),) and beats having to worry about domain renewal once a year.
 
@@ -18,24 +18,17 @@ Finally, we will author a simple post with markdown, and enjoy the beautifully f
 
 **Why use Jekyll?** [ask Parker, the creator.](https://byparker.com/blog/2014/jekyll-3-the-road-ahead/)
 
-### Prerequisites
+## Prerequisites
 
 - [A stable Operating System that can deal with development tools reliably.](https://www.quora.com/What-OS-is-the-best-for-software-engineers)[^1]
 - Basic version control skills. [This 10-minute read is a great place to start, and enough for this tutorial.](https://guides.github.com/activities/hello-world/)
 - A [github account](https://github.com/), preferably created with your university email to take advantage of the [Github Student Developer Pack.](https://education.github.com/pack)
 
-![Git](/legacy/Git-Logo-Black.png) || Please be aware that _git_ and _Github_ are separate entities; _git_ is a version control system, to reliably track changes to a codebase. _Github_ is a hosting site for remote git repositories. Both are excellent development tools.
+Please be aware that _git_ and _Github_ are separate entities; _git_ is a version control system, to reliably track changes to a codebase. _Github_ is a hosting site for remote git repositories. Both are excellent development tools.
 
-The [_Github Student Developer Pack_](https://education.github.com/pack) contains a plethora of **free** development tools from major vendors, including Amazon, Microsoft, Digital Ocean (cloud hosting,) Hackhands (live programming help,) NameCheap, Stripe, and the Unreal Engine. Access requires proof of enrollment at a learning institution. | ![Git](/legacy/devpack.png)
+The [_Github Student Developer Pack_](https://education.github.com/pack) contains a plethora of **free** development tools from major vendors, including Amazon, Microsoft, Digital Ocean (cloud hosting,) Hackhands (live programming help,) NameCheap, Stripe, and the Unreal Engine. Access requires proof of enrollment at a learning institution.
 
-**Table of Contents:**
-
-1. Seed list entry.
-   {:toc}
-
-## Setup
-
-### Prepare Your Development Environment
+## Prepare Your Development Environment
 
 Any operating system will do.[^1] Install the ruby development tools for your Operating System of choice.
 
@@ -71,7 +64,7 @@ Once you have installed git and ruby, you'll need to install a text editor and t
 
 ![Development Environment](/legacy/JekyllDev.png)
 
-### Create a Github Account
+## Create a Github Account
 
 Again, students should create an accout with their [university email to take advantage of the Github Student Developer Pack.](https://education.github.com/pack).
 
@@ -89,15 +82,15 @@ git clone ssh://git@github.com/UserName/RepoName.git
 
 A better guide for setting up these keys is available [here for troubleshooting.](http://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/)
 
-### Download Minima.zip
+## Download Minima.zip
 
 [Save it in your downloads, we'll be using it soon.](https://github.com/jekyll/minima)
 
 ![Web Building Art](/legacy/art/MakeAWebsite.png)
 
-## Development
+# Development
 
-### Set Up Your Repository
+## Set Up Your Repository
 
 The following steps, explained in detail below, will cover creating a repository, uploading the neccessary files, and viewing your new live site:
 
@@ -125,7 +118,7 @@ To upload your changes, type `git add .` to let git know about the new files you
 
 _If no message is present, you've done something wrong. Check the [troubleshooting guide]() at the end of this article._
 
-### Customize: Style Your Site
+## Customize: Style Your Site
 
 In your `_assets` folder, a file named `main.scss` should exist.
 
@@ -149,7 +142,7 @@ If you are familiar with CSS or SASS, this is your chance to let your creativity
 
 _To learn the very basics of CSS, I reccomend the interactive tutorial on Codecademy._
 
-### Customize: Structure Your Site
+## Customize: Structure Your Site
 
 Jekyll uses the _Liquid_ templating engine to process files in tandem with html in `_includes` and `_layouts`.
 
@@ -170,7 +163,7 @@ _Layout_ allows you to choose which .html file in the `_layouts` folder is used 
 **news.html**
 
 ```html
-{% raw %}---
+---
 layout: default
 ---
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -195,7 +188,7 @@ layout: default
   {{ post.excerpt }}
   <a class="readmore" href="{{ post.url | relative_url }}"><i>...read more.</i></a>
 </div>
-{%- endfor -%}{% endraw %}
+{%- endfor -%}
 ```
 
 You'll notice that the html above contains for loops, relative links, and variables set. More about _Liquid Templating_ can be found [**here.**](https://jekyllrb.com/docs/templates/) Also note that `layout: default` is included at the top of the page; this prompts the engine to nest this piece of html inside the contents of `default.html`, shown below:
@@ -203,7 +196,7 @@ You'll notice that the html above contains for loops, relative links, and variab
 **default.html**
 
 ```html
-{% raw %}<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
@@ -222,16 +215,16 @@ You'll notice that the html above contains for loops, relative links, and variab
     {%- include footer.html -%}
 
   </body>
-</html>{% endraw %}
+</html>
 ```
 
-#### Important Things to Note
+## Important Things to Note
 
 1. The html in `_layouts` are page layouts, and are typically nested inside `default.html`.
 2. The html in `_includes` are snippets for globally shared parts like headers, decoration and tracking.
 3. HTML in `_layouts` must include `{% raw %}{{ content }}{% endraw %}` where the child layout is to be inserted.
 
-### Add Some JavaScript
+## Add Some JavaScript
 
 Include a script at the end of your **default.html** like so:
 
@@ -245,9 +238,9 @@ _...and have fun._ Here's what you'll see if you open the console of your browse
 
 Do remember that the more JavaScript you use to manipulate your site, apart from fun extras and experiments, the more prone it is to all sorts of failure. [The less you use, the better, and please for the love of whatever deity you pray to, don't implement some JavaScript frontend without a basic html/css failsafe.](https://hackernoon.com/the-javascript-phenomenon-is-a-mass-psychosis-57adebb09359)
 
-### Recommended Tweaks
+## Recommended Tweaks
 
-#### Consistent Footnotes:
+## Consistent Footnotes:
 
 If sticking with the default minima font, Windows 10 will render the reverse-footnote ( ↩ ) wilh a strange, emoji-like character. To bypass this, change the site font, or add an exception for this element in `main.scss`:
 
@@ -258,7 +251,7 @@ If sticking with the default minima font, Windows 10 will render the reverse-foo
 }
 ```
 
-#### Take Control of the Navigation
+## Take Control of the Navigation
 
 To choose the specific appearance and order of pages in the navigation, modify the `_config.yml` file and uncomment the `header_pages:` line.
 
@@ -271,31 +264,31 @@ header_pages:
   - archive.md
 ```
 
-## Utilize Your Creation
+# Utilize Your Creation
 
-### Write Some Posts
+## Write Some Posts
 
 Until this section is completed, please refer to the [official Kramdown tutorial.](https://kramdown.gettalong.org/quickref.html) The default _Rouge_ syntax highlighter supports a wide variety of languages. In most cases, using a language's common file extension will give good results, but for some (erlang, lisps,) it is better to refer to [this list](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers) of officially-supported languages.
 
-### Google Analytics
+## Google Analytics
 
 Until this section is completed, please refer to [this blog post.](https://michaelsoolee.com/google-analytics-jekyll/)
 
-### Share Your Site
+## Share Your Site
 
 If this is a showcase for personal projects, it's more important for the site to be _populated_ than _popular_. Still, if you're eager for the general public to read your work, consider linking to your own articles in forum discussions, or on various social media platforms.
 
-### Troubleshooting
+## Troubleshooting
 
-#### Site Won't Build?
+## Site Won't Build?
 
 Check the repository settings for errors, and set the `minimal` theme, which is identical to Minima and will help fill in any gaps (where gaps are files that have not been included.)
 
-#### Time Test
+## Time Test
 
 Last update: {{ site.time | date_to_rfc822 }}
 
-#### FUBAR
+## FUBAR
 
 If the site goes **FUBAR**, it's probably Windows line endings. Fix in GNU/Linux:
 
@@ -303,7 +296,7 @@ If the site goes **FUBAR**, it's probably Windows line endings. Fix in GNU/Linux
 find ./ -type f -exec dos2unix {} \;
 ```
 
-#### Site Regenerates Slowly
+## Site Regenerates Slowly
 
 You can utilize the following flags to limit the amount of processing that needs to be completed, and limit the number of posts the engine renders.
 

@@ -2,23 +2,16 @@
 title: "2018 at 21"
 date: 2019-02-16 00:10:22
 draft: true
+toc: true
 ---
+
+# A Year
 
 Another year has come and gone, certainly my most important year to date. I spent the entire year acclimatizing to private industry, forming relationships at MNP LLP and observing a technology consultancy from the inside. I made plenty of mistakes, learned from them as best as I could, and summarized the most important lessons in this post.
 
 Hopefully, by organizing my thoughts 'on paper', I'll be able to reduce my experiences to a few robust bullet points, enabling me to give more concise explanations and advice during conversations.
 
 This post is divided into X parts. The most important parts are included first. For additional context, please refer to the (clearly marked) [context](#context) section.
-
-<br />
-
-<h3>Table of Contents</h3>
-1. Seed entry for TOC
-{:toc}
-
-<br />
-
-<br />
 
 <br />
 
@@ -54,11 +47,9 @@ Notably performed by [Loudon Wainwright III on *Attempted Moustache*.](https://w
 
 <br />
 
-<br />
-
-<br />
-
 # Lessons
+
+I've learned a lot over the course of this year.
 
 ## Business Relationships
 
@@ -100,7 +91,7 @@ The primary takeaway: the critical path of software development is difficult to 
 
 ## A Self-Portrait from January
 
-At the beginning of January, I was still [riddled with guilt and having a pretty hard time.](2017-12-23-hardsemester.markdown)
+At the beginning of January, I was still [riddled with guilt and having a pretty hard time.](/2017/2017-12-23-hardsemester/)
 
 - Comfortable with new people
 - Met april and new people

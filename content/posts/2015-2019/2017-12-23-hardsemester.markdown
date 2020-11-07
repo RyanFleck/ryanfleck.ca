@@ -1,14 +1,14 @@
 ---
 title: "Life And How To Live It"
 date: 2017-12-23 11:19:52
-draft: true
+toc: true
 ---
 
 The following post is a summation of what I've learned about living over the past few months. I've gone through a minor injury, some major family deaths, career moves... It should be noted that this is a set of personal reflections, not a self improvement post. Who knows, dear reader; you may be able to avoid some of these mistakes I've made.
 
 A full semester has come and gone since my last post. For three weeks, the page was replaced with a resume-site:
 
-![Resume site.](/legacy/OldSite.png){: .center-image }
+![Resume site.](/legacy/OldSite.png)
 
 I built it quickly, utilizing the beautiful IBM Plex web font under the SIL open font license, essentially creating a resume webpage. I like this blog style with a secondary resume page much better. Going forward, I will attempt to continue more personal projects (weekends will be free, yay!) and make notes about my progress here. This post is going to be a little different, though:
 

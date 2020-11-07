@@ -1,8 +1,11 @@
 ---
 title: "Fedora 28 Setup Guide"
 date: 2018-09-15 03:12:13
+toc: true
 draft: true
 ---
+
+# Working Machines
 
 When I sit down to write _anything_, I want to be using an Operating System that is stable, supports the tools I use, and maximizes the amount of time I spend being productive. This post is **WIP**.
 
@@ -12,16 +15,7 @@ And so, I use Fedora. Here is how I configure my personal OS.
 
 **Important:** I assume the reader is able to distinguish between commands that require SuperUser and commands that should be run without. Installing libraries or modules as a superuser in js, python and ruby will cause awful problems.
 
-**Table of Contents:**
-
-1. Seed list entry.
-   {:toc}
-
-<br />
-
-## Baseline
-
-### Install Fedora
+# Install Fedora
 
 1. Download a Fedora Workstation disk image.
 1. Become superuser with `su` or `sudo su`
@@ -31,7 +25,7 @@ And so, I use Fedora. Here is how I configure my personal OS.
 1. Write the downloaded image to the USB with `dd`
 1. Install Fedora on your machine.
 
-### Update Packages
+# Update Packages
 
 Before continuing, it is best to update everything and reboot so the new kernel is used. First, configure dnf by adding the following lines to `//etc/dnf/dnf.conf` (you'll need to be SuperUser):
 
@@ -58,7 +52,7 @@ dnf install packagename
 exit
 ```
 
-### Important Tweaks
+# Important Tweaks
 
 1. **Set up the terminal** by installing the `terminus-fonts` and `terminus-fonts-console` packages, setting Terminus as the custom font, disabling scrollbars, disabling the terminal bell, hiding the menu bar by default, and setting the color scheme to white on black. Add terminal to your GNOME favourites.
 1. **Swap the CapsLock key for an additional Esc;** it's far easier to hit Esc when it's right by your pinkie. Do this by installing `gnome-tweak-tool` and checking _make caps lock an additional esc_ in Keyboard and Mouse > Additional Layout Options. (I also set window focus to _Sloppy_ at this point, and enable the window minimize button.)
@@ -74,7 +68,7 @@ dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-rel
 
 <br />
 
-## Install Development Tools
+# Install Development Tools
 
 Install the major dependancies for most development:
 
@@ -82,7 +76,7 @@ Install the major dependancies for most development:
 dnf groupinstall "Development Tools"
 ```
 
-### Version Control
+# Version Control
 
 **Git with SSH keys makes version control a breeze.** assuming all your projects are stored in GitHub repos, generating and storing an SSH key means you won't need to type your password with every push, as you would with simple HTTP authentication. First, generate the key; it is safe to accept all the defaults.
 
@@ -110,7 +104,7 @@ Repositories can now be cloned like so:
 git clone git@github.com:UserName/RepoName.git
 ```
 
-### C and C++
+# C and C++
 
 Well, this is pretty easy on Unixlikes:
 
@@ -118,7 +112,7 @@ Well, this is pretty easy on Unixlikes:
 dnf install gcc gcc-c++
 ```
 
-### Java
+# Java
 
 I typically program with Java 8, which is also a Scala dependancy:
 
@@ -126,7 +120,7 @@ I typically program with Java 8, which is also a Scala dependancy:
 dnf install java-1.8.0-openjdk-devel
 ```
 
-### JavaScript
+# JavaScript
 
 To install nodejs and npm:
 
@@ -134,7 +128,7 @@ To install nodejs and npm:
 dnf install nodejs
 ```
 
-### Python
+# Python
 
 To install Python 3 and pip:
 
@@ -142,7 +136,7 @@ To install Python 3 and pip:
 dnf install python3-devel
 ```
 
-### Scala
+# Scala
 
 For basic fiddling, install the basic scala repl:
 
@@ -158,7 +152,7 @@ sudo mv bintray-sbt-rpm.repo /etc/yum.repos.d/
 sudo dnf install sbt
 ```
 
-### Ruby
+# Ruby
 
 Install ruby prerequisites:
 
@@ -183,13 +177,7 @@ rbenv install 2.4.2
 gem install bundler
 ```
 
-### LaTeX
-
-<br />
-
-## Configure Development Tools
-
-### Vim
+# Vim
 
 Write your vim config, `.vimrc`, to `~/.vimrc`.
 
@@ -210,11 +198,7 @@ nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
 dnf install gnome-terminal-nautilus
 ```
 
-<br />
-
-## Extras
-
-### Google Chrome
+# Google Chrome
 
 ```bash
 dnf install fedora-workstation-repositories

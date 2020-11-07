@@ -1,7 +1,6 @@
 ---
 title: "Accessing Git Repos with SSH"
 date: 2018-12-27 09:12:13
-draft: true
 ---
 
 SSH keys provide a convenient way to authenticate and interact securely with a git server. GitHub strongly recommends using SSH, and so do I.

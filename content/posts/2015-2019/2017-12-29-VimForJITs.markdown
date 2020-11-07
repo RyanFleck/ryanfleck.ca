@@ -1,12 +1,13 @@
 ---
 title: "VIM For The Just-In-Time Crowd"
 date: 2017-12-29 12:11:37
-draft: true
+tags:
+  - Vim
 ---
 
 VIM is the best programming tool, full stop. This short guide will take the average JIT[^1] student from _"why would I use this silly terminal thing"_ to **"ohmygod where has this amazing tool been all my life?"** in 5 minutes, plus an hour or so of experimentation and adapting to the keybindings.
 
-## 1. What is VIM?
+# 1. What is VIM?
 
 VIM is a text editor with infinite reprogrammability, time-traveling and full-line undo, and a seemingly endless list of very useful functionality. [There is no end to the things you can learn about VIM.](https://sanctum.geek.nz/arabesque/vim-koans/) Notably, it has been released and developed as _Charityware_[^2]. Open a file by typing:
 
@@ -18,7 +19,7 @@ vim filename.extension
 
 If you typed in that simple command correctly, VIM will open your file.
 
-## 2. How to use VIM
+# 2. How to use VIM
 
 Structurally, VIM is designed to allow a programmer to move, cut, find, paste, delete, and program as fast as is humanly possible, moving all menus and buttons into the back of the user's head, so all focus can be placed on the program. VIM's learning curve is steep but short.
 
@@ -50,7 +51,7 @@ Structurally, VIM is designed to allow a programmer to move, cut, find, paste, d
 1. **:set number** and **:set nonumber** turn line numbering on and off.
 2. **:w** is to write, **:q** is to quit, **:wq** is to save and exit.
 
-## 3. Modifying VIM
+# 3. Modifying VIM
 
 The true power of VIM lies in its flexibility. My personal **.vimrc** is very small and tuned for editing C. Take a quick read, but implementing a robust .vimrc will not be covered in this post, as it is intended to introduce the user to simple editing and navigation within VIM.
 
@@ -67,7 +68,7 @@ set autoindent
 nnoremap <F4> :! clear && gcc % && clear && ./a.out<cr>
 ```
 
-## 4. Additional Resources
+# 4. Additional Resources
 
 VIM provides an interactive help menu, **:help**. Typing '**vimtutor**' in your shell will bring up an interactive tutorial to teach you the basics outlined above in a very nice hand-holding way. The verbose MAN pages are, as always, available by typing **man vim** in your shell. [Consider reading these koans.](https://sanctum.geek.nz/arabesque/vim-koans/) Below is a picture of _vimtutor_.
 

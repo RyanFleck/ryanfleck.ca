@@ -1,12 +1,11 @@
 ---
-title: "Bike Crash / BitDungeon"
+title: "Bike Crash"
 date: 2017-06-20 13:01:01 -0400
-draft: true
 ---
 
 Development on everything has stalled because I did something really stupid: I fractured my arm. The injury is very minor, and I should be back up and running in a week or less, but in the meantime, my right arm and wrist are going to need some rest.
 
-### Story Time:
+# Story Time:
 
 I was biking home from a good day’s work at a warehouse, unloading heavy boxes from a trailer, and was rather tired. Since I was in the industrial park, and biking home around 4pm, there was a fair amount of traffic on the road I was on. Beside me, there lay a freshly poured concrete sidewalk. Since I was keeping as far right as possible, and was uncomfortably close to the vehicles, I decided to pop up onto the sidewalk and continue that way. Looking for an opening, I saw a ramp ahead where the sidewalk dipped so traffic could smoothly pass up to a driveway. Obviously, I took this opportunity. What I didn’t see was the dirt, grave and dust-filled gap between the fresh sidewalk and the pavement.
 
@@ -26,7 +25,7 @@ My lovely girlfriend helped me first to the uOttawa clinic, then to the ER, and 
 
 Today, close to a week since the incident, my arm is much better and I’m recovering well. Should be entirely better within two weeks.
 
-### Update on projects:
+# Update on projects:
 
 **BattleCommander** should see some improvements today, as I’m trying to implement more movement and interaction methods. Hopefully I’ll be able to replace the TILED map with a new data structure soon, which can store data about the type of terrain, and the units within. | **BitDungeon**, another test experiment, was just created. It’s another simple experiment, but private for now. Mostly to test collisions and a graph-based room system. I’ll also be learning how to render different rooms and levels.
 

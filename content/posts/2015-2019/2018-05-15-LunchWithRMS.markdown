@@ -1,7 +1,6 @@
 ---
 title: "Lunch with Richard Stallman"
-date: 2018-05-15 15:47
-draft: true
+date: 2018-05-15 15:47:00
 ---
 
 _"Happy Hacking"_, he said with a smile. Written here is a short account of the meal I shared with the venerable Richard Stallman ([rms](https://stallman.org/biographies.html#serious)), father of the Free Software movement, a community whose ethos has evolved into the better half of the modern computing world (where people and quality come first!) I have no photos, autographs or records of the event _(I wanted to respect rms's privacy,)_ but have come away with a medley of interesting contacts and experiences.

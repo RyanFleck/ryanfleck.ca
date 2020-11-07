@@ -1,7 +1,6 @@
 ---
 title: "Hard Knocks"
 date: 2018-04-28 01:13:28
-draft: true
 ---
 
 My last 4 months were spent with [MNP LLP](http://www.mnp.ca/en), a financial firm and technology consultancy. I've learned a great deal from playing a small but essential role on the Digital Integration team. Becoming close with team members, coordinating development efforts, and discovering the strengths and weaknesses of my coworkers (along with my own,) has been a particularly rewarding experience. All this was not earned without hard work; I've made a great deal of mistakes, stepped on a few toes, and bumbled aplenty. The following article summarizes my growth at MNP, the mistakes I've made, and the life lessons learned from making them.
@@ -29,7 +28,11 @@ I was hired as a _Co-Op Analyst-Developer_, which has primarily involved running
 
 All of these roles required plenty of communication, an area in which I've seen significant improvement. Many of my trials and tribulations early in the semester involved misinterpretation or a lack of initiative to investigate and ask questions. With the team running overtime, I am occasionally left to operate independently; I've learned to make safe and justifiable assumptions if guidelines were not given. Deciding when to assert myself to clarify important details, or to rely on my predicted expectations has been interesting.
 
-<img src="/legacy/MNP.png" alt="Drawing" style="width: 300px; border-radius:0;"/>|<img src="/legacy/AHA.png" alt="Drawing" style="width: 400px; border-radius:0;"/>
+<span>
+
+<img src="/legacy/MNP.png" alt="Drawing" style="width: 300px; border-radius:0;"/><img src="/legacy/AHA.png" alt="Drawing" style="width: 400px; border-radius:0;"/>
+
+</span>
 
 While the company name is _MNP LLP_, the environment I operate in has the guts, crew, and visage of the amalgamated [_A Hundred Answers_](https://www.ahundredanswers.com/insights/aha-merges-with-mnp-oct-1), a boutique tech consulting firm. _"A Hundred Answers (AHA) is a Canadian professional services firm providing advisory, digital and technology solutions and services."_ The culture, while not quite what I expected, has been excellent for personal development. I have been provided with a mentor, a buddy, and a diverse set of team members who are happy to answer questions and give guidance.
 

@@ -1,35 +1,31 @@
 ---
 title: "Windows Mixed Reality"
 date: 2018-06-24 00:18:13
-draft: true
+toc: true
 ---
+
+# Preamble
 
 As the Virtual Reality scene continues to improve, the aging first-gen conceptual headsets are becoming less expensive. The HTC Vive initially retailed at CAD $1200, and now sells for $700, whereas the Oculus Rift dropped from $800 for the standalone headset to $530 including motion controllers. _Windows Mixed Reality_ headsets are the consumer offspring of all the R&D that occurred for the HoloLens, namely inside-out tracking, and positioned themselves as the budget alternative to these premium headsets. I purchased a _Lenovo Explorer_ on sale for \$300, less than half the cost of either premium HMD; these are my thoughts on the headset and platform.
 
 **Update 2018-12-14:** I've decided to finally finish and post this article, because Dell WMR headsets are currently on sale for $250 CAD from Microsoft, and the Oculus Rift is discounted to $450 on Amazon. I think this is a fantastic chance to jump into VR, provided you have a capable system:
 
-![Image.](/legacy/vr/dell.png){: .center-image }
+![Image.](/legacy/vr/dell.png)
 
-<br />
-
-<h3>Table of Contents</h3>
-1. Seed entry for TOC
-{:toc}
-
-<br />
-
-## Disclaimers
+# Disclaimers
 
 1. I already own a fairly powerful PC, packing an i7-4790k, GTX 980ti and 32 Gigs of DDR3. The cost of VR is far higher if you do not already have a powerful _desktop_ system, (I'm fairly certain mobile CPUs can't push 90 hertz,) you'll have to make an investment of ~\$2000 CAD or more.
 1. **VR is NOT for everyone.** at this early stage, you'll need to have a fair bit of patience and high tolerance for unnatural movement; players can easily get motion sickness or eye problems. If you can tolerate reading in the car or working on the bus, you ought to be fine. _Interpupillary distance_ is another common problem, especially with Windows Mixed Reality headsets which have a fixed _IPD_. If your eyes are significantly further apart then the 90%s ~62.8mm, do some research to find out if your face is compatible with any of the available headsets.
 
 <br />
+<div style="text-align:center">
 
-![Image.](/legacy/vr/VR-EVIL-s.jpg){: .center-image }
+![Image.](/legacy/vr/VR-EVIL-s.jpg)
 
+</div>
 <br />
 
-## Lenovo Explorer First Impressions
+# Lenovo Explorer First Impressions
 
 Lenovo's HMD arrived in a clean, well-padded box. While nowhere near the premium, luxurious packaging and thoughtful presentation of the _Oculus rift_, which I have also helped to unbox (and will be comparing to throughout this review,) the HMD and controllers were well-protected and easy to unpack.
 
@@ -39,11 +35,15 @@ Right off the bat, the setup process was easy; much easier than the Oculus. To s
 
 <br />
 
-![Image.](/legacy/vr/VR-Controller.jpg){: .center-image }
+<div style="text-align:center">
+
+![Image.](/legacy/vr/VR-Controller.jpg)
+
+</div>
 
 <br />
 
-## Games & Compatibility
+# Games & Compatibility
 
 I've mostly played room-scale, movement-filled games with the WMR headset. My favorite room-scale experiences so far have been Gorn, Superhot VR, Skyrim VR, Arizona Sunshine, Robo Recall, and Valve mini-games. In particular, Gorn and Superhot VR will make you feel like an absolute angel of death. Arizona Sunshine, especially during the dark levels, has the ability to give you a panic attack. Robo Recall is beautifully crafted, and Skyrim is (with tons of mods,) a blast.
 
@@ -53,7 +53,7 @@ The support for HTC Vive games is, generally, very good. The greatest problem I'
 
 Oculus games are a different story. The ReVive layer has a performance cost, and many of the beautifully-crafted Oculus games require you to use the controllers in ways that feel awkward or don't work with WMR. _Echo Arena_, one of my favorite games to play on the Oculus, is unplayable in WMR because of a gameplay mechanic: While floating in space, you will often need to anchor yourself to an object that is behind you, so you can catch and throw the ring with the other hand. _WMR cannot reliably track controllers behind you._
 
-## The Headset
+# The Headset
 
 While not as deep and black, the LCD panels in the Lenovo Explorer have a higher pixel density (2x1440x1440) than the Oculus Rift's PenTile OLED panels (2x1080x1200), and far better pixel fill (screen door mitigation.) In-game objects and text are clear and sharper. The only real weakness of the LCD Panels is the image persistence; bright objects will leave faint trails across the liquid crystal panels. This is almost unnoticeable, except by comparison with OLED headsets, and does not effect immersion.
 
@@ -63,7 +63,7 @@ What _does_ impact the immersion is the engineering of the head-mounting mechani
 
 A problem specifically with the Lenovo Explorer is the position of the cables. Out of the box, they run out of the visor, up along the side of the headset, and down to the floor. This poses two problems. Firstly, a tug on this cable will place strain on the hinge connecting the headband to the headset. Secondly, the weight of the cable is applied to only one side of your head. I've modified my headset with twist-ties to reroute the cable to the back of the head, and secured part of it so a tug will not apply force to the visor.
 
-## Controllers
+# Controllers
 
 The controllers work. It makes me sad to think about the Oculus controllers, as they provided far better _hand presence_, and seeing them again when I boot Oculus games makes me wince. _The Oculus Touch controllers are amazing, and all other controllers come second._
 
@@ -71,7 +71,7 @@ This being said, the WMR and Vive controllers do the job; allowing you to intera
 
 The tracking of WMR controllers is great, so long as they are held in front of you. This is discussed in-depth in the next section.
 
-## Tracking
+# Tracking
 
 For room-scale VR, **Vive > WMR > Oculus.**
 For seated VR, **Oculus > WMR > Vive.**
@@ -86,7 +86,7 @@ WMR has reasonably accurate tracking, but does not rely on base stations, and so
 
 All things considered, WMR is far better equipped for use at room-scale than an Oculus with two sensors. And the Vive trounces both... but at the moment, is ~4x the cost of a single WMR headset.
 
-## Five Months Later
+# Five Months Later
 
 Microsoft continues to push improvements for its Mixed Reality ecosystem. The recent _Mixed Reality Flashlight_ allows the user to see through the WMR cameras, enabling soda-drinking and dorito-eating without lifting the visor. SteamVR compatibility continues to improve, and games can now be launched directly from Windows Home.
 
