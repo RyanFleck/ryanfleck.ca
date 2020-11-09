@@ -582,3 +582,12 @@ footer p a {
   color: red;
   transition: 5s ease;
 }
+
+#views-box {
+  transition: ease-in 1s;
+}
+
+.invisible {
+  display: none;
+  transition: ease-in 1s;
+}

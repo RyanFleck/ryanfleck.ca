@@ -2,9 +2,11 @@
 <!---->
 {{ if .WordCount }}
 <!-- View count -->
-<span id="views">_</span> Views
+<span id="views-box" class="invisible">
+  <span id="views">0</span> Views &middot;
+</span>
 <!-- Words -->
-&middot; {{ .WordCount }} Words {{ end }}
+{{ .WordCount }} Words {{ end }}
 <!-- ...and reading time.  -->
 {{ if .ReadingTime }} &middot;
 <!---->

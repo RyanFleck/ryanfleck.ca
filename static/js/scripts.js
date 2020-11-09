@@ -10,7 +10,11 @@
 
 function setPageViews(message) {
   console.log("This page has " + message + " views.");
-  document.getElementById("views").innerText = message;
+  var count = document.getElementById("views");
+  var box = document.getElementById("views-box");
+  count.innerText = message;
+  box.classList.remove("invisible");
+  box.classList.add("visible");
 }
 
 /*
@@ -84,8 +88,6 @@ window.addEventListener("load", function (event) {
       // Set the page views if they are given by the server.
       if (blob.hasOwnProperty("page_views")) {
         setPageViews(blob.page_views.toString());
-      } else {
-        setPageViews("0");
       }
     })
     .catch((e) => {

@@ -1,9 +1,13 @@
 <br />
 {{ if not .IsHome }}
 <footer>
-<p style="font-size: 1.1em;">{{ .Title }} </p>
+
+{{ if .WordCount }}
+<br />
+<p style="font-size: 1.3em;">{{ .Title }} </p>
 <p>{{ partial "word-count.html" .}}</p>
 <p>{{ partial "tags.html" .}}</p>
+{{ end }}
 <br />
 <p>
     <a href="/">Home</a> &middot; 
