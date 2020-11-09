@@ -1,22 +1,19 @@
 ---
-date: 2020-07-10T09:19:51.000-04:00
 title: Technocracy
+date: 2020-07-10T09:19:51.000-04:00
 draft: true
+toc: true
 tags:
   - Technology
   - Politics
 ---
 
-_Article Structure_
-
-- Intro to Technocracy
-- Society leeching into technology
-- Danger of excluding human principles from technology
-- Conclusions
+# What was Technocracy?
 
 The Technocratic political movement emerged in the 1930s as Scientists and
 Engineers proposed a better and brighter way forward, paved by the relentless
 application of the scientific method to the problems of modern society.
+
 Horrified by the first Great War of 1914-1918, and confronted with the Great
 Depression from 1929-1939, technologists proposed a bureaucracy with members
 selected based on merit and specialized knowledge, and not necessarily by
@@ -27,20 +24,44 @@ and the top-heavy and slow legislative process could be deprecated.
 A monad, representing the balance between production and consumption, was used
 by Howard Scott as the logo for Technocracy Inc. Interestingly, the monad is
 also associated with many philosophical and religious beliefs, particularly
-_gnosticism_.
+_Gnosticism_. Se also _Monism_.
 
-Interestingly, Canada banned Technocracy in 1940, allegedly due to opposition to
-the Second World War. An archive of Technocracy material from this era is stored
-at the University of Alberta in Edmonton, Canada.
+The Government of Canada temporarily banned Technocracy in 1940, allegedly due
+to opposition to the Second World War. An archive of Technocracy material from
+this era is stored at the University of Alberta in Edmonton, Canada. To my
+delight, Technocracy Inc. still hosts a website at
+[technocracyinc.org](https://www.technocracyinc.org/)
+
+Though allegedly stopped in its tracks and ground into the dust, the core ideas
+behind Technocracy have been kept alive and nurtured, first by the American
+Industrial Complex, namely IBM, Xerox, and HP, and more recently by the Silicon
+Valley technology giants.
+
+
+By the end of this article, I seek to answer the question: _for better or worse,
+what impact have the Technocratic ideas had on our modern era of computing?_
+
+
+# Heart of Darkness 
 
 As of late, rather than the purely analytical reasoning of technology seeping
 into the convoluted and biased world of politics and social sciences, the
 doublethink of these domains has been seeping backwards into computing.
 
-The realm of computers is currently a very secular one, albeit tainted at the
-fringes with brain-bending notions of equal understanding, co-operation, and
-productivity no matter how little the people present know about the subject
-matter, or comprehension of the subtleties of the project's goals.
+The realm of computers has always been rather secular, save for the rare
+divinely inspired program, or even entire operating systems like _Temple OS_
+Movements based on lofty idealism like the Free Software movement exist to
+increase the accessibility of software, and grant users the right to know what
+the software running on their system _is actually doing,_ have gained some
+traction but mostly been co-opted and spun off into more business-palatable
+variants. Aside from these rare instances, the rather Gnostic realm of computing has remained untouched by politics.
+
+Perhaps the change has been occurring for longer than I know, but I can say with
+relative certainty that the world of software has become a much darker place in
+recent years.
+
+
+# The Purge 
 
 If everybody has an equal capacity for applying logic and holding complex data
 structures in their heads, then it is entirely fair to assert that hard work is
