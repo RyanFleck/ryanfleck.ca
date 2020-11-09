@@ -49,7 +49,7 @@ window.addEventListener("load", function (event) {
   };
 
   console.log("Feature 2: Attempt to contact rcf-services on Heroku.");
-  fetch("https://rcf-services.herokuapp.com/api/view-counts/page-tracker", {
+  fetch("https://rcf-services.herokuapp.com/api/view-counts/page-tracker/", {
     mode: "cors",
     method: "POST",
     headers: {
