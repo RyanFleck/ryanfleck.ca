@@ -28,6 +28,19 @@ window.addEventListener("load", function (event) {
         header.appendChild(anchorLink);
       }
     }
+
+    // Feature 2: Let RCF Services know we're here.
+    fetch("https://rcf-services.herokuapp.com/", { mode: "cors" })
+      .then((res) => {
+        // For now, just print the response.
+        console.log("Services responded with:");
+        console.log(res);
+      })
+      .catch((e) => {
+        // This feature is still in development, so no worries if errors occur.
+        console.error("Couldn't contact services.");
+        console.error(e);
+      });
   });
   /*
   // Feature 2: Replace Xg and Xgs with explanation.

@@ -8,7 +8,7 @@ attend the _University of Ottawa_ pursuing a BASc in Computer Engineering.
 Alongside internships at _IBM_ and _MNP LLP_, I contribute to _Xalgorithms
 Foundation_ projects and the _UOE Racing Team_.
 
-<link rel="prefetch" href="/pics/uoe/team_picture_2_compressed.jpg">
+<link rel="preload" as="image" href="/pics/uoe/team_picture_2_compressed.jpg">
 
 ![The Car!](/pics/uoe/team_picture_2_compressed.jpg)
 

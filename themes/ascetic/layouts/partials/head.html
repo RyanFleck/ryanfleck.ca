@@ -10,7 +10,7 @@
   name="description"
   content="Ryan Fleck, computer engineering student, pragmatic programmer."
 />
-<link rel="preload" href="/r.svg" />
+<link rel="preload" as="image" href="/r.svg" />
 {{ else }}
 <meta name="description" content="{{ .Summary }}" />
 {{ end }}
@@ -85,7 +85,7 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="/style.css" media="screen" />
-<script type="application/javascript" src="/scripts.js" async defer></script>
+<script type="application/javascript" src="/js/scripts.js" async defer></script>
 
 <style media="print">
   html {
