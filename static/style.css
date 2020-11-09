@@ -105,6 +105,8 @@ a {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  text-decoration: none;
+  color: rgb(83, 83, 221);
 }
 
 /* Places where eyeballs go should be comfortable and serifed. */
@@ -126,11 +128,6 @@ button {
   margin: 0 auto;
   max-width: 700px;
   padding: 0.6em;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(83, 83, 221);
 }
 
 ul {
