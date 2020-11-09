@@ -1,0 +1,9 @@
+<!-- Include word count if present. -->
+&middot;
+<!---->
+{{ if .WordCount }} {{ .WordCount }} Words {{ end }}
+<!-- ...and reading time.  -->
+{{ if .ReadingTime }} &middot;
+<!---->
+{{ .ReadingTime }} minute read. {{ end }}
+<!---->
