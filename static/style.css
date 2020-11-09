@@ -560,6 +560,11 @@ sup.footnote-ref > a {
   opacity: 100%;
 }
 
+footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
 footer p a {
   color: rgb(183 183 236);
 }

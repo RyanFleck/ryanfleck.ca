@@ -9,7 +9,8 @@
  */
 
 function setPageViews(message) {
-  console.log("Set page views to " + message);
+  console.log("This page has " + message + " views.");
+  document.getElementById("views").innerText = message;
 }
 
 /*
@@ -18,6 +19,17 @@ function setPageViews(message) {
 
 window.addEventListener("load", function (event) {
   console.log("Page scripts for ryanfleck.ca loaded and running.");
+
+  // Check session storage and page URL
+  var id = sessionStorage.getItem("rcf_user_id") || "";
+  var url = window.location.href.toString();
+  var server = "https://rcf-services.herokuapp.com";
+
+  // If running in development, point requests to localhost:8000
+  if (url.indexOf("localhost") == 7) {
+    console.log("Contacting local Django server instead of production.");
+    server = "http://localhost:8000";
+  }
 
   //Feature 1: Add tildes with anchor links beside all headers.
   console.log("Feature 1: Add tildes with anchor links beside all headers.");
@@ -42,14 +54,13 @@ window.addEventListener("load", function (event) {
   });
 
   // Feature 2: Attempt to contact rcf-services on Heroku.
-  var id = sessionStorage.getItem("rcf_user_id") || "";
   var postData = {
     user_id: id,
-    page_url: window.location.href.toString(),
+    page_url: url,
   };
 
   console.log("Feature 2: Attempt to contact rcf-services on Heroku.");
-  fetch("https://rcf-services.herokuapp.com/api/view-counts/page-tracker/", {
+  fetch(server + "/api/view-counts/page-tracker/", {
     mode: "cors",
     method: "POST",
     headers: {

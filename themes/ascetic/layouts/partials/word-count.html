@@ -1,7 +1,10 @@
 <!-- Include word count if present. -->
-&middot;
 <!---->
-{{ if .WordCount }} {{ .WordCount }} Words {{ end }}
+{{ if .WordCount }}
+<!-- View count -->
+<span id="views">_</span> Views
+<!-- Words -->
+&middot; {{ .WordCount }} Words {{ end }}
 <!-- ...and reading time.  -->
 {{ if .ReadingTime }} &middot;
 <!---->

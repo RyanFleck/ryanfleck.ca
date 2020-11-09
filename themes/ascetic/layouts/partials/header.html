@@ -1,7 +1,3 @@
-{{ if .Title }}
-{{ if not .IsHome }}
-{{ if not (in .Kind "404") }}
+{{ if .Title }} {{ if not .IsHome }} {{ if not (in .Kind "404") }}
 <h1 class="page-title">{{ .Title }}</h1>
-{{end}}
-{{end}}
-{{end}}
+{{end}} {{end}} {{end}}
