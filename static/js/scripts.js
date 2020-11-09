@@ -8,6 +8,14 @@
  *
  */
 
+function setPageViews(message) {
+  console.log("Set page views to " + message);
+}
+
+/*
+ * On load operations.
+ */
+
 window.addEventListener("load", function (event) {
   console.log("Page scripts for ryanfleck.ca loaded and running.");
 
@@ -34,12 +42,40 @@ window.addEventListener("load", function (event) {
   });
 
   // Feature 2: Attempt to contact rcf-services on Heroku.
+  var id = sessionStorage.getItem("rcf_user_id") || "";
+  var postData = {
+    user_id: id,
+    page_url: window.location.href.toString(),
+  };
+
   console.log("Feature 2: Attempt to contact rcf-services on Heroku.");
-  fetch("https://rcf-services.herokuapp.com/", { mode: "cors" })
+  fetch("https://rcf-services.herokuapp.com/api/view-counts/page-tracker", {
+    mode: "cors",
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(postData),
+  })
     .then((res) => {
       // For now, just print the response.
-      console.log("Services responded with:");
-      console.log(res);
+      return res.json();
+    })
+    .then((blob) => {
+      console.log(blob);
+
+      // Save an ID if it is provided.
+      if (blob.hasOwnProperty("new_id")) {
+        console.log("Got new ID from server. Saving...");
+        sessionStorage.setItem("rcf_user_id", blob.new_id);
+      }
+
+      // Set the page views if they are given by the server.
+      if (blob.hasOwnProperty("page_views")) {
+        setPageViews(blob.page_views.toString());
+      } else {
+        setPageViews("0");
+      }
     })
     .catch((e) => {
       // This feature is still in development, so no worries if errors occur.

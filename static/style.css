@@ -563,3 +563,17 @@ sup.footnote-ref > a {
 footer p a {
   color: rgb(183 183 236);
 }
+
+.viewcount {
+  margin-top: 0px;
+  height: 0px;
+  transition: 5s ease;
+  opacity: 0;
+}
+
+.viewcount-visible {
+  height: auto;
+  opacity: 1;
+  color: red;
+  transition: 5s ease;
+}
