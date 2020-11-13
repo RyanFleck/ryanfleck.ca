@@ -92,3 +92,8 @@ deals with the art and science of computers and digital logic.
 
 While programming, we must keep God's moral principles in our hearts, or we risk
 losing our humanity to daemons of our own creation.
+
+# Neon Genesis: Evangelion and the Human Instrumentation Project
+
+The first superintelligence will be born by connecting a greater percentage of
+the human population to a cloud computing engine. Google is effectively NERV.
