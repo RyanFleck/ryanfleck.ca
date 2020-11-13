@@ -12,3 +12,8 @@ Linux. The topics in this guide could be just as easily applied to a
 different distro.
 
 <https://www.brianlinkletter.com/fixing-thinkpad-t420-battery-problem-linux/>
+
+One of the more annoying bugs this machine has is with the trackpad power
+management, which can be fixed by following this guide:
+
+<https://wiki.ubuntu.com/DebuggingTouchpadDetection#In_case_your_Touchpad_stops_working_after_a_while>
