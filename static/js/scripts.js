@@ -39,8 +39,8 @@ function addAnchorsToHeaders() {
  * Add view counts to articles.
  */
 function setPageViewCounts() {
-  // Check session storage and page URL
-  var id = sessionStorage.getItem("rcf_user_id") || "";
+  // Check local storage and page URL
+  var id = localStorage.getItem("rcf_user_id") || "";
   var server_url = getServerUrl();
   var page_path = window.location.pathname;
 
@@ -65,7 +65,7 @@ function setPageViewCounts() {
       // Save an ID if it is provided.
       if (blob.hasOwnProperty("new_id")) {
         console.log("setPageViewCounts: Got new ID from server. Saving...");
-        sessionStorage.setItem("rcf_user_id", blob.new_id);
+        localStorage.setItem("rcf_user_id", blob.new_id);
       }
 
       // Set the page views if they are given by the server.
