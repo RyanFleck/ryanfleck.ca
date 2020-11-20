@@ -117,6 +117,7 @@ html {
   -moz-osx-font-smoothing: auto !important;
   font-variant-ligatures: normal;
   -webkit-font-feature-settings: "liga" on, "calt" on;
+  font-feature-settings: "liga" on, "calt" on;
   text-rendering: optimizeLegibility;
   max-width: 100%;
   color: rgba(0, 0, 0, 0.8);
@@ -269,6 +270,7 @@ pre,
   -moz-osx-font-smoothing: auto !important;
   font-variant-ligatures: normal;
   -webkit-font-feature-settings: "liga" on, "calt" on;
+  font-feature-settings: "liga" on, "calt" on;
   text-rendering: optimizeLegibility;
   font-family: "JetBrains Mono", "IBM Plex Mono", "SFMono-Regular", Consolas,
     "Liberation Mono", "Noto Mono", Menlo, Courier, monospace;
