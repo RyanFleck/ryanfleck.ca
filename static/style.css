@@ -12,6 +12,26 @@
 }
 
 @font-face {
+  font-family: "Alata";
+  src: url("fonts/alata/Alata-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jbm/web/woff2/JetBrainsMono-Regular.woff2") format("woff2"),
+    url("/fonts/jbm/web/woff/JetBrainsMono-Regular.woff") format("woff"),
+    url("/fonts/jbm/web/eot/JetBrainsMono-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Source Serif Pro */
+
+@font-face {
   font-family: "Source Serif Pro";
   src: url("fonts/source_serif_pro/SourceSerifPro-Italic.ttf")
     format("truetype");
@@ -27,6 +47,41 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* JBM */
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jbm/web/woff2/JetBrainsMono-Bold.woff2") format("woff2"),
+    url("/fonts/jbm/web/woff/JetBrainsMono-Bold.woff") format("woff"),
+    url("/fonts/jbm/web/eot/JetBrainsMono-Bold.eot") format("eot");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jbm/web/woff2/JetBrainsMono-Bold-Italic.woff2")
+      format("woff2"),
+    url("/fonts/jbm/web/woff/JetBrainsMono-Bold-Italic.woff") format("woff"),
+    url("/fonts/jbm/web/eot/JetBrainsMono-Bold-Italic.eot") format("eot");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jbm/web/woff2/JetBrainsMono-Italic.woff2") format("woff2"),
+    url("/fonts/jbm/web/woff/JetBrainsMono-Italic.woff") format("woff"),
+    url("/fonts/jbm/web/eot/JetBrainsMono-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Plex */
 
 @font-face {
   font-family: "IBM Plex Mono";
@@ -52,14 +107,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Alata";
-  src: url("fonts/alata/Alata-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* Style */
 
 html {
@@ -68,6 +115,9 @@ html {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: auto !important;
+  font-variant-ligatures: normal;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  text-rendering: optimizeLegibility;
   max-width: 100%;
   color: rgba(0, 0, 0, 0.8);
   background: white;
@@ -214,8 +264,14 @@ h6 {
 code,
 pre,
 .highlight {
-  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono",
-    "Noto Mono", Menlo, Courier, monospace;
+  /* These are not enforced if not important, wcyd? */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-variant-ligatures: normal;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  text-rendering: optimizeLegibility;
+  font-family: "JetBrains Mono", "IBM Plex Mono", "SFMono-Regular", Consolas,
+    "Liberation Mono", "Noto Mono", Menlo, Courier, monospace;
   background-color: transparent !important;
   color: black;
   font-size: 0.8rem;
