@@ -18,10 +18,12 @@ This [minimalist](/2019/digital-minimalism/) website stores my
 long-form writing; records of experiments, musings, tutorials, and articles on
 technology.
 
+I also store a collection of personal notes at **[manuals.ryanfleck.ca](https://manuals.ryanfleck.ca)**, my other less formal referential website.
+
 I'm always looking for new, innovative projects to contribute to.
 
 My ProtonMail inbox,
-[Ryan.Fleck@protonmail.com](mailto:ryan.fleck@protonmail.com),
+**[Ryan.Fleck@protonmail.com,](mailto:ryan.fleck@protonmail.com)**
 is the most reliable way to get in touch.
 I check this inbox twice a day. At those times, I will read all of the messages
 and pencil in a future time to respond to the most important. At one point, I

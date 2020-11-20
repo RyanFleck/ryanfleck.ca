@@ -310,8 +310,9 @@ blockquote {
 #R {
   margin: 20px auto;
   display: block;
-  width: 70%;
-  max-width: 400px;
+  width: 50vh;
+  max-width: 70%;
+  filter: drop-shadow(0 0 10px rgb(200, 200, 255));
 }
 
 #buttons {
@@ -320,6 +321,7 @@ blockquote {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  font-size: 1.2em;
 }
 
 @media (max-width: 600px) {
@@ -513,6 +515,10 @@ a[href^="http://localhost:1313/"]
 #buttons > a.button {
   background: none;
   padding-right: 0px;
+}
+
+.homedot {
+  color: rgb(186 186 255);
 }
 
 code {
