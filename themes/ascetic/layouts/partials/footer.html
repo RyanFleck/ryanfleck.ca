@@ -1,22 +1,40 @@
-<br />
 {{ if not .IsHome }}
+<br />
 <footer>
+  <!--Word Count-->
+  {{ if .WordCount }}
+  <br />
+  <p style="font-size: 1.3em">{{ .Title }}</p>
+  <p>{{ partial "word-count.html" .}}</p>
+  <p>{{ partial "tags.html" .}}</p>
+  {{ end }}
 
-{{ if .WordCount }}
-<br />
-<p style="font-size: 1.3em;">{{ .Title }} </p>
-<p>{{ partial "word-count.html" .}}</p>
-<p>{{ partial "tags.html" .}}</p>
-{{ end }}
-<br />
-<p>
-    <a href="/">Home</a> &middot; 
-    <a href="/posts">Posts</a> &middot; 
+  <!--Remainder of Footer-->
+
+  <br />
+  <div>
+    <a href="/">Home</a> &middot; <a href="/posts">Posts</a> &middot;
     <a href="/about">About</a>
-</p>
-
-<p>Copyright © 2019 Ryan Fleck</br>
-Work licensed under the <b>CC BY-SA 4.0</b> license unless otherwise specified.</p>
-<br />
+  </div>
+  <br />
+  <div>Copyright © 2019 Ryan Fleck</div>
+  <small>
+    <div>
+      Work licensed under the
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+        >CC BY-SA 4.0</a
+      >
+      license unless otherwise specified.
+    </div>
+    <div>
+      Source code published at
+      <a
+        href="https://github.com/ryanfleck/ryanfleck.ca"
+        target="_blank"
+        rel="noopener noreferrer"
+        >github.com/ryanfleck/ryanfleck.ca</a
+      >
+    </div>
+  </small>
 </footer>
 {{ end }}

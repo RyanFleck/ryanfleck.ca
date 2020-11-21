@@ -166,6 +166,7 @@ li,
 tr,
 td,
 th,
+footer,
 button {
   font-family: "Source Serif Pro", Iowan Old Style, Apple Garamond,
     Palatino Linotype, Times New Roman, "Droid Serif", Times, serif,
@@ -491,8 +492,8 @@ td {
   padding-right: 3px;
 }
 
-a[href^="https://"],
-a[href^="http://"]
+article a[href^="https://"],
+article a[href^="http://"]
 {
   background: url(/external.png) right no-repeat;
   /* In the future, make a larger icon and scale it down. */
@@ -500,13 +501,13 @@ a[href^="http://"]
   padding-right: 12px;
 }
 
-a[href^="https://ryanfleck.ca"]
+article a[href^="https://ryanfleck.ca"]
 {
   background: none;
   padding-right: 0px;
 }
 
-a[href^="http://localhost:1313/"]
+article a[href^="http://localhost:1313/"]
 {
   background: none;
   padding-right: 0px;
@@ -526,7 +527,7 @@ code {
 }
 
 footer a {
-  color: rgb(141, 141, 228);
+  color: rgb(202 202 249);
 }
 
 .rcf-glitch {
