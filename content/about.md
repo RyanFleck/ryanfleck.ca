@@ -8,8 +8,6 @@ attend the _University of Ottawa_ pursuing a BASc in Computer Engineering.
 Alongside internships at _IBM_ and _MNP LLP_, I contribute to _Xalgorithms
 Foundation_ projects and the _UOE Racing Team_.
 
-<link rel="preload" as="image" href="/pics/uoe/team_picture_2_compressed.jpg">
-
 ![The UOE Racing Team](pics/uoe/team_picture_2_compressed.jpg)
 
 <p style="text-align:center"><small><i>UOE Racing Supermileage Team - Photo: Bijan Samiee</i></small></p>
