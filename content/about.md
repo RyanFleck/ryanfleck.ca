@@ -20,8 +20,8 @@ I also store a collection of personal notes at **[manuals.ryanfleck.ca](https://
 
 I'm always looking for new, innovative projects to contribute to.
 
-My ProtonMail inbox,
-**[Ryan.Fleck@protonmail.com,](mailto:ryan.fleck@protonmail.com)**
+My email inbox,
+**[hello@ryanfleck.ca,](mailto:hello@ryanfleck.ca)**
 is the most reliable way to get in touch.
 I check this inbox twice a day. At those times, I will read all of the messages
 and pencil in a future time to respond to the most important. At one point, I

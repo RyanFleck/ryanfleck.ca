@@ -226,7 +226,7 @@ Here's a copy of the code with comments:
 
 /**
  * Timer experiments.
- * Adapted by Ryan Fleck - Ryan.Fleck@protonmail.com
+ * Adapted by Ryan Fleck - dev@ryanfleck.ca 
  *
  * Blinks LED2 at P4.7
  */
