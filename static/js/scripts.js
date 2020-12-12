@@ -21,12 +21,14 @@ function addAnchorsToHeaders() {
         var anchorLink = document.createElement("a");
 
         // Add required attributes.
-        anchorLink.text = "~"; // Could be pilcrow ¶
+        anchorLink.text = "¶"; // Could be pilcrow ¶
         anchorLink.href = "#" + header.id;
         anchorLink.className = "header-anchor-link";
         anchorLink.style.float = "left";
         anchorLink.style.marginLeft = "-20px";
-
+        anchorLink.style.fontSize = "0.7em";
+        anchorLink.style.paddingTop = "0.38em";
+        anchorLink.style.paddingRight = "0.1em";
         // Append to header.
         header.appendChild(anchorLink);
       }
