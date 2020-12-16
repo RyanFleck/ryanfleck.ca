@@ -85,13 +85,23 @@
 <!-- CSS -->
 <link rel="stylesheet" href="/style.css" />
 
+<!-- Non-Critical CSS can be deferred. -->
 <link
   rel="preload"
-  href="/fonts.css"
+  href="/style-noncritical.css"
   as="style"
   onload='this.onload=null;this.rel="stylesheet";this.as=null;'
 />
-<noscript><link rel="stylesheet" href="/fonts.css" /></noscript>
+<noscript><link rel="stylesheet" href="/style-noncritical.css" /></noscript>
+
+<!-- Fonts can be loaded after the rest of the CSS. -->
+<link
+  rel="preload"
+  href="/style-fonts.css"
+  as="style"
+  onload='this.onload=null;this.rel="stylesheet";this.as=null;'
+/>
+<noscript><link rel="stylesheet" href="/style-fonts.css" /></noscript>
 
 <!-- JS -->
 <script type="application/javascript" src="/js/scripts.js" async defer></script>
