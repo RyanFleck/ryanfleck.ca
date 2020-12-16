@@ -83,7 +83,23 @@
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
 <!-- CSS -->
-<link rel="stylesheet" href="/style.css" media="screen" />
+<link
+  rel="preload"
+  href="/style.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  media="screen"
+/>
+<noscript><link rel="stylesheet" href="/style.css" media="screen" /></noscript>
+<link
+  rel="preload"
+  href="/fonts.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  media="screen"
+/>
+<noscript><link rel="stylesheet" href="/fonts.css" media="screen" /></noscript>
+
 <!-- JS -->
 <script type="application/javascript" src="/js/scripts.js" async defer></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
