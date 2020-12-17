@@ -128,7 +128,8 @@ div.highlight > pre {
 }
 
 hr {
-  border-style: dashed;
+  border: none;
+  border-top: 2px solid #eee;
 }
 
 blockquote {
@@ -338,4 +339,8 @@ footer p a {
 .invisible {
   display: none;
   transition: ease-in 1s;
+}
+
+.footnote-backref {
+  font-family: "Courier New", Courier, monospace;
 }
