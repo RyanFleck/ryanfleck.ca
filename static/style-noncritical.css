@@ -182,7 +182,6 @@ div.highlight > pre {
   margin: 0;
 }
 
-
 blockquote {
   margin-left: 2ch;
 }
@@ -473,6 +472,11 @@ sub {
 sup.footnote-ref > a {
   color: grey;
   font-size: 0.5rem;
+}
+
+a.footnote-ref {
+  font-size: 0.7rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* WebKit Scrollbar */
