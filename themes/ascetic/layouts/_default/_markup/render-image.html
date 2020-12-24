@@ -1,8 +1,10 @@
 {{ $image_ext := path.Ext .Destination }}
-{{- if (or (strings.HasPrefix .Destination "http") (and (not (strings.HasSuffix $image_ext "jpg")) (not (strings.HasSuffix $image_ext "jpeg")) (not (strings.HasSuffix $image_ext "png")) (not (strings.HasSuffix $image_ext "svg")))) -}}
+{{- if (or (strings.HasPrefix .Destination "http") (and (not (strings.HasSuffix $image_ext "jpg")) (not (strings.HasSuffix $image_ext "jpeg")) (not (strings.HasSuffix $image_ext "gif"))  (not (strings.HasSuffix $image_ext "png")) (not (strings.HasSuffix $image_ext "svg")))) -}}
   <img class="rcf-image external-image" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} loading="lazy" />
 {{- else if (strings.HasSuffix $image_ext "svg") -}}
     {{ partial "compressed-svg.html" (dict "context" . "Destination" .Destination )}} 
+{{- else if (strings.HasSuffix $image_ext "gif") -}}
+    {{ partial "compressed-gif.html" (dict "context" . "Destination" .Destination )}} 
 {{- else -}}
     {{/* Get from assets folder and compress */}}
     {{ partial "compressed-image.html" (dict "context" . "Destination" .Destination )}} 
