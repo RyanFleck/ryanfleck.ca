@@ -9,33 +9,38 @@
 {{/* We build our src-set step by step. */}}
 {{ $src_set := "" }}
 
-{{ if ge $image.Width "2300" }}
-{{ $resized := $image.Resize "2300x 80q jpg"}}
+{{ if ge $image.Width "2100" }}
+{{ $resized := $image.Resize "2100x 80q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
-{{ if ge $image.Width "1920" }}
-{{ $resized := $image.Resize "1920x 80q jpg"}}
+{{ if ge $image.Width "1750" }}
+{{ $resized := $image.Resize "1750x 80q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
-{{ if ge $image.Width "1500" }}
-{{ $resized := $image.Resize "1500x 80q jpg"}}
+{{ if ge $image.Width "1400" }}
+{{ $resized := $image.Resize "1400x 80q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
-{{ if ge $image.Width "1000" }}
-{{ $resized := $image.Resize "1000x 80q jpg"}}
+{{ if ge $image.Width "1225" }}
+{{ $resized := $image.Resize "1225x 80q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
-{{ if ge $image.Width "800" }}
-{{ $resized := $image.Resize "800x 80q jpg"}}
+{{ if ge $image.Width "1050" }}
+{{ $resized := $image.Resize "1050x 80q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
-{{ if ge $image.Width "600" }}
-{{ $resized := $image.Resize "600x 80q jpg"}}
+{{ if ge $image.Width "875" }}
+{{ $resized := $image.Resize "875x 80q jpg"}}
+{{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
+{{ end }}
+
+{{ if ge $image.Width "700" }}
+{{ $resized := $image.Resize "700x 80q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
@@ -44,7 +49,7 @@
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
-{{ $placeholder := ($image.Resize "48x q20") | images.Filter (images.GaussianBlur 2) }}
+{{ $placeholder := ($image.Resize "128x q20") | images.Filter (images.GaussianBlur 2) }}
 {{ $alt := .PlainText | safeHTML }}
 {{ $caption := "" }}
 {{ with .Title }}
