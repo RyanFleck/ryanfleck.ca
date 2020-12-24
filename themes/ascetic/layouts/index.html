@@ -3,7 +3,10 @@
   <div id="c-parent">
     <div id="c-floater"></div>
     <div id="c-child">
-      <img id="R" alt="Fancy R" class="" src="/r.svg" />
+      {{ $image := resources.Get "/pics/r.svg" }}
+      <div id="R" class="rcf-svg landing-r">
+      {{ $image.Content | safeHTML }}
+      </div>
       <br />
       <div id="buttons" class="">
         <a class="button" href="/about">About</a>

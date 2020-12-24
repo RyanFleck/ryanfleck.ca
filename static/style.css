@@ -344,3 +344,14 @@ footer p a {
 .footnote-backref {
   font-family: "Courier New", Courier, monospace;
 }
+
+.rcf-svg > svg{
+  width: 100%;
+  height: auto;
+}
+
+.rcf-image{
+  display: block;
+  height: auto;
+  width: 100%;
+}
