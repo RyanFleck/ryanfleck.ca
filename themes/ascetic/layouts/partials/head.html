@@ -104,8 +104,12 @@
 <noscript><link rel="stylesheet" href="/style-fonts.css" /></noscript>
 
 <!-- JS -->
-<script type="application/javascript" src="/js/scripts.js" async defer></script>
-<script type="application/javascript" src="/js/lazysizes.min.js" async defer></script>
+{{ $global := resources.Get "/js/scripts.js" }}
+{{ $lazyload := resources.Get "/js/lazysizes.min.js" }}
+{{ $jsu := slice $global $lazyload | resources.Concat "js/bundle.js" }}
+{{ $js := $jsu | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="application/javascript" src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" async defer></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script
   async
