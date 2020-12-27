@@ -9,4 +9,7 @@
 <div class="rcf-svg">
 {{ $image.Content | safeHTML }}
 </div>
+{{ else }}
+<img class="rcf-svg unoptimized" src="{{ .Destination }}" loading="lazy">
+<p><b>Could not process the image asset: "{{ .Destination }}"</b></p>
 {{ end }}
