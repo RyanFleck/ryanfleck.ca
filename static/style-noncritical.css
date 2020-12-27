@@ -283,6 +283,7 @@ img {
   border-radius: 4px;
 
   /* Images fade in. */
+  /*
   opacity: 0;
   -webkit-animation: fadeIn ease-in 1;
   -moz-animation: fadeIn ease-in 1;
@@ -299,6 +300,7 @@ img {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  */
 }
 
 @-webkit-keyframes fadeIn {

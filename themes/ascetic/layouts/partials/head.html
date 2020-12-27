@@ -83,7 +83,9 @@
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
 <!-- CSS -->
-<link rel="stylesheet" href="/style.css" />
+<!-- Inline Critical CSS -->
+{{ $style := resources.Get "style.css" | minify }}
+<style>{{ $style.Content | safeCSS }}</style>
 
 <!-- Non-Critical CSS can be deferred. -->
 <link

@@ -346,12 +346,20 @@ footer p a {
 }
 
 .rcf-svg > svg{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .rcf-image{
   display: block;
   height: auto;
-  width: 100%;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.rcf-gif{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 2rem auto;
 }
