@@ -153,6 +153,11 @@ blockquote {
   /* filter: drop-shadow(0 0 10px rgb(255, 255, 255)); */
 }
 
+#R svg {
+  display: block;
+  margin: 0 auto;
+}
+
 #buttons {
   max-width: 80%;
   margin: 0 auto;
@@ -345,19 +350,19 @@ footer p a {
   font-family: "Courier New", Courier, monospace;
 }
 
-.rcf-svg > svg{
+.rcf-svg > svg {
   max-width: 100%;
   height: auto;
 }
 
-.rcf-image{
+.rcf-image {
   display: block;
   height: auto;
   max-width: 100%;
   margin: 1rem auto;
 }
 
-.rcf-gif{
+.rcf-gif {
   display: block;
   height: auto;
   max-width: 100%;
