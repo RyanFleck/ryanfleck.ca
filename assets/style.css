@@ -162,7 +162,6 @@ blockquote {
 }
 
 footer {
-  color: rgba(0, 0, 0, 0.2);
   font-size: 0.8rem;
 }
 
@@ -306,10 +305,6 @@ code {
   font-size: 0.8rem;
 }
 
-footer a {
-  color: rgb(202 202 249);
-}
-
 @media (max-width: 600px) {
   #mdot1 {
     display: none;
@@ -401,10 +396,6 @@ a.footnote-ref {
 footer p {
   margin: 0px;
   padding: 0px;
-}
-
-footer p a {
-  color: rgb(183 183 236);
 }
 
 .viewcount {
