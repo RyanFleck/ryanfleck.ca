@@ -13,10 +13,8 @@ html {
   max-width: 100%;
   color: rgba(0, 0, 0, 0.8);
   background: white;
-
-  font-family: "Alata", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
   font-size: 20px;
 }
 
@@ -58,6 +56,24 @@ button {
 
 ul {
   list-style: decimal-leading-zero;
+}
+
+::selection {
+  background: rgba(255, 255, 44, 0.76);
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 44, 0.76);
+}
+
+code::selection,
+pre ::selection {
+  background: #ff00ff80;
+}
+
+code::-moz-selection,
+pre ::-moz-selection {
+  background: #ff00ff80;
 }
 
 .pagin-mobile {
@@ -111,6 +127,15 @@ h6 {
 code,
 pre,
 .highlight {
+  /* These are not enforced if not important, wcyd? */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-variant-ligatures: normal;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  font-feature-settings: "liga" on, "calt" on;
+  text-rendering: optimizeLegibility;
+  font-family: "SFMono-Regular", Consolas, Monaco, "Liberation Mono",
+    "Noto Mono", Menlo, Courier, "Courier New", monospace !important;
   background-color: transparent !important;
   color: black;
   font-size: 0.8rem;
@@ -209,6 +234,16 @@ blockquote {
   transition: 0.5s;
 }
 
+h1:hover > .header-anchor-link,
+h2:hover > .header-anchor-link,
+h3:hover > .header-anchor-link,
+h4:hover > .header-anchor-link,
+h5:hover > .header-anchor-link,
+h6:hover > .header-anchor-link {
+  opacity: 1;
+  transition: 0.5s;
+}
+
 @media (max-width: 600px) {
   .header-anchor-link {
     display: none;
@@ -235,6 +270,27 @@ th {
 
 td {
   padding-right: 3px;
+}
+
+article a[href^="https://"],
+article a[href^="http://"]
+{
+  background: url(/external.png) right no-repeat;
+  /* In the future, make a larger icon and scale it down. */
+  background-size: 10px 10px;
+  padding-right: 12px;
+}
+
+article a[href^="https://ryanfleck.ca"]
+{
+  background: none;
+  padding-right: 0px;
+}
+
+article a[href^="http://localhost:1313/"]
+{
+  background: none;
+  padding-right: 0px;
 }
 
 #buttons > a.button {
@@ -298,6 +354,11 @@ sup.footnote-ref > a {
   font-size: 0.5rem;
 }
 
+a.footnote-ref {
+  font-size: 0.7rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
 /* WebKit Scrollbar */
 
 ::-webkit-scrollbar {
@@ -308,6 +369,29 @@ sup.footnote-ref > a {
 
 ::-webkit-scrollbar-thumb {
   background: #ccc;
+}
+
+.slideshow-section {
+  min-height: 90vh;
+  margin-top: 10px;
+  margin-bottom: 10vh;
+  border: 1px dashed #eee;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 50px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.slideshow-button {
+  outline: none;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+  background: white;
+  opacity: 50%;
+  font-family: "Alata", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .slideshow-button:hover {

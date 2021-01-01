@@ -85,25 +85,7 @@
 <!-- CSS -->
 <!-- Inline Critical CSS -->
 {{ $style := resources.Get "style.css" | minify }}
-<style>{{ $style.Content | safeCSS }}</style>
-
-<!-- Non-Critical CSS can be deferred. -->
-<link
-  rel="preload"
-  href="/style-noncritical.css"
-  as="style"
-  onload='this.onload=null;this.rel="stylesheet";this.as=null;'
-/>
-<noscript><link rel="stylesheet" href="/style-noncritical.css" /></noscript>
-
-<!-- Fonts can be loaded after the rest of the CSS. -->
-<link
-  rel="preload"
-  href="/style-fonts.css"
-  as="style"
-  onload='this.onload=null;this.rel="stylesheet";this.as=null;'
-/>
-<noscript><link rel="stylesheet" href="/style-fonts.css" /></noscript>
+<style media="screen">{{ $style.Content | safeCSS }}</style>
 
 <!-- JS -->
 {{ $global := resources.Get "/js/scripts.js" }}
