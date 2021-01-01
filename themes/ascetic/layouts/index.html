@@ -1,29 +1,19 @@
 {{ define "main" }}
-<main>
-  <div id="c-parent">
-    <div id="c-floater"></div>
-    <div id="c-child">
-      {{ $image := resources.Get "/pics/r.svg" }}
-      <div id="R" class="rcf-svg landing-r">
-      {{ $image.Content | safeHTML }}
-      </div>
-      <br />
-      <div id="buttons" class="">
-        <a class="button" href="/about">About</a>
-        <p id="mdot1" class="button b-desktop homedot">&middot;</p>
-        <a
-          class="button"
-          rel="noopener noreferrer"
-          href="https://github.com/RyanFleck/Projects/raw/master/tex/Resume/Ryan_Fleck_CV.pdf"
-          >Resume<small>&nbsp;&dArr;</small></a
-        >
-
-        <p id="mdot2" class="button b-desktop homedot">&middot;</p>
-        <a class="button" href="/posts">Writing</a>
-      </div>
-      <br />
-      <br />
-    </div>
+<main id="landing-page">
+  {{ $image := resources.Get "/pics/r.svg" }}
+  <div id="R" class="rcf-svg landing-r">{{ $image.Content | safeHTML }}</div>
+  <br />
+  <div id="buttons" class="">
+    <a class="button" href="/about">About</a>
+    <p id="mdot1" class="button b-desktop homedot">&middot;</p>
+    <a
+      class="button"
+      rel="noopener noreferrer"
+      href="https://github.com/RyanFleck/Projects/raw/master/tex/Resume/Ryan_Fleck_CV.pdf"
+      >Resume<small>&nbsp;&dArr;</small></a
+    >
+    <p id="mdot2" class="button b-desktop homedot">&middot;</p>
+    <a class="button" href="/posts">Writing</a>
   </div>
 </main>
 {{end}}

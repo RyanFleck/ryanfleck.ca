@@ -1,5 +1,12 @@
 /* RyanFleck.ca Styling */
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -11,10 +18,11 @@ html {
   font-feature-settings: "liga" on, "calt" on;
   text-rendering: optimizeLegibility;
   max-width: 100%;
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
+  /* color: rgba(0, 0, 0, 0.8); */
   background: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 20px;
 }
 
@@ -48,11 +56,67 @@ button {
   /* color: rgba(0, 0, 0, 0.7); */
 }
 
+/*
 #web-wrap {
   margin: 0 auto;
   max-width: 700px;
   padding: 0.6em;
 }
+*/
+
+/* Alignment on Page */
+div {
+  display: block;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+hr,
+br,
+svg,
+table,
+.rcf-svg,
+footer {
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 1em;
+}
+
+article > div.highlight {
+  overflow-x: auto;
+  padding: 0;
+  /*
+  border-radius: 5px;
+  border: 1px solid #dbce8a;
+  */
+}
+
+article > pre,
+article > div.highlight pre {
+  width: 100%;
+  padding-left: calc(50vw - 360px);
+}
+
+@media only screen and (min-width: 600px) {
+  li > .highlight {
+    margin-right: calc(310px - 50vw);
+  }
+}
+
+pre {
+  overflow: auto;
+  background-color: transparent !important;
+}
+
+/* */
 
 ul {
   list-style: decimal-leading-zero;
@@ -136,18 +200,7 @@ pre,
     "Noto Mono", Menlo, Courier, "Courier New", monospace !important;
   background-color: transparent !important;
   color: black;
-  font-size: 0.8rem;
-}
-
-article > div.highlight,
-article > pre {
-  overflow-x: auto;
-  margin-right: calc(-50vw + 51%);
-  padding: 0;
-}
-
-div.highlight > pre {
-  margin: 0;
+  font-size: 0.9rem;
 }
 
 hr {
@@ -181,7 +234,7 @@ blockquote {
 }
 
 #buttons {
-  max-width: 80%;
+  max-width: 420px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -189,8 +242,16 @@ blockquote {
   font-size: 1.2em;
 }
 
+#landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+}
+
 @media (max-width: 600px) {
-  #TableOfContents ul li a{
+  #TableOfContents ul li a {
     line-height: 2rem;
   }
   #buttons {
@@ -359,12 +420,12 @@ a.footnote-ref {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
+  height: 5px;
   background: white;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: #DDD;
 }
 
 .slideshow-section {
