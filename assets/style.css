@@ -192,6 +192,9 @@ blockquote {
 }
 
 @media (max-width: 600px) {
+  #TableOfContents ul li a{
+    line-height: 2rem;
+  }
   #buttons {
     text-align: center;
     flex-direction: column;

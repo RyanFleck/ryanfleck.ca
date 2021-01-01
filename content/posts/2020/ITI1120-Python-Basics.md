@@ -255,7 +255,7 @@ I recommend following along past this point in a jupyter notebook. It's very eas
 
 Far easier, at least, than setting up python for each of you:
 
-<a href="https://colab.research.google.com/#create=true" target="_blank">colab.research.google.com/#create=true</a>
+<a href="https://colab.research.google.com/#create=true" target="_blank" rel="noopener noreferrer">colab.research.google.com/#create=true</a>
 
 ![google colab notebook](/pics/py/colab.png)
 
