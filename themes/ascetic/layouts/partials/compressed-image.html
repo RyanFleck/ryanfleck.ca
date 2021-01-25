@@ -10,42 +10,42 @@
 {{ $src_set := "" }}
 
 {{ if ge $image.Width "2100" }}
-{{ $resized := $image.Resize "2100x 80q jpg"}}
+{{ $resized := $image.Resize "2100x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "1750" }}
-{{ $resized := $image.Resize "1750x 80q jpg"}}
+{{ $resized := $image.Resize "1750x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "1400" }}
-{{ $resized := $image.Resize "1400x 80q jpg"}}
+{{ $resized := $image.Resize "1400x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "1225" }}
-{{ $resized := $image.Resize "1225x 80q jpg"}}
+{{ $resized := $image.Resize "1225x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "1050" }}
-{{ $resized := $image.Resize "1050x 80q jpg"}}
+{{ $resized := $image.Resize "1050x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "875" }}
-{{ $resized := $image.Resize "875x 80q jpg"}}
+{{ $resized := $image.Resize "875x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "700" }}
-{{ $resized := $image.Resize "700x 80q jpg"}}
+{{ $resized := $image.Resize "700x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 
 {{ if ge $image.Width "300" }}
-{{ $resized := $image.Resize "300x 80q jpg"}}
+{{ $resized := $image.Resize "300x 90q jpg"}}
 {{ $src_set = (print $resized.RelPermalink " " $resized.Width "w, " $src_set)}}
 {{ end }}
 

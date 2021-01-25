@@ -22,3 +22,18 @@ pygmentsStyle = "perldoc"
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "lanczos"
+# Default JPEG quality setting. Default is 75.
+quality = 90 
+anchor = "smart"
+bgColor = "#ffffff"
+
+[imaging.exif]
+includeFields = ""
+disableDate = true 
+disableLatLong = true 
