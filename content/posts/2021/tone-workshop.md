@@ -2,7 +2,7 @@
 title: "Tone Analysis Workshop"
 date: 2021-02-05T19:24:50-05:00
 toc: true
-tags:
+tags: ["workshop", "programming"]
 ---
 
 # Introduction
@@ -81,7 +81,6 @@ that it supports. For a quick guide to the endpoint, read on.
 
 ![Languages](/pics/uohack/docs-languages.png)
 
-
 # Start up a REPL.it Project
 
 Make an account and create a new REPL
@@ -101,7 +100,7 @@ Search for _"ibm-watson"_ and add it.
 ![Languages](/pics/uohack/replit-addpackage.png)
 
 Wait for the installation to complete...
- 
+
 ![Languages](/pics/uohack/replit-installing.png)
 
 **Bam.** _We're ready to go!_
@@ -167,45 +166,56 @@ response = tone_analyzer.tone(
 print(response)
 ```
 
-You can get a response from the API like this:
+You can get a response from the API like this. I've truncated the sentences a
+bit in order to make it look a little cleaner here, but in real API responses
+from this endpoint, the full text will be returned.
 
 ```json
 {
-    "document_tone": {
-        "tones": [
-            {"score":0.664175,"tone_id":"tentative","tone_name":"Tentative"},
-            {"score":0.771025,"tone_id":"analytical","tone_name":"Analytical"}
-        ]
-    },
-    "sentences_tone": [
-        {
-            "sentence_id": 0,
-            "text": "Perhaps, if I had made a different turn on life's winding paths all those ages ago, I wouldn't have found myself in so fortunate a position.",
-            "tones": [{"score":0.589295,"tone_id":"analytical","tone_name":"Analytical"}]
-        },
-        {
-            "sentence_id": 1,
-            "text": "Now I can smoke a thousand cigarettes a day, and they can't give me cancer due to my mechanical lungs!",
-            "tones": [{"score":0.599421,"tone_id":"analytical","tone_name":"Analytical"}]
-        },
-        {
-            "sentence_id": 2,
-            "text": "Hahahahaha!",
-            "tones": []
-        }
+  "document_tone": {
+    "tones": [
+      { "score": 0.664175, "tone_id": "tentative", "tone_name": "Tentative" },
+      { "score": 0.771025, "tone_id": "analytical", "tone_name": "Analytical" }
     ]
+  },
+  "sentences_tone": [
+    {
+      "sentence_id": 0,
+      "text": "Perhaps, if I had made a different turn on life's... ",
+      "tones": [
+        {
+          "score": 0.589295,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 1,
+      "text": "Now I can smoke a thousand cigarettes a day, and... ",
+      "tones": [
+        {
+          "score": 0.599421,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 2,
+      "text": "Hahahahaha!",
+      "tones": []
+    }
+  ]
 }
 ```
 
 Notice that the data returned from the endpoint is in a dict, meaning we can
 sift through it and pull out neat info!
 
-# A REPL (In REPL.it, ha!)
+# A Simple Command-Line REPL
 
-Open <https://repl.it/@RyanFleck/tone-analysis-repl#main.py> and fork to tinker
-from this point.
-
-Putting the code 
+Add the following code to your file:
 
 ```py
 def analyze(text:str):
@@ -223,7 +233,7 @@ while True:
   analyze(text)
 ```
 
-Into the end of the file causes a little REPL to start itself when you run the
+This will cause a little REPL to start itself when you run the
 REPL. It'll return your input like this:
 
 ```
@@ -231,21 +241,18 @@ OwO >> It was so good to see you again and catch up; be?
 Analyzing...  detected emotions: Joy
 OwO >> AAAAAUGH! Why did you do that? Why on earth!? I'll kill you!!!!
 Analyzing...  detected emotions: Anger
-OwO >> 
+OwO >>
 ```
 
-# REPL REPL
+REPL.it: <https://repl.it/@RyanFleck/tone-analysis-repl>
 
-<iframe class="replit" frameborder="0" width="100%" height="600px" src="https://repl.it/@RyanFleck/tone-analysis-repl?lite=true"></iframe>
-
-# A Web App (Big Step, I Know)
+# Integration Into a Web App
 
 Before we start, install the **flask** package from the package manager.
 
-I'll start by posting the entirety of the flask app, then explain it
-step-by-step. You can open this repl at
-<https://repl.it/@RyanFleck/tone-analysis-simple#main.py> and fork it to get
-started from this point right away.
+Replace the code in your `main.py` file with the following:
+
+**`main.py`**
 
 ```py
 from ibm_watson import ToneAnalyzerV3
@@ -296,9 +303,43 @@ def analyze():
 app.run(host='0.0.0.0', port=random.randint(2000, 9000))
 ```
 
-# Web App REPL
+Additionally, create a new folder called _templates_ and create the html file
+`base.html` within it. This template will be used by Flask to render some I/O
+for our web users.
 
-<iframe class="replit" frameborder="0" width="100%" height="800px" src="https://repl.it/@RyanFleck/tone-analysis-simple?lite=true"></iframe>
+**`templates/base.html`**
+
+```html
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1,
+    shrink-to-fit=no" />
+</head>
+<body>
+	<h1>Tone Analyzer</h1>
+	<form action="/analyze" method="post">
+		<div>
+			<textarea id="entry" name="journal-entry" required></textarea>
+    </div>
+    <div>
+      <input id="submit" type="submit" value="I'm Done Writing" />
+    </div>
+  </form>
+  {% if data %}
+  <br />
+  <h2>Analysis Results</h2>
+  <p>Detected emotions: {{ data.emotions }}</p>
+  <p>
+  <i>"{{ data.entry }}"</i>
+  <pre>{{data.data}}</pre>
+  </p>
+  {% endif %}
+</body>
+```
+
+REPL.it: <https://repl.it/@RyanFleck/tone-analysis-simple>
 
 # Conclusions
 

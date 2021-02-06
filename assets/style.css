@@ -99,6 +99,15 @@ article > div.highlight {
   */
 }
 
+article > div.highlight::hover {
+  overflow-x: auto;
+  padding: 0;
+  /*
+  border-radius: 5px;
+  border: 1px solid #dbce8a;
+  */
+}
+
 article > pre,
 article > div.highlight pre {
   width: 100%;
