@@ -105,6 +105,13 @@ Wait for the installation to complete...
 
 **Bam.** _We're ready to go!_
 
+# Coffee Break
+
+At this point, we'll wait for everyone else to catch up. I'd recommend reading
+through <https://github.com/public-apis/public-apis> to find some interesting
+endpoints to call in your project. As soon as everyone has their API keys and
+Repl.it up and ready, we'll continue with the workshop.
+
 # Storing our Secrets
 
 Before we start writing any python code, create a new file named `.env` (yes,
@@ -122,6 +129,9 @@ you'll need to use the dotenv package to load the contents of this file, or you
 can just keep 'em as strings.
 
 # Before the Magic, You've Gotta Authenticate!
+
+Most APIs (or client libraries like the one we're using now,) require you to
+identify yourself in order to limit the computing resources that each user can utilize.
 
 Add or type these lines into your `main.py` file.
 
@@ -211,7 +221,12 @@ from this endpoint, the full text will be returned.
 ```
 
 Notice that the data returned from the endpoint is in a dict, meaning we can
-sift through it and pull out neat info!
+sift through it and pull out neat info! For instance, to get the list of tones
+for the document, we can call the following (and we will in the next section.)
+
+```python
+document_tones = res["document_tone"]["tones"]
+```
 
 # A Simple Command-Line REPL
 
