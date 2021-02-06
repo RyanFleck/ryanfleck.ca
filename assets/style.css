@@ -366,7 +366,7 @@ article a[href^="http://localhost:1313/"]
 
 .replit{
   display: block;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0px auto;
   border-radius: 10px;
 }
