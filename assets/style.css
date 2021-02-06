@@ -209,7 +209,8 @@ hr {
 }
 
 blockquote {
-  margin-left: 2ch;
+  margin:0;
+  padding:0;
 }
 
 footer {
