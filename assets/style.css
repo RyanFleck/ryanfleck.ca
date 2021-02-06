@@ -364,6 +364,13 @@ article a[href^="http://localhost:1313/"]
   color: rgb(186 186 255);
 }
 
+.replit{
+  display: block;
+  max-width: 800px;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
 code {
   font-size: 0.8rem;
 }

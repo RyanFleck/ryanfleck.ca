@@ -197,10 +197,15 @@ You can get a response from the API like this:
 }
 ```
 
+Notice that the data returned from the endpoint is in a dict, meaning we can
+sift through it and pull out neat info!
+
 # A REPL (In REPL.it, ha!)
 
 Open <https://repl.it/@RyanFleck/tone-analysis-repl#main.py> and fork to tinker
 from this point.
+
+Putting the code 
 
 ```py
 def analyze(text:str):
@@ -217,3 +222,82 @@ while True:
   text = input("OwO >> ")
   analyze(text)
 ```
+
+Into the end of the file causes a little REPL to start itself when you run the
+REPL. It'll return your input like this:
+
+```
+OwO >> It was so good to see you again and catch up; be?
+Analyzing...  detected emotions: Joy
+OwO >> AAAAAUGH! Why did you do that? Why on earth!? I'll kill you!!!!
+Analyzing...  detected emotions: Anger
+OwO >> 
+```
+
+# REPL REPL
+
+<iframe class="replit" frameborder="0" width="100%" height="500px" src="https://repl.it/@RyanFleck/tone-analysis-repl"></iframe>
+
+# A Web App (Big Step, I Know)
+
+Before we start, install the **flask** package from the package manager.
+
+I'll start by posting the entirety of the flask app, then explain it
+step-by-step. You can open this repl at
+<https://repl.it/@RyanFleck/tone-analysis-simple#main.py> and fork it to get
+started from this point right away.
+
+```py
+from ibm_watson import ToneAnalyzerV3
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+from flask import Flask, render_template, request
+import os
+import json
+import random
+
+# Get environment variables from '.env'
+key = os.getenv("TONE_KEY")
+url = os.getenv("TONE_URL")
+
+# Set up the IBM Watson stuff
+authenticator = IAMAuthenticator(key)
+tone_analyzer: ToneAnalyzerV3 = ToneAnalyzerV3(version='2017-09-21',
+                                               authenticator=authenticator)
+tone_analyzer.set_service_url(url)
+
+# Start the flask app.
+app = Flask("journal", template_folder='templates')
+
+
+@app.route('/')
+def base_page():
+    return render_template('base.html')
+
+
+@app.route('/analyze', methods=['POST'])
+def analyze():
+    entry = request.form.get("journal-entry")
+    res = tone_analyzer.tone(entry).get_result()
+    document_tones = res["document_tone"]["tones"]
+    emotions = ", ".join(list(map(lambda x: x["tone_name"], document_tones)))
+    if not emotions:
+        emotions = "nothing."
+
+    data = {
+        "entry": entry,
+        "emotions": emotions,
+        "data": json.dumps(res, indent=2),
+    }
+    return render_template('base.html', data=data)
+
+
+
+# Start the flask site on the REPL.IT host 0.0.0.0
+app.run(host='0.0.0.0', port=random.randint(2000, 9000))
+```
+
+# Web App REPL
+
+<iframe class="replit" frameborder="0" width="100%" height="500px" src="https://repl.it/@RyanFleck/tone-analysis-simple"></iframe>
+
+# Conclusions
