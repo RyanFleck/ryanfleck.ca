@@ -236,7 +236,7 @@ OwO >>
 
 # REPL REPL
 
-<iframe class="replit" frameborder="0" width="100%" height="500px" src="https://repl.it/@RyanFleck/tone-analysis-repl?lite=true"></iframe>
+<iframe class="replit" frameborder="0" width="100%" height="600px" src="https://repl.it/@RyanFleck/tone-analysis-repl?lite=true"></iframe>
 
 # A Web App (Big Step, I Know)
 
@@ -298,6 +298,9 @@ app.run(host='0.0.0.0', port=random.randint(2000, 9000))
 
 # Web App REPL
 
-<iframe class="replit" frameborder="0" width="100%" height="500px" src="https://repl.it/@RyanFleck/tone-analysis-simple?lite=true"></iframe>
+<iframe class="replit" frameborder="0" width="100%" height="800px" src="https://repl.it/@RyanFleck/tone-analysis-simple?lite=true"></iframe>
 
 # Conclusions
+
+Check out this mega list of APIs <https://github.com/public-apis/public-apis> and add some cool
+functionality to your project!
