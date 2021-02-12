@@ -12,7 +12,9 @@ reasonable introduction to the content I'll be discussing in this post.
 
 > Hey, I'm Ryan,
 >
-> Tonight (9PM!) I'll be teaching y'all how to read the thoughts of your to detect emotion in the content that your users post, and in general, how to find and use free APIs to make your program AWESOME!
+> Tonight (9PM!) I'll be teaching y'all how to read the thoughts of your [users]
+> to detect emotion in the content that they post, and in general, how to
+> find and use free APIs to make your program AWESOME!
 >
 > If you know how to write some python, you can use the power of the web to suggest cocktails, get stock information , news, recognize faces, and translate text.
 >

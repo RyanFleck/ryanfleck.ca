@@ -18,6 +18,7 @@ html {
   font-feature-settings: "liga" on, "calt" on;
   text-rendering: optimizeLegibility;
   max-width: 100%;
+  min-width: 300px;
   color: black;
   /* color: rgba(0, 0, 0, 0.8); */
   background: white;
@@ -218,8 +219,13 @@ hr {
 }
 
 blockquote {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote > p {
+  padding-left: 1rem;
+  border-left: 2px solid #eee;
 }
 
 footer {
@@ -373,7 +379,7 @@ article a[href^="http://localhost:1313/"]
   color: rgb(186 186 255);
 }
 
-.replit{
+.replit {
   display: block;
   max-width: 1000px;
   margin: 0px auto;
@@ -442,7 +448,7 @@ a.footnote-ref {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #DDD;
+  background: #ddd;
 }
 
 .slideshow-section {
