@@ -215,7 +215,7 @@ pre,
 
 hr {
   border: none;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #EEE;
 }
 
 blockquote {
@@ -223,10 +223,19 @@ blockquote {
   padding: 0;
 }
 
-blockquote > p {
+blockquote p {
   padding-left: 1rem;
-  border-left: 2px solid #eee;
+  border-left: 2px solid #F4F4F4;
+  margin-top: 0;
+  padding-top: 1rem;
 }
+
+blockquote p:first-child {
+  margin-top: 1rem;
+  padding-top: 0; 
+
+}
+
 
 footer {
   font-size: 0.8rem;
