@@ -8,10 +8,9 @@
       <!-- Render each article. -->
       <li>
         {{ if .Date }}
-        <span class="pagin-desktop" style="aria-hidden: true">
+        <span class="pagin-desktop">
           {{.Date.Format "2006·01·02"}} &nbsp;&nbsp;
         </span>
-        <span class="pagin-mobile"> {{.Date.Format "2006·01·02"}} </span>
         {{end}}
         <a href="{{.Permalink}}" class="toc-article-link">
           {{ if .Draft }}

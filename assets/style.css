@@ -150,12 +150,6 @@ pre ::-moz-selection {
   background: #ff00ff80;
 }
 
-.pagin-mobile {
-  display: none;
-  font-size: 0.7em;
-  padding-top: 0.5rem;
-}
-
 .pagin-desktop {
   display: inline;
 }
@@ -166,11 +160,12 @@ pre ::-moz-selection {
   }
 
   .pagin-desktop {
-    display: none;
-  }
-
-  .pagin-mobile {
     display: block;
+    font-size: 0.8em;
+    padding-top: 0.4rem;
+    padding-bottom: 0;
+    height: 1.4rem;
+    color: #444;
   }
 
   #listcontent > ol > li {
@@ -215,7 +210,7 @@ pre,
 
 hr {
   border: none;
-  border-top: 2px solid #EEE;
+  border-top: 2px solid #eee;
 }
 
 blockquote {
@@ -225,17 +220,15 @@ blockquote {
 
 blockquote p {
   padding-left: 1rem;
-  border-left: 2px solid #F4F4F4;
+  border-left: 2px solid #f4f4f4;
   margin-top: 0;
   padding-top: 1rem;
 }
 
 blockquote p:first-child {
   margin-top: 1rem;
-  padding-top: 0; 
-
+  padding-top: 0;
 }
-
 
 footer {
   font-size: 0.8rem;
