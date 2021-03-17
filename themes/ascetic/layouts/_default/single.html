@@ -7,8 +7,8 @@
   <article>{{ .Content }}</article>
 
   {{ if (not .Params.no_comments)}}
-  <div id="comments">
-  <h2>Comments</h2>
+  <div id="commentsblock">
+    <h2 id="comments">Comments</h2>
     <script
       src="https://utteranc.es/client.js"
       repo="RyanFleck/Comments"
