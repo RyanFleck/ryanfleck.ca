@@ -2,6 +2,7 @@
 date: 2019-08-17T11:15:48-04:00
 title: "About"
 summary: "Information about me - Ryan Fleck, Computer Engineering, uOttawa '21."
+no_comments: true
 ---
 
 Hello! My name is **Ryan**, and I am a passionate computer programmer. Currently I

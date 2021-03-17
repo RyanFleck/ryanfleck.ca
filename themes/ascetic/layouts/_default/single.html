@@ -1,15 +1,24 @@
 {{ define "main" }}
 <main>
+  {{ if .Params.toc }}
+  <aside id="toc">{{ .TableOfContents }}</aside>
+  {{ end }}
 
-    {{ if .Params.toc }}
-        <aside id="toc">
-            {{ .TableOfContents }}
-        </aside>
-    {{ end }}
+  <article>{{ .Content }}</article>
 
-    <article>
-        {{ .Content }}
-    </article>
-
+  {{ if (not .Params.no_comments)}}
+  <div id="comments">
+  <h2>Comments</h2>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="RyanFleck/Comments"
+      issue-term="{{ .RelPermalink }}"
+      theme="boxy-light"
+      crossorigin="anonymous"
+      async
+      defer
+    ></script>
+  </div>
+  {{ end }}
 </main>
 {{end}}
